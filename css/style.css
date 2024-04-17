@@ -11,6 +11,13 @@
 */
 
 
+
+/*Definerer at alt skrift i vores CSS er farven "skriftfarve"*/
+* {
+    color: var(--skriftfarve);
+}
+
+
 /* Definerer de mest brugte farver og andre elementer i koden */
 :root {
     --skriftfarve: #000;
@@ -20,6 +27,10 @@
     --primaer-gul: #FFF3A4;
     --sekundaer-gul: #DFD381;
     --sekundaer-moerk-gul: #CCC06E;
+}
+
+a {
+    text-decoration: none; /* Fjerner understregninger */
 }
 
 body {
@@ -52,24 +63,26 @@ body {
 /*styling af burgermenu*/
 .dropdown-indhold { 
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--sekundaer-moerk-lyseroed);
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    position: absolute; 
+    right: 0;/* Placerer menuen til højre for den overordnede knap */
+    background-color: var(--sekundaer-moerk-lyseroed);/* Baggrundsfarve for dropdown-menu */
+    z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
+
 }
 
 .dropdown-indhold li {
-    padding: 10px;
+    padding: 10px; /*afstand mellem hvert link, i baren*/
+    list-style-type: none; /*fjerner prikker for hver undermenu*/
 }
 
-.dropdown-indholdli a {
-    text-decoration: none;
-    color: var(--skriftfarve);
-
+.dropdown-indhold ul {
+  /*vil gerne have fjernet den padding, der gør, at menubaren ikke står ordenligt ????*/ 
+  
 }
+
+
+
+
 
 /*har ingen effekt pt??*/
 .dropdown-indhold li:hover {
@@ -85,5 +98,6 @@ body {
 #bar-checkbox {
     display: none;
 }
+
 
 
