@@ -53,20 +53,27 @@ body {
     padding-left: 4%; /* Luft omkring logo, til venstre kant */
 }
 
-/* Styling af baren */
+/* Styling for baren */
 .bar {
-    width: 100%;
-    height: 85%;
-    margin-right: 0; /* fjerner evt. margin der kan påvirke placering*/
+    width: 100%; 
+    height: 100%; 
+    margin-left: auto; /* Placerer baren helt til højre */
+    display: block; /* Sikrer, at baren vises som et blokelement */
+    margin-right: 1%;
 }
- 
-/* Styling af label */
+
+/* Styling for label */
 label {
     display: inline-block; /* Sikrer, at label ikke tager hele linjen og holder sig til billedebredden */
-    position: relative; 
-    height: 70px; /* fjerner witespace, mellem bar-img og højre hjørne*/
-    width: 70px;
-    margin-right: 1.5%;
+    padding: 0; 
+    margin: 0; 
+    width: 80px; 
+    height: 30px; 
+}
+
+/* Juster baren og label til samme størrelse */
+input[type="checkbox"] {
+    display: none; /* Skjul input-checkbox'en */
 }
 
 
