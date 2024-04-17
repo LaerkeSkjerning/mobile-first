@@ -10,7 +10,7 @@
 
 */
 
-/*------------------------------------------------------------*/
+/*---------------------------------------------------*/
 
 /*Definerer at alt skrift i vores CSS er farven "skriftfarve"*/
 * {
@@ -37,7 +37,7 @@ body {
     background-color: var(--primaer-lyseroed);
 }
 
-/*------------------------------------------------------------*/
+/*----------------------------------------------------*/
 
 .logo-og-bar {
     display: flex; /* Billederne er på linje  */
@@ -45,25 +45,25 @@ body {
     align-items: center; /* Placerer begge elementer i midtne horisontalt */
 }
 
+/* Styling af baren */
 .logo {
     width: 30%; /* størrelse på logo */
     padding: 2%; /* luft omkinrg logo, til kant af skærm */
     padding-left: 4%; /* Luft omkring logo, til venstre kant */
 }
 
-
+/* Styling af baren */
 .bar {
     width: 30%;
     height: 30%;
     position: relative;
     display: inline-block;
+    flex-direction: left;
 }
 
 
 
-
-
-/* DESIGN FOR NAV.BAR - DROPDOWN -----------------------------*/
+/* DESIGN FOR NAV.BAR - DROPDOWN ---------------------*/
 
 .dropdown {
     position: relative;
@@ -74,6 +74,7 @@ body {
 .dropdown-indhold { 
     display: none;
     position: absolute; 
+    top: 100%; /* Placerer dropdown-menuen under baren*/
     right: 0;/* Placerer menuen til højre for den overordnede knap */
     background-color: var(--sekundaer-moerk-lyseroed);/* Baggrundsfarve for dropdown-menu */
     z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
@@ -84,14 +85,9 @@ body {
     list-style-type: none; /*fjerner prikker for hver undermenu*/
 }
 
-.dropdown-indhold ul {
-  /*vil gerne have fjernet den padding, der gør, at menubaren ikke står ordenligt ????*/ 
-  
-}
 
 
-
-/* DESIGN FOR NAV.BAR - CHECKBOX -----------------------------*/
+/* DESIGN FOR NAV.BAR - CHECKBOX ---------------------*/
 
 /*har ingen effekt pt??*/
 .dropdown-indhold li:hover {
@@ -111,16 +107,28 @@ body {
 
 
 
-/* DESIGN FOR NAV.BAR - LISTE ELEMENTER ----------------------*/
+/* DESIGN FOR NAV.BAR - LISTE ELEMENTER --------------*/
+
+/* Styling for liste elementer*/
 .liste-over-indhold-i-kategori {
     display: none;
-
+    position: absolute;
+    top: 0;
+    left: 100%; /* placerer listelementer til højre for menuelementet */
+    background-color: var(--sekundaer-moerk-lyseroed);
+    z-index: 1000;
 }
 
-/*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
-.dropdown-.dropdown-liste-element ~ .liste-over-indhold-i-kategori {
-    display: block;
+.dropdown-indhold li:hover .liste-over-indhold-i-kategori {
+    display: block; /* Viser listeelementer, når et menuelement klikkes */
 }
 
+.liste-over-indhold-i-kategori li {
+    padding: 10px;
+    list-style-type: none;
+}
 
-/*------------------------------------------------------------*/
+/*----------------------------------------------------*/
+
+
+
