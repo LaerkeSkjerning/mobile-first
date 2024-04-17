@@ -10,7 +10,7 @@
 
 */
 
-
+/*------------------------------------------------------------*/
 
 /*Definerer at alt skrift i vores CSS er farven "skriftfarve"*/
 * {
@@ -37,6 +37,8 @@ body {
     background-color: var(--primaer-lyseroed);
 }
 
+/*------------------------------------------------------------*/
+
 .logo-og-bar {
     display: flex; /* Billederne er på linje  */
     justify-content: space-between; /* Opdeler så logo er længst til venstre og bar er længst til højre */
@@ -44,16 +46,24 @@ body {
 }
 
 .logo {
-    width: 45%;
+    width: 30%; /* størrelse på logo */
+    padding: 2%; /* luft omkinrg logo, til kant af skærm */
+    padding-left: 4%; /* Luft omkring logo, til venstre kant */
 }
 
 
 .bar {
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    height: 30%;
     position: relative;
     display: inline-block;
 }
+
+
+
+
+
+/* DESIGN FOR NAV.BAR - DROPDOWN -----------------------------*/
 
 .dropdown {
     position: relative;
@@ -67,7 +77,6 @@ body {
     right: 0;/* Placerer menuen til højre for den overordnede knap */
     background-color: var(--sekundaer-moerk-lyseroed);/* Baggrundsfarve for dropdown-menu */
     z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
-
 }
 
 .dropdown-indhold li {
@@ -82,7 +91,7 @@ body {
 
 
 
-
+/* DESIGN FOR NAV.BAR - CHECKBOX -----------------------------*/
 
 /*har ingen effekt pt??*/
 .dropdown-indhold li:hover {
@@ -98,3 +107,20 @@ body {
 #bar-checkbox {
     display: none;
 }
+
+
+
+
+/* DESIGN FOR NAV.BAR - LISTE ELEMENTER ----------------------*/
+.liste-over-indhold-i-kategori {
+    display: none;
+
+}
+
+/*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
+.dropdown-.dropdown-liste-element ~ .liste-over-indhold-i-kategori {
+    display: block;
+}
+
+
+/*------------------------------------------------------------*/
