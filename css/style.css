@@ -83,6 +83,9 @@ input[type="checkbox"] {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding: 20px;
+    right: 0; /* Placerer menuen til højre for den overordnede knap */
+    top: 100%; /* Justerer menuen til at starte fra bunden af den overordnede knap */
 }
 
 /*styling af burgermenu*/
@@ -104,9 +107,9 @@ input[type="checkbox"] {
 
 /* DESIGN FOR NAV.BAR - CHECKBOX ---------------------*/
 
-/*har ingen effekt pt??*/
+/* Design af hover effekt ved dropdown*/
 .dropdown-indhold li:hover {
-    background-color: var(--sekundaer-lyseroed);
+    background-color: var(--sekundaer-lyseroed);font-weight: bold;
 }
 
 /*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
@@ -135,13 +138,9 @@ input[type="checkbox"] {
 }
 
 .dropdown-indhold li:hover .liste-over-indhold-i-kategori {
-    display: block; /* Viser listeelementer, når et menuelement klikkes */
+    display: block; /* Viser listeelementer, når musen holdes over et element */
 }
 
-.liste-over-indhold-i-kategori li {
-    padding: 10px;
-    list-style-type: none;
-}
 
 /*----------------------------------------------------*/
 
