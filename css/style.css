@@ -1,3 +1,6 @@
+
+
+/* Definerer de mest brugte farver og andre elementer i koden */
 :root {
     --skriftfarve: #000;
     --primaer-lyseroed: #f9CBCE;
@@ -5,8 +8,44 @@
     --sekundaer-moerk-lyseroed: #C78D91;  
     --primaer-gul: #FFF3A4;
     --sekundaer-gul: #DFD381;
+    --sekundaer-moerk-gul: #CCC06E;
 }
 
 body {
     background-color: var(--primaer-lyseroed);
+}
+
+.logo-og-bar {
+    display: flex; /* Billederne er på linje  */
+    justify-content: space-between; /* Opdeler så logo er længst til venstre og bar er længst til højre */
+    align-items: center; /* Placerer begge elementer i midtne horisontalt */
+}
+
+.logo {
+    width: 45%;
+}
+
+.bar {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-indhold {
+    display: none;
+}
+
+.dropdown-indhold {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.bar:hover .dropdown {
+    display: block;
 }

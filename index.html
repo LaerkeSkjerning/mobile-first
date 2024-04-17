@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>La cana</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="index.html"><img class="logo" src="images/lacana-logo.webp" alt="La Caña logo"></a>
-            <aside>
+
+            <aside class="logo-og-bar">
+                <a href="index.html"><img class="logo" src="images/lacana-logo.webp" alt="La Caña logo"></a>
+                <img class="bar" src="images/bar.webp" alt="Bar">
+            </aside>
+
+            <aside class="dropdown">
                 <ul class="dropdown-indhold">
-                    <li><a href="menu.html">MENUKORT</a>
-                        <ul class="liste-over-indhold-i-menukort">
+
+                    <li class="dropdown-liste-element"><a href="menu.html">MENUKORT</a> <!-- Menukort fordi det er søgeord -->
+                        <ul class="liste-over-indhold-i-kategori"> <!-- En liste inde i en liste -->
                             <li><a href="meat-on-stone.html">Meat on the stone</a></li>
                             <li><a href="saladbowls.html">Salad Bowls</a></li>
                             <li><a href="sandwich.html">Sandwich</a></li>
                             <li><a href="soft-taco.html">Soft Taco</a></li>
                             <li><a href="tapas.html">Tapas</a></li>
                         </ul>
-                    </li> <!-- Menukort fordi det er søgeord -->
-                    <li><a href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
-                    <li><a href="gavekort.html">GAVEKORT</a></li>
-                    <li><a href="billedergalleri.html">GALLERI</a></li>
-                    <li><a href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+                    </li> 
+
+                    <li class="dropdown-liste-element"><a href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+
+                    <li class="dropdown-liste-element"><a href="gavekort.html">GAVEKORT</a>
+                        <ul class="liste-over-indhold-i-kategori">
+                            <li><a href="gavekort-kob.html">KØB GAVEKORT</a></li>
+                            <li><a href="gavekort-brug.html">BRUG AF GVEKORT</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-liste-element"><a href="billedergalleri.html">GALLERI</a></li>
+                    <li class="dropdown-liste-element"><a href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+
                 </ul>
             </aside>
+        
         </nav>
         
     </header>
