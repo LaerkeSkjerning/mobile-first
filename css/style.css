@@ -101,7 +101,15 @@ input[type="checkbox"] {
 .dropdown-indhold li {
     padding: 10px; /*afstand mellem hvert link, i baren*/
     list-style-type: none; /*fjerner prikker for hver undermenu*/
+    display: block; /* Hvert link vises som en blok */
+    width: 135px; /* Begræns bredden af hvert link */
+    white-space: nowrap; /* Forhindrer tekst i at gå på flere linjer */
+    overflow: hidden; /* Skjul overskydende tekst, hvis det ikke kan vises */
+    text-overflow: ellipsis; /* Vis "..." hvis teksten er for lang til at blive vist */
 }
+
+/* DER SKAL DEFINERES ET ELLER ANDET MED UL - SOM KAN FIKSE/FJERNE DEN PADDING PÅ 40px, SOM DER FREMGÅR I INSPECT????? KAN IKKE FÅ DET TIL AT FUNGERE */
+
 
 
 
