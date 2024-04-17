@@ -44,22 +44,23 @@ body {
     justify-content: space-between; /* Opdeler så logo er længst til venstre og bar er længst til højre */
     align-items: center; /* Placerer begge elementer i midtne horisontalt */
     position: relative;
+   
 }
 
 /* Styling af baren */
 .logo {
     width: 19%; /* størrelse på logo */
-    padding: 2%; /* luft omkinrg logo, til kant af skærm */
-    padding-left: 4%; /* Luft omkring logo, til venstre kant */
+    padding: 1%; /* luft omkinrg logo, til kant af skærm */
+    padding-left: 3%; /* Luft omkring logo, til venstre kant */
 }
 
 /* Styling for baren */
 .bar {
-    width: 100%; 
-    height: 100%; 
-    margin-left: auto; /* Placerer baren helt til højre */
+    width: 90%; 
+    height: 90%; 
     display: block; /* Sikrer, at baren vises som et blokelement */
     margin-right: 1%;
+    
 }
 
 /* Styling for label */
@@ -67,8 +68,8 @@ label {
     display: inline-block; /* Sikrer, at label ikke tager hele linjen og holder sig til billedebredden */
     padding: 0; 
     margin: 0; 
-    width: 80px; 
-    height: 30px; 
+    width: 70px; /*størrelsen på bar-img, som er placeret i label*/
+    height: 40px; /*størrelsen på bar-img, som er placeret i label*/
 }
 
 /* Juster baren og label til samme størrelse */
