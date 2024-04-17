@@ -1,0 +1,12 @@
+:root {
+    --skriftfarve: #000;
+    --primaer-lyseroed: #f9CBCE;
+    --sekundaer-lyseroed: #DfADB0;
+    --sekundaer-moerk-lyseroed: #C78D91;  
+    --primaer-gul: #FFF3A4;
+    --sekundaer-gul: #DFD381;
+}
+
+body {
+    background-color: var(--primaer-lyseroed);
+}
