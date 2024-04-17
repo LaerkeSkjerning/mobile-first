@@ -60,16 +60,17 @@ body {
 
 }
 
+/*har ingen effekt pt??*/
 .dropdown-indhold li:hover {
     background-color: var(--sekundaer-lyseroed);
-
 }
 
+/*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
 #bar-checkbox:checked ~ .dropdown-indhold {
     display: block;
 }
 
-
+/*skjuler checkbox - i stedet for brug af js */
 #bar-checkbox {
     display: none;
 }
