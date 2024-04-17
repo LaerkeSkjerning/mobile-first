@@ -43,24 +43,31 @@ body {
     display: flex; /* Billederne er på linje  */
     justify-content: space-between; /* Opdeler så logo er længst til venstre og bar er længst til højre */
     align-items: center; /* Placerer begge elementer i midtne horisontalt */
+    position: relative;
 }
 
 /* Styling af baren */
 .logo {
-    width: 30%; /* størrelse på logo */
+    width: 25%; /* størrelse på logo */
     padding: 2%; /* luft omkinrg logo, til kant af skærm */
     padding-left: 4%; /* Luft omkring logo, til venstre kant */
 }
 
 /* Styling af baren */
 .bar {
-    width: 30%;
-    height: 30%;
-    position: relative;
-    display: inline-block;
-    flex-direction: left;
+    width: 100%;
+    height: 100%;
+    margin-right: 0; /* fjerner evt. margin der kan påvirke placering*/
 }
-
+ 
+/* Styling af label */
+label {
+    display: inline-block; /* Sikrer, at label ikke tager hele linjen og holder sig til billedebredden */
+    position: relative; 
+    height: 70px; /* fjerner witespace, mellem bar-img og højre hjørne*/
+    width: 70px;
+    margin-right: 1.5%;
+}
 
 
 /* DESIGN FOR NAV.BAR - DROPDOWN ---------------------*/
@@ -114,7 +121,7 @@ body {
     display: none;
     position: absolute;
     top: 0;
-    left: 100%; /* placerer listelementer til højre for menuelementet */
+    right: 100%; /* placerer listelementer til venstre for menuelementet */
     background-color: var(--sekundaer-moerk-lyseroed);
     z-index: 1000;
 }
