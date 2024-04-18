@@ -168,8 +168,7 @@ input[type="checkbox"] {
 /*---MENUKORTET---*/
 .menukort1 { 
     display: flex; 
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 #menuskilt {
