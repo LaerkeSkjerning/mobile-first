@@ -12,12 +12,6 @@
 
 /*---------------------------------------------------*/
 
-/* Definerer at alt skrift i vores CSS er farven "skriftfarve" */
-* {
-    color: var(--skriftfarve);
-}
-
-
 /* Definerer de mest brugte farver og andre elementer i koden */
 :root {
     --skriftfarve: #000;
@@ -27,6 +21,14 @@
     --primaer-gul: #FFF3A4;
     --sekundaer-gul: #DFD381;
     --sekundaer-moerk-gul: #CCC06E;
+}
+
+
+/* Definerer at alt skrift i vores CSS er farven "skriftfarve", samt font og font-size */
+* {
+    color: var(--skriftfarve);
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 
 a {
@@ -199,3 +201,93 @@ input[type="checkbox"] {
     font-weight: bold;
     font-size: 18px;
 }
+
+/* Styling af selve karrusel */
+
+.karrusel-container {
+    /* position: relative; */
+    overflow: hidden; /* Gør sådan, at man ikke kan se næste eller forrige sides indhold*/
+    /* margin: 0 auto; */
+}
+
+.indre-karrusel {
+    display: flex; /* Sætter de tre 'sider' på linje, så der kan skiftes imellem dem*/
+    transition: transform 1.0s ease; /* Den tid det tager om at skifte fra en side til en anden */
+}
+
+.karrusel-side {
+    width: 100%; /* Al indhold vises inden for rammen */
+    flex-shrink: 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/*____________________________________________________________*/
+
+/* Styling af forsideelementerne */
+
+    /* Generel styling af titel, tekst og knapper på forside */
+.forside-elementer {
+    margin-top: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+
+    /* Styler titlerne på alle forsider*/
+.forside-titel {
+    font-size: 1,5rem;
+    font-weight: lighter;
+}
+
+    /* Styler teksten på alle forsider */
+.forside-tekst {
+    margin-top: -3%;
+    margin-bottom: 10%;
+    font-size: 0.75rem;
+}
+
+/* Styling af knap på forside 1*/
+#lyseroed-forside-knap {
+    padding: 1% 8%;
+    background-color: var(--sekundaer-lyseroed);
+    border-radius: 20px;
+    border: solid thin black;
+}
+
+/* Knappen på forside 2 i karrusellen */
+.gul-forside-knap {
+    padding: 1% 8%;
+    background-color: var(--sekundaer-gul);
+    border-radius: 20px;
+    border: solid thin black;
+}
+
+/* Styling af elementer på tredje forside */
+.lyseroed-forside-knap-et, .lyseroed-forside-knap-to{
+    border: solid thin black;
+    border-radius: 20px; /* Omregn til procent? */ 
+}
+
+.lyseroed-forside-knap-et {
+    padding: 1.5% 8.5%; /* Hvor stor knappen omkring teksten skal være */
+    background-color: var(--sekundaer-lyseroed); /* Baggrundsfarven for 'knappen'*/
+}
+
+/* Styling for den enkelte knap på forside 3 - FIND OS*/
+.lyseroed-forside-knap-to {
+    padding: 1.5% 5%;
+    background-color: var(--sekundaer-lyseroed);
+    margin-top: 2%; /* Laver afstand mellem de to knapper */
+}
+
+/* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
+#sidste-forside {
+    margin-top: 82%;
+}
+
+
+/*____________________________________________________________*/
