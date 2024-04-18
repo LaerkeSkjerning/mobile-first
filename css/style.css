@@ -278,7 +278,7 @@ input[type="checkbox"] {
 
 /* Styling for den enkelte knap på forside 3 - FIND OS*/
 .lyseroed-forside-knap-to {
-    padding: 1.5% 5%;
+    padding: 1.5% 7%;
     background-color: var(--sekundaer-lyseroed);
     margin-top: 2%; /* Laver afstand mellem de to knapper */
 }
