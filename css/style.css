@@ -127,7 +127,7 @@ input[type="checkbox"] {
 
 /*skjuler checkbox - i stedet for brug af js */
 #bar-checkbox {
-    display: none;
+    display: none; /* Har denne en egentlig funktion? Jeg kan se checkboxen ved display block, men ikke hvis css helt fjernes for denne */
 }
 
 
