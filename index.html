@@ -10,19 +10,27 @@
 
     <header>
         <nav>
-            <aside class="logo-og-bar">
+            <aside class="logo-og-bar"> <!-- flecbox, som får logo og bar på linje-->
+
+                <!-- Logo, som img -->
                 <a href="index.html"><img class="logo" src="images/logo.webp" alt="La Caña logo"></a>
 
-                <input type="checkbox" id="bar-checkbox"> <!--sikrer at navigationsbaren først kommer frem, når der klikkes på bar-image-->
+                <!--sikrer at navigationsbaren først kommer frem, når der klikkes på bar-image-->
+                <input type="checkbox" id="bar-checkbox"> 
 
+                <!--- Burgermenu iconet, som img -->
                 <label for="bar-checkbox">
                     <img class="bar" src="images/bar.webp" alt="bar">
                 </label> 
 
+
+                <!-- Liste elementer, i vores navigationsbar-->
                 <ul class="dropdown-indhold">
+
                     <li class="dropdown-liste-element"><a href="menu.html">MENUKORT</a> <!-- Menukort fordi det er søgeord -->
 
-                        <ul class="liste-over-indhold-i-kategori"> <!-- En liste inde i en liste -->
+                        <!-- En under-liste, inde i listen -->
+                        <ul class="liste-over-indhold-i-kategori"> 
                             <li><a href="meat-on-stone.html">Meat on the stone</a></li>
                             <li><a href="saladbowls.html">Salad Bowls</a></li>
                             <li><a href="sandwich.html">Sandwich</a></li>
@@ -42,7 +50,9 @@
                     </li>
 
                     <li class="dropdown-liste-element"><a href="billedergalleri.html">GALLERI</a></li>
+
                     <li class="dropdown-liste-element"><a href="om-os.html">OM OS</a></li>
+                    
                     <li class="dropdown-liste-element"><a href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
                 </ul>
             </aside>
