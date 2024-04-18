@@ -152,5 +152,30 @@ input[type="checkbox"] {
 
 /*----------------------------------------------------*/
 
+/*menuen*/
 
+.menukort2 {
+    width: 90%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #DfADB0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #C78D91(0, 0, 0, 0.1);
+}
 
+.menukort2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menukort2 li {
+    margin-bottom: 10px;
+}
+
+.menukort2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
