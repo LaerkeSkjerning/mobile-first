@@ -12,7 +12,7 @@
 
 /*---------------------------------------------------*/
 
-/*Definerer at alt skrift i vores CSS er farven "skriftfarve"*/
+/* Definerer at alt skrift i vores CSS er farven "skriftfarve" */
 * {
     color: var(--skriftfarve);
 }
@@ -78,9 +78,9 @@ input[type="checkbox"] {
 }
 
 
-/* DESIGN FOR NAV.BAR - DROPDOWN ---------------------*/
+/* DESIGN FOR DROPDOWN - I BURGERBAR -----------------*/
 
-/* styling af burgerbar */
+/* styling af dropdown */
 .dropdown-indhold { 
     display: none;
     position: absolute; 
@@ -90,7 +90,7 @@ input[type="checkbox"] {
     z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
 }
 
-/* styling af burgerbar-indhold, li */
+/* styling af dropdown */
 .dropdown-indhold li {
     padding: 10px; /*afstand mellem hvert link, i baren*/
     list-style-type: none; /*fjerner prikker for hver undermenu*/
@@ -106,7 +106,7 @@ input[type="checkbox"] {
 
 
 
-/* DESIGN FOR NAV.BAR - CHECKBOX ---------------------*/
+/* DESIGN FOR DROPDOWN - CHECKBOX -----------------*/
 
 /* Design af hover effekt ved dropdown*/
 .dropdown-indhold li:hover {
@@ -125,10 +125,9 @@ input[type="checkbox"] {
 
 
 
+/* DESIGN FOR U-DROPDOWN - LISTE ELEMENTER -----*/
 
-/* DESIGN FOR NAV.BAR - LISTE ELEMENTER --------------*/
-
-/* Styling for liste elementer*/
+/* Styling for liste elementer, i u-dropdown */
 .liste-over-indhold-i-kategori {
     display: none;
     position: absolute;
@@ -139,9 +138,8 @@ input[type="checkbox"] {
 }
 
 .dropdown-indhold li:hover .liste-over-indhold-i-kategori {
-    display: block; /* Viser listeelementer, når musen holdes over et element */
+    display: inline; /* Viser liste elementer, når der klikkes på element i burgerbaren */
 }
-
 
 /*----------------------------------------------------*/
 
