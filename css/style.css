@@ -12,7 +12,7 @@
 
 /*---------------------------------------------------*/
 
-/*Definerer at alt skrift i vores CSS er farven "skriftfarve"*/
+/* Definerer at alt skrift i vores CSS er farven "skriftfarve" */
 * {
     color: var(--skriftfarve);
 }
@@ -78,17 +78,9 @@ input[type="checkbox"] {
 }
 
 
-/* DESIGN FOR NAV.BAR - DROPDOWN ---------------------*/
+/* DESIGN FOR DROPDOWN - I BURGERBAR -----------------*/
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    right: 0; /* Placerer menuen til højre for den overordnede knap */
-    top: 100%; /* Justerer menuen til at starte fra bunden af den overordnede knap */
-}
-
-/*styling af burgermenu*/
+/* styling af dropdown */
 .dropdown-indhold { 
     display: none;
     position: absolute; 
@@ -98,6 +90,7 @@ input[type="checkbox"] {
     z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
 }
 
+/* styling af dropdown */
 .dropdown-indhold li {
     padding: 10px; /*afstand mellem hvert link, i baren*/
     list-style-type: none; /*fjerner prikker for hver undermenu*/
@@ -113,11 +106,11 @@ input[type="checkbox"] {
 
 
 
-/* DESIGN FOR NAV.BAR - CHECKBOX ---------------------*/
+/* DESIGN FOR DROPDOWN - CHECKBOX -----------------*/
 
 /* Design af hover effekt ved dropdown*/
 .dropdown-indhold li:hover {
-    background-color: var(--sekundaer-lyseroed);font-weight: bold;
+    background-color: var(--sekundaer-lyseroed);font-weight: bolder;
 }
 
 /*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
@@ -132,10 +125,9 @@ input[type="checkbox"] {
 
 
 
+/* DESIGN FOR U-DROPDOWN - LISTE ELEMENTER -----*/
 
-/* DESIGN FOR NAV.BAR - LISTE ELEMENTER --------------*/
-
-/* Styling for liste elementer*/
+/* Styling for liste elementer, i u-dropdown */
 .liste-over-indhold-i-kategori {
     display: none;
     position: absolute;
@@ -146,11 +138,44 @@ input[type="checkbox"] {
 }
 
 .dropdown-indhold li:hover .liste-over-indhold-i-kategori {
-    display: block; /* Viser listeelementer, når musen holdes over et element */
+    display: inline; /* Viser liste elementer, når der klikkes på element i burgerbaren */
 }
-
 
 /*----------------------------------------------------*/
 
+/*---MENUKORTET---*/
+.menukort1 { 
+    display: flex; 
+    flex-direction: column;
+    
+}
 
+#menuskilt {
+    width: 10%;
+}
 
+.menukort2 {
+    width: 90%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: #DfADB0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #C78D91(0, 0, 0, 0.1);
+}
+
+.menukort2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menukort2 li {
+    margin-bottom: 10px;
+}
+
+.menukort2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
