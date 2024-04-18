@@ -152,7 +152,16 @@ input[type="checkbox"] {
 
 /*----------------------------------------------------*/
 
-/*MENUKORTET*/
+/*---MENUKORTET---*/
+.menukort1 { 
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+#menuskilt {
+    width: 10%;
+}
 
 .menukort2 {
     width: 90%;
