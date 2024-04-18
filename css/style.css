@@ -263,19 +263,20 @@ a {
 
     /* Styler titlerne på alle forsider*/
 .forside-titel {
-    font-size: 1,5rem;
+    font-size: 2rem;
     font-weight: lighter;
 }
 
     /* Styler teksten på alle forsider */
 .forside-tekst {
-    margin-top: -3%;
+    margin-top: 5%;
     margin-bottom: 10%;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
 }
 
 /* Styling af knap på forside 1*/
 #lyseroed-forside-knap {
+    font-size: 1.5rem;
     padding: 1% 8%;
     background-color: var(--sekundaer-lyseroed);
     border-radius: 20px;
@@ -284,6 +285,7 @@ a {
 
 /* Knappen på forside 2 i karrusellen */
 .gul-forside-knap {
+    font-size: 1.5rem;
     padding: 1% 8%;
     background-color: var(--sekundaer-gul);
     border-radius: 20px;
@@ -292,20 +294,21 @@ a {
 
 /* Styling af elementer på tredje forside */
 .lyseroed-forside-knap-et, .lyseroed-forside-knap-to{
+    font-size: 1.5rem;
     border: solid thin black;
     border-radius: 20px; /* Omregn til procent? */ 
 }
 
 .lyseroed-forside-knap-et {
-    padding: 1.5% 8.5%; /* Hvor stor knappen omkring teksten skal være */
+    padding: 1% 10%; /* Hvor stor knappen omkring teksten skal være */
     background-color: var(--sekundaer-lyseroed); /* Baggrundsfarven for 'knappen'*/
 }
 
 /* Styling for den enkelte knap på forside 3 - FIND OS*/
 .lyseroed-forside-knap-to {
-    padding: 1.5% 7%;
+    padding: 1% 9%;
     background-color: var(--sekundaer-lyseroed);
-    margin-top: 2%; /* Laver afstand mellem de to knapper */
+    margin-top: 4%; /* Laver afstand mellem de to knapper */
 }
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
