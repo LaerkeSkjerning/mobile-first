@@ -12,6 +12,18 @@
 
 /*---------------------------------------------------*/
 
+/* Basic stylings - generelt for html */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--skriftfarve);
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    /* font-size: 30px; */
+}
+
 /* Definerer de mest brugte farver og andre elementer i koden */
 :root {
     --skriftfarve: #000;
@@ -24,13 +36,6 @@
 }
 
 
-/* Definerer at alt skrift i vores CSS er farven "skriftfarve", samt font og font-size */
-* {
-    color: var(--skriftfarve);
-    font-family: Quattrocento, 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-
 a {
     text-decoration: none; /* Fjerner understregninger */
 }
@@ -39,125 +44,145 @@ body {
     background-color: var(--primaer-lyseroed);
 }
 
+
 /*----------------------------------------------------*/
 
-.logo-og-bar {
-    display: flex; /* Billederne er på linje  */
-    justify-content: space-between; /* Opdeler så logo er længst til venstre og bar er længst til højre */
-    align-items: center; /* Placerer begge elementer i midtne horisontalt */
-    position: relative;
-   
+/* FUNKTIONER / STYLING AF NAVIGATIONSBAR */
+
+/* Styling af nav-tag */
+nav {
+    font-weight: 300;
+    height: 100 vh; /* 100% af viewport-height */
 }
 
-/* Styling af baren */
-.logo {
-    width: 19%; /* størrelse på logo */
-    padding: 1%; /* luft omkinrg logo, til kant af skærm */
-    padding-left: 3%; /* Luft omkring logo, til venstre kant */
+/* styling af checkbox - navigationsbar */
+.nav {
+    border-bottom: 1px;
 }
 
-/* Styling for baren */
-.bar {
-    width: 90%; 
-    height: 90%; 
-    display: block; /* Sikrer, at baren vises som et blokelement */
-    margin-right: 1%;
-    
+/* styling af den egentlige checkboks */
+.nav-checkbox {
+    display: none; /* fjerner den aktuelle checkboks fra syne*/
 }
 
-/* Styling for label */
-label {
-    display: inline-block; /* Sikrer, at label ikke tager hele linjen og holder sig til billedebredden */
-    padding: 0; 
-    margin: 0; 
-    width: 70px; /*størrelsen på bar-img, som er placeret i label*/
-    height: 40px; /*størrelsen på bar-img, som er placeret i label*/
-}
-
-/* Juster baren og label til samme størrelse */
-input[type="checkbox"] {
-    display: none; /* Skjul input-checkbox'en */
-}
-
-
-/* DESIGN FOR DROPDOWN - I BURGERBAR -----------------*/
-
-/* styling af dropdown */
-.dropdown-indhold { 
-    display: none;
-    position: absolute; 
-    top: 100%; /* Placerer dropdown-menuen under baren*/
-    right: 0;/* Placerer menuen til højre for den overordnede knap */
-    background-color: var(--sekundaer-moerk-lyseroed);/* Baggrundsfarve for dropdown-menu */
-    z-index: 1000; /* Sikrer at dropdown-menuen er foran andre elementer */
-}
-
-/* styling af dropdown li */
-.dropdown-indhold li {
-    padding: 10px; /*afstand mellem hvert link, i baren*/
-    list-style-type: none; /*fjerner prikker for hver undermenu*/
-    display: block; /* Hvert link vises som en blok */
-    width: 135px; /* Begræns bredden af hvert link */
-    white-space: nowrap; /* Forhindrer tekst i at gå på flere linjer */
-    overflow: hidden; /* Skjul overskydende tekst, hvis det ikke kan vises */
-    text-overflow: ellipsis; /* Vis "..." hvis teksten er for lang til at blive vist */
-}
-
-/* DER SKAL DEFINERES ET ELLER ANDET MED UL - SOM KAN FIKSE/FJERNE DEN PADDING PÅ 40px, SOM DER FREMGÅR I INSPECT????? KAN IKKE FÅ DET TIL AT FUNGERE */
-
-
-
-
-/* DESIGN FOR DROPDOWN - CHECKBOX -----------------*/
-
-/* Design af hover effekt ved dropdown*/
-.dropdown-indhold li:hover {
-    background-color: var(--sekundaer-lyseroed);font-weight: bolder;
-}
-
-/*checkboks som gør det muligt at åbne/lukke burgermenu - uden brug af js*/
-#bar-checkbox:checked ~ .dropdown-indhold {
-    display: block;
-}
-
-/*skjuler checkbox - i stedet for brug af js */
-#bar-checkbox {
-    display: none; /* Har denne en egentlig funktion? Jeg kan se checkboxen ved display block, men ikke hvis css helt fjernes for denne */
-}
-
-
-
-/* DESIGN FOR U-DROPDOWN - LISTE ELEMENTER -----*/
-
-/* Styling for liste elementer, i u-dropdown */
-.liste-over-indhold-i-kategori {
-    display: none;
+/* styling af burgermenu - bar-img */
+.nav-toggle {
     position: absolute;
-    top: 0;
-    right: 100%; /* placerer listelementer til venstre for menuelementet */
-    background-color: var(--sekundaer-moerk-lyseroed);
-    z-index: 1000;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0; /* placerer img helt til højre */
 }
 
-.dropdown-indhold li:hover .liste-over-indhold-i-kategori {
-    display: inline; /* Viser liste elementer, når der klikkes på element i burgerbaren */
+/*styling af burgermenu - bar-img */
+.menu {
+    width: 3.8rem; /* størrelse på img */
+    margin: 0.4rem; /* placering af img fra top */
+    right: 0;
+    position: relative;
 }
 
-/* Responsive - Media Queries */
+/* styling af navigationsbar */
+.nav-menu {
+    display: flex;
+    flex-direction: column; /* elementer på række - mobil view*/
+    margin: 0.7rem; 
+    margin-bottom: 0; /* fjerner margin i bund */
+}
+
+/* funktionalitet af burgermenu - bar-img */
+#nav-checkbox:checked ~ ul.nav-menu li {
+    display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
+}
+
+/* styling af dropdown elementer, i en liste */
+.dropdown {
+    font-weight: lighter;
+}
+
+/* styling af dropdown-lister */
+ul {
+    list-style: none;
+    }
+
+    ul li {
+    display: inline-block;
+    position: relative;
+    }
+
+    ul li a {
+    display: block; 
+    padding: 1rem 0.5rem;
+    }
+
+    ul li ul.dropdown li {
+    display: block;
+    }
+    
+    ul li ul.dropdown {
+    width: 12rem; /* definerer størrelsen på dropdown under-liste*/
+    position: relative;
+    display: none; /* fjerner dropdown under-lister */
+    font-weight: bold;
+    }
+
+    ul li:hover ul.dropdown {
+    display: block;
+    }
 
 
+ /* STYLING AF LISTEDE ELEMENTER - LI */
+
+/* layout af listede elementer */
+.dropdown-styling {
+    width: 9rem; /* definerer størrelsen på dropdown liste elementer*/
+ }
+
+/* styling af listede elementer*/
+nav li { 
+    list-style: none; /* fjerner prikker fra listede elementer */
+    display: none; /*viser kun listede elementer, når der klikkes på burgermenu-logo/img*/
+}
+
+/* placering af logo - i listede elementer */
+li:first-child { /* first-child, fordi logo er første element i listede elementer. Denne skal være placeret anderledes. */
+    margin-right: auto;
+    display: block; /* sikrer at logo altid vises, selvom andre listede elementer er skjult*/
+}
+
+/* styling af logo-img */
+.logo {
+    width: 8rem; /* størrelse på img - rem pga. responsiv */
+    margin-left: 0.8rem; /* luft omkring img, til nærliggende kanter*/
+}
+
+/* styling af a-tag */
+a {
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* fjerner den blå farve i links */
+    font-size: 1.2rem;
+}
 
 
+/*-----------------------------------------------*/
 
+/* RESPONSIVE - MEDIA QUERIES */
 
+/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (min-width: 1024px) {
 
+    .nav-toggle {
+        display: none; /* skjuler bar-img i desktop view */
+    }
 
+    .nav-menu {
+        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+    }
 
+    nav li {
+        display: block; /* gør listede elementer synlige */
+    }
 
-
-
-
-
+}
 
 /*----------------------------------------------------*/
 
@@ -165,7 +190,8 @@ input[type="checkbox"] {
 
 
 
-/*---MENUKORTET---*/
+/* MENUKORTET */
+
 .menukort1 { 
     display: flex; 
     flex-direction: column;  
