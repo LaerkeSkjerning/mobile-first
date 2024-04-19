@@ -285,6 +285,23 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-weight: bold;
     font-size: 18px;
 }
+/*---------------------------------------------*/
+
+
+/* SANDWICH SIDE - STYLING */
+
+#sandwich-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.sandwich {
+    margin-top: 5%;
+    padding: 2% 5%;
+    background-color: var(--sekundaer-lyseroed);
+}
+
 
 
 /*----------------------------------------------*/

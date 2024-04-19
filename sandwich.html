@@ -1,62 +1,66 @@
-    <!DOCTYPE html>
-    <html lang="da">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LA CAÑA</title>
-        <link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA CAÑA</title>
+    <link rel="shortcut icon" href="images/ikon.webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap'); /* FONT */
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            color: var(--skriftfarve);
-            font-family: Quattrocento, 'Times New Roman', Times, serif;
-            /* font-size: 30px; */
-        }
-
-        /* Definerer de mest brugte farver og andre elementer i koden */
-        :root {
-            --skriftfarve: #000;
-            --primaer-lyseroed: #f9CBCE;
-            --sekundaer-lyseroed: #DfADB0;
-            --sekundaer-moerk-lyseroed: #C78D91;  
-            --primaer-gul: #FFF3A4;
-            --sekundaer-gul: #DFD381;
-            --sekundaer-moerk-gul: #CCC06E;
-        }
-
-        a {
-            text-decoration: none; /* fjerner streger under links */
-            color: inherit; /* fjerner den blå farve i links */
-            font-size: 1.2rem;
-        }
-
-        body {
-            background-color: var(--primaer-lyseroed);
-        }
-
-        #sandwich-container {
-            display: flex;
-            align-items: center;
-            
-        }
-
-        .sandwich {
-            margin-top: 5%;
-            padding: 2% 5%;
-            background-color: var(--sekundaer-lyseroed);
-        }
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
     </style>
 
-    </head>
+</head>
 
+<body>
+
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
     
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+        </nav>
+    </header>
 
-    <body>
         <!-- 
         <section class="menukort1">
             <img src="images/menu.webp" alt="icon">
@@ -132,3 +136,5 @@
         </section>
 
     </body>
+    
+</html>
