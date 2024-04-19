@@ -7,6 +7,8 @@
  - "Performance: Produktet skal være optimeret i relation til Page Load Time"
  - "SEO: Optimer din kode til søgemaskiner"
  - "Semantisk HTML; semantiske tags"
+- Billeder skal optimeres og være webp
+- Alt kode skal valideres
 
 */
 
@@ -208,6 +210,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
     li ul.dropdown {
         margin-right: 0; /* indryk fra kant, i under-listede elementer */
+        background-color: rgba(249, 203, 206, 0.7); /* primær-lyserød-farve med 50% gennemsigtighed */
         }
 
     .dropdown-styling {
