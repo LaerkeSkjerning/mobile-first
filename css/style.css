@@ -105,7 +105,8 @@ nav {
 
 /* styling af klik på links i nav */
 a:active {
-    background-color: var(--sekundaer-lyseroed); /*gør baggrundsfarven mørkere, når der klikkes*/
+    background-color: var(--sekundaer-lyseroed); /* 
+   giver aktiverede links en mørkere baggrundsfarve:*/
 }
 
 /* Justerer positionen af dropdown-lister */
@@ -308,6 +309,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     align-items: center;
 }
 
+
 /*_______________________________________________*/
 
 /* STYLING AF FORSIDE ELEMENTER */
@@ -327,7 +329,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
  /* Styler titlerne på alle forsider*/
 .forside-titel {
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 600;
+    line-height: 2.2rem;
 }
 
 /* Styler teksten på alle forsider */
@@ -337,11 +340,13 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-size: 1.5rem;
     padding: 0 1.3rem;
     line-height: 2rem;
+    font-weight: 500;
 }
 
 /* Styling af knap på forside 1*/
 #lyseroed-forside-knap {
     font-size: 1.5rem;
+    font-weight: 550;
     padding: 1% 8%;
     background-color: var(--sekundaer-lyseroed);
     border-radius: 20px;
@@ -351,6 +356,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /* Knappen på forside 2 i karrusellen */
 .gul-forside-knap {
     font-size: 1.5rem;
+    font-weight: 550;
     padding: 1% 8%;
     background-color: var(--sekundaer-gul);
     border-radius: 20px;
