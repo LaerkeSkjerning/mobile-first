@@ -131,6 +131,7 @@ ul {
     li ul.dropdown {
     position: relative;
     display: none; /* fjerner dropdown under-lister */
+    font-weight: bold;
     }
 
     /*sørger for, at dropdown føler menupunktets placering */
@@ -177,6 +178,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     width: 8rem; /* størrelse på img - rem pga. responsiv */
     margin-left: 0.8rem; /* luft omkring img, til nærliggende kanter*/
 }
+
+
 
 
 /*-----------------------------------------------*/
@@ -227,7 +230,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     }
 
     li ul.dropdown {
-        font-weight: bold;
         padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
         background-color: var(--primaer-lyseroed);
         }
