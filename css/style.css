@@ -53,7 +53,10 @@ body {
 /* Styling af nav-tag */
 nav {
     font-weight: 300;
-    height: 100 vh; /* 100% af viewport-height */
+    position: fixed; /* sikrer at nav følger skærmen, når der scrolles nedad */
+    width: 100%; 
+    top: 0; /* Placerer navigationen øverst på skærmen */
+    z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */
 }
 
 /* styling af checkbox - navigationsbar */
@@ -72,6 +75,7 @@ nav {
     cursor: pointer;
     margin: 0rem 1rem;
     right: 0; /* placerer img helt til højre */
+    z-index: 1000; /* Sørger for, at burgermenu-ikonet vises over alt andet */
 }
 
 /*styling af burgermenu - bar-img */
@@ -240,7 +244,9 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-size: 18px;
 }
 
-/* Styling af selve karrusel */
+
+/*----------------------------------------------------*/
+/* STYLING AF KARUSEL - FORSIDEN */
 
 .karrusel-container {
     /* position: relative; */
@@ -261,13 +267,15 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     align-items: center;
 }
 
-/*____________________________________________________________*/
+/*_____________________________________________________*/
 
-/* Styling af forsideelementerne */
+/* STYLING AF FORSIDE ELEMENTER */
 
-    /* Generel styling af titel, tekst og knapper på forside */
+/* Generel styling af titel, tekst og knapper på forside */
 .forside-elementer {
-    margin-top: 70%;
+    position: relative; /* relativ positionering - så nav-baren ikke rykker elementerne ned, når den åbnes */
+    z-index: 1; /* Sørger for, at forsideelementerne er under navigationsbjælken */
+    margin-top: 40vh; /* Ændret til viewport height enhed for mere præcis placering */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,13 +283,13 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     text-align: center;
 }
 
-    /* Styler titlerne på alle forsider*/
+ /* Styler titlerne på alle forsider*/
 .forside-titel {
     font-size: 2rem;
     font-weight: lighter;
 }
 
-    /* Styler teksten på alle forsider */
+/* Styler teksten på alle forsider */
 .forside-tekst {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -327,7 +335,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
 #sidste-forside {
-    margin-top: 82%;
+    margin-top: 47vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
 }
 
 
