@@ -404,10 +404,50 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
-
-
-
+/*----------------------------------------------*/
 
 /* GAVEKORT - STYLING  */
 
+/* styling af top billede - ekstra afstand fra top*/
+    .billede-container-top {
+        position: relative;
+        margin-top: 6.5rem;
+        padding: 1rem;
+        
+    }
+    
+    .billede-container-top img {
+        display: block;
+        width: 100%;
+        border-radius: 0.8rem; /*afrundede kanter*/
+    }
 
+/* styling af bund billede */
+    .billede-container-bund {
+        position: relative;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .billede-container-bund img {
+        display: block;
+        width: 100%;
+        border-radius: 0.8rem; /*afrundede kanter*/
+    }
+
+
+/* styling af tekstboksen - over billederne */
+.overlay-tekstboks {
+    position: absolute;
+    top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
+    left: 50%; /*sikrer placering i midten*/
+    transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 80%; /*gennemsigtighed af tekstboks*/
+    padding: 2rem; /*luft omkring tekst*/
+    font-weight: 1000; /*tykkelse på tekst*/
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem; /*linjeafstand*/
+    border-radius: 0.8rem; /*afrundede kanter*/
+  }
