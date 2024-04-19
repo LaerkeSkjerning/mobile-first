@@ -138,7 +138,7 @@ ul {
     display: flex;
     justify-content: right; /* placerer menuen i højre side */
     padding-left: 1rem; /*luft mellem elementer */
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
     width: auto;
  }
 
@@ -188,8 +188,13 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     }
 
     li ul.dropdown {
-        margin-right: 0; /* indryk fra kant, i under-listede elementer*/
+        margin-right: 0; /* indryk fra kant, i under-listede elementer */
         }
+
+    .dropdown-styling {
+        padding-right: 0.5rem; /* padding i desktop */
+ }
+
 }
 
 /*----------------------------------------------------*/
