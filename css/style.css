@@ -23,7 +23,6 @@
     padding: 0;
     color: var(--skriftfarve);
     font-family: Quattrocento, 'Times New Roman', Times, serif;
-    /* font-size: 30px; */
 }
 
 /* Definerer de mest brugte farver og andre elementer i koden */
@@ -41,6 +40,7 @@ a {
     text-decoration: none; /* fjerner streger under links */
     color: inherit; /* fjerner den blå farve i links */
     font-size: 1.2rem;
+    font-weight: 650;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 }
 
 
-/*----------------------------------------------------*/
+/*------------------------------------------*/
 
 /* FUNKTIONER / STYLING AF NAVIGATIONSBAR */
 
@@ -147,7 +147,7 @@ ul {
     right: 0;
     }
 
-/*----------------------------------------------------*/
+/*----------------------------------------------*/
 
 
  /* STYLING AF LISTEDE ELEMENTER - LI */
@@ -188,8 +188,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 
 
-
-/*-----------------------------------------------*/
+/*---------------------------------------------*/
 
 /* RESPONSIVE - MEDIA QUERIES */
 
@@ -243,7 +242,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
         }
 
 }
-/*----------------------------------------------------*/
+/*-----------------------------------------------*/
 
 
 
@@ -287,7 +286,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
-/*----------------------------------------------------*/
+/*----------------------------------------------*/
 /* STYLING AF KARUSEL - FORSIDEN */
 
 .karrusel-container {
@@ -309,7 +308,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     align-items: center;
 }
 
-/*_____________________________________________________*/
+/*_______________________________________________*/
 
 /* STYLING AF FORSIDE ELEMENTER */
 
@@ -382,5 +381,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-top: 46vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
 }
 
+/*________________________________________*/
 
-/*____________________________________________________________*/
+/* GAVEKORT - STYLING  */
+
+
