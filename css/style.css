@@ -35,7 +35,6 @@
     --sekundaer-moerk-gul: #CCC06E;
 }
 
-
 a {
     text-decoration: none; /* Fjerner understregninger */
 }
@@ -134,8 +133,19 @@ ul {
 
 /* layout af listede elementer */
 .dropdown-styling {
-    width: 9rem; /* definerer størrelsen på dropdown liste elementer*/
+    display: flex;
+    justify-content: space-between right;
+    align-items: right;  
+    text-align: right;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
  }
+
+li {
+    display: flex;
+    align-items: right;
+    right: 0;
+}
 
 /* styling af listede elementer*/
 nav li { 
