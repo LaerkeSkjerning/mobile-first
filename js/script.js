@@ -1,7 +1,7 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function() { /* listener, der venter på at al TML-indholdet er loaded før funktionen kører */
+document.addEventListener("DOMContentLoaded", function() { /* listener, der venter på at al HTML-indholdet er loaded før funktionen kører */
     const inner = document.querySelector(".indre-karrusel"); /* querySelector henter det første element, der har klassen 'indre-karrusel' */
     const pages = document.querySelectorAll(".karrusel-side"); /* querySelectorAll henter alle elementer med klassen 'karrusel-side' */
     const colors = ["var(--primaer-lyseroed)", "var(--primaer-gul)", "var(--primaer-lyseroed)"]; // Listen over baggrundsfarver

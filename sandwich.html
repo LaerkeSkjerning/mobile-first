@@ -5,8 +5,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LA CAÑA</title>
         <link rel="stylesheet" href="css/style.css">
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap'); /* FONT */
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: var(--skriftfarve);
+            font-family: Quattrocento, 'Times New Roman', Times, serif;
+            /* font-size: 30px; */
+        }
+
+        /* Definerer de mest brugte farver og andre elementer i koden */
+        :root {
+            --skriftfarve: #000;
+            --primaer-lyseroed: #f9CBCE;
+            --sekundaer-lyseroed: #DfADB0;
+            --sekundaer-moerk-lyseroed: #C78D91;  
+            --primaer-gul: #FFF3A4;
+            --sekundaer-gul: #DFD381;
+            --sekundaer-moerk-gul: #CCC06E;
+        }
+
+        a {
+            text-decoration: none; /* fjerner streger under links */
+            color: inherit; /* fjerner den blå farve i links */
+            font-size: 1.2rem;
+        }
+
+        body {
+            background-color: var(--primaer-lyseroed);
+        }
+
+        #sandwich-container {
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .sandwich {
+            margin-top: 5%;
+            padding: 2% 5%;
+            background-color: var(--sekundaer-lyseroed);
+        }
+    </style>
+
     </head>
+
+    
+
     <body>
+        <!-- 
         <section class="menukort1">
             <img src="images/menu.webp" alt="icon">
             <h2>MENUKORT</h2>
@@ -22,36 +73,62 @@
             </container>
         </section>
 
-    <section class="sandwich1">
-        <h2>BOCADILLOS (LUNE SANDWICH)</h2>
-        <p>Nyd en af vores lækre sandwich - hele dagen fra 11.00-21.30</p>
+        -->
 
-        <p><strong>Serrano skinke</strong></p>
-        <p>Manchego, mayonaise og tomat | 99,-</p>
-            
-        <p><strong>Chorizo pølse</strong></p>
-        <p>Trøffelmayonaise, manchego, og tomat | 99,-</p>
-            
-        <p><strong>Marineret kylling</strong></p>
-        <p>Manchego, tomat og romesco | 99,-</p>
-    
-        <p><strong>Avocado</strong></p>
-        <p>Romesco, tomat og marineret salat | 99,-</p>
-        
-        <p><strong>Kold røget laks</strong></p>
-        <p>Med friskostcreme, tomat og marineret salat | 119,-</p>
-        
-        <p><strong>Bagt sød kartoffel</strong></p>
-        <p>Pesto og tomat | 99,-</p>
-        
-        <p><strong>Tunsalat, pesto</strong></p>
-        <p>avocado, tomat og marineret salat | 119,-</p>
-    </section>
+        <aside class="sandwich-container">
+            <section>
+                <h2>BOCADILLOS (LUNE SANDWICH)</h2>
+                <p>Nyd en af vores lækre sandwich - hele dagen fra 11.00-21.30</p>
+            </section>
 
-    <section class="sandwich2">
-        <h3>SANDWICH COMBO MENU</h3>
-        <p>VALGFRI SANDWICH</p>
-        <p>PATATAS BRAVAS (SPANSKE POMFRIT KARTOFLER)</p>
-        <p>VALGFRI ØL / VAND</p>
-        <p>159,-</p>
-    </section>
+            <section>
+                <h3 class="sandwich">Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+                <p>Manchego, mayonaise og tomat | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+                <p>Manchego, mayonaise og tomat | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Chorizo pølse</h3>
+                <p>Trøffelmayonaise, manchego, og tomat | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Marineret kylling</h3>
+                <p>Manchego, tomat og romesco | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Avocado</h3>
+                <p>Romesco, tomat og marineret salat | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Kold røget laks</h3>
+                <p>Med friskostcreme, tomat og marineret salat | 119,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Bagt sød kartoffel</h3>
+                <p>Pesto og tomat | 99,-</p>
+            </section>
+
+            <section>
+                <h3 class="sandwich">Tunsalat, pesto</h3>
+                <p>avocado, tomat og marineret salat | 119,-</p>
+            </section>
+
+        </aside>
+
+        <section class="sandwich2">
+            <h3>SANDWICH COMBO MENU</h3>
+            <p>VALGFRI SANDWICH</p>
+            <p>PATATAS BRAVAS (SPANSKE POMFRIT KARTOFLER)</p>
+            <p>VALGFRI ØL / VAND</p>
+            <p>159,-</p>
+        </section>
+
+    </body>
