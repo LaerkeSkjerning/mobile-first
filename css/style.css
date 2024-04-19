@@ -71,7 +71,7 @@ nav {
     display: none; /* fjerner den aktuelle checkboks fra syne*/
 }
 
-/* styling af burgermenu - bar-img */
+/* placering af burgermenu - bar-img */
 .nav-toggle {
     position: absolute;
     cursor: pointer;
@@ -80,7 +80,7 @@ nav {
     z-index: 1000; /* Sørger for, at burgermenu-ikonet vises over alt andet */
 }
 
-/*styling af burgermenu - bar-img */
+/* styling af burgermenu - bar-img */
 .menu {
     width: 3.8rem; /* størrelse på img */
     margin: 0.4rem; /* placering af img fra top */
@@ -88,7 +88,7 @@ nav {
     position: relative;
 }
 
-/* styling af navigationsbar */
+/* styling af navigation */
 .nav-menu {
     display: flex;
     flex-direction: column; /* elementer på række - mobil view*/
@@ -101,6 +101,11 @@ nav {
 /* funktionalitet af burgermenu - bar-img */
 #nav-checkbox:checked ~ ul.nav-menu li {
     display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
+}
+
+/* styling af klik på links i nav */
+a:active {
+    background-color: var(--sekundaer-lyseroed); /*gør baggrundsfarven mørkere, når der klikkes*/
 }
 
 /* Justerer positionen af dropdown-lister */
