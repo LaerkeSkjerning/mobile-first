@@ -108,6 +108,14 @@ nav {
     width: auto /* Definerer bredden af dropdown-listen */
 }
 
+/* layout af dropdown liste */
+.dropdown li {
+    border-style: solid;
+    border-width: 0 0 0.15rem 0;
+    border-color: var(--sekundaer-lyseroed);
+    width: 95%;
+}
+
 /* styling af dropdown-lister */
 ul {
     display: flex;
@@ -124,7 +132,6 @@ ul {
     position: relative;
     display: none; /* fjerner dropdown under-lister */
     font-weight: bold;
-    margin-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
     }
 
     /*sørger for, at dropdown føler menupunktets placering */
@@ -133,6 +140,7 @@ ul {
     right: 0;
     }
 
+/*----------------------------------------------------*/
 
 
  /* STYLING AF LISTEDE ELEMENTER - LI */
@@ -172,12 +180,14 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
+
+
 /*-----------------------------------------------*/
 
 /* RESPONSIVE - MEDIA QUERIES */
 
 /* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 
     .nav-toggle {
         display: none; /* skjuler bar-img i desktop view */
@@ -185,6 +195,11 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
     .nav-menu {
         flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+        /* styling af navigationsbar */
+        display: flex;
+        right: 0;
+        margin: 0.7rem; 
+        z-index: 100;
     }
 
     nav li {
@@ -196,11 +211,30 @@ li:first-child { /* first-child, fordi logo er første element i listede element
         }
 
     .dropdown-styling {
-        padding-right: 0.5rem; /* padding i desktop */
- }
+        padding-right: 1.4rem; /* padding i desktop */
+        padding-top: 1.5rem;
+        padding-left: 0.1;
+     }
 
 }
 
+
+/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (max-width: 1024px) {
+
+    .dropdown-styling {
+        background-color: var(--sekundaer-lyseroed);
+        border-style: solid;
+        border-width: 0 0 0.15rem 0;
+        border-color: var(--primaer-lyseroed);
+    }
+
+    li ul.dropdown {
+        padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
+        background-color: var(--primaer-lyseroed);
+        }
+
+}
 /*----------------------------------------------------*/
 
 
@@ -294,6 +328,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-top: 5%;
     margin-bottom: 10%;
     font-size: 1.5rem;
+    padding: 0 1.3rem;
+    line-height: 2rem;
 }
 
 /* Styling af knap på forside 1*/
@@ -335,7 +371,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
 #sidste-forside {
-    margin-top: 47vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
+    margin-top: 46vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
 }
 
 
