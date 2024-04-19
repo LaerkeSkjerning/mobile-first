@@ -4,7 +4,56 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LA CAÑA</title>
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+             
+             :root {
+                --skriftfarve: #000;
+                --primaer-lyseroed: #f9CBCE;
+                --sekundaer-lyseroed: #DfADB0;
+                --sekundaer-moerk-lyseroed: #C78D91;  
+                --primaer-gul: #FFF3A4;
+                --sekundaer-gul: #DFD381;
+                --sekundaer-moerk-gul: #CCC06E;
+            }
+            body {
+                background-color: var(--primaer-lyseroed);
+            }
+            #menu-ikon {
+                width: 10%;
+            }
+
+            h2 {
+                font-family: "Quattrocento", serif;
+                font-weight: 700;
+                font-style: normal;
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                font-family: "Quattrocento", serif;
+                font-weight: 400;
+                font-style: normal;
+                display: flex;
+                justify-content: center;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            .menukort2 {
+                display: flex;
+            flex-direction: column;
+            background-color: var(--sekundaer-lyseroed, 0.5);
+            border-radius: 10%;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            margin-bottom: 0.5rem;
+            }
+            
+        </style>
     </head>
         
     <body>
@@ -12,16 +61,16 @@
     <!--INDSÆT HEADER-->
 
         <section class="menukort1">
-            <img src="images/menu.webp" alt="menu skilt" id="menuskilt">
+            <img src="images/menu.webp" alt="menu skilt" id="menu-ikon">
             <h2>MENUKORT</h2>
             <container class="menukort2">
                 <ul id="indhold-i-menu-liste">
-                    <a href="meat-on-stone.html">Meat On Stone</a>
-                    <a href="saladbowls.html">Saladbowls</a>
-                    <a href="sandwich.html">Sandwich</a>
-                    <a href="soft-taco.html">Soft Taco</a>
-                    <a href="tapas.html">Tapas</a>
-                    <a href="billedgalleri.html">Inspiration</a>
+                    <p><a href="meat-on-stone.html">Meat On Stone</a></p>
+                    <p><a href="saladbowls.html">Saladbowls</a></p>
+                    <p><a href="sandwich.html">Sandwich</a></p>
+                    <p><a href="soft-taco.html">Soft Taco</a></p>
+                    <p><a href="tapas.html">Tapas</a></p>
+                    <p> <a href="billedgalleri.html">Inspiration</a></p>
                 </ul>
             </container>
         </section>
