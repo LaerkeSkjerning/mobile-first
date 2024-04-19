@@ -36,7 +36,9 @@
 }
 
 a {
-    text-decoration: none; /* Fjerner understregninger */
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* fjerner den blå farve i links */
+    font-size: 1.2rem;
 }
 
 body {
@@ -84,6 +86,7 @@ nav {
 .nav-menu {
     display: flex;
     flex-direction: column; /* elementer på række - mobil view*/
+    right: 0;
     margin: 0.7rem; 
     margin-bottom: 0; /* fjerner margin i bund */
     z-index: 100;
@@ -103,9 +106,9 @@ nav {
 
 /* styling af dropdown-lister */
 ul {
+    display: flex;
+    flex-direction: end;
     list-style: none;
-    text-align: right;
-    align-items: right;
     }
 
     ul li a {
@@ -114,10 +117,10 @@ ul {
     }
     
     li ul.dropdown {
-    width: 12rem; /* definerer størrelsen på dropdown under-liste*/
     position: relative;
     display: none; /* fjerner dropdown under-lister */
     font-weight: bold;
+    margin-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
     }
 
     /*sørger for, at dropdown føler menupunktets placering */
@@ -125,6 +128,7 @@ ul {
     display: block;
     right: 0;
     }
+
 
 
  /* STYLING AF LISTEDE ELEMENTER - LI */
@@ -163,13 +167,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-left: 0.8rem; /* luft omkring img, til nærliggende kanter*/
 }
 
-/* styling af a-tag */
-a {
-    text-decoration: none; /* fjerner streger under links */
-    color: inherit; /* fjerner den blå farve i links */
-    font-size: 1.2rem;
-}
-
 
 /*-----------------------------------------------*/
 
@@ -189,6 +186,10 @@ a {
     nav li {
         display: block; /* gør listede elementer synlige */
     }
+
+    li ul.dropdown {
+        margin-right: 0; /* indryk fra kant, i under-listede elementer*/
+        }
 }
 
 /*----------------------------------------------------*/
