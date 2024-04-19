@@ -86,6 +86,7 @@ nav {
     flex-direction: column; /* elementer på række - mobil view*/
     margin: 0.7rem; 
     margin-bottom: 0; /* fjerner margin i bund */
+    z-index: 100;
 }
 
 /* funktionalitet af burgermenu - bar-img */
@@ -93,39 +94,36 @@ nav {
     display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
 }
 
-/* styling af dropdown elementer, i en liste */
+/* Justerer positionen af dropdown-lister */
 .dropdown {
-    font-weight: lighter;
+    position: absolute;
+    right: 0; /* Højrestiller dropdown-listen */
+    width: auto /* Definerer bredden af dropdown-listen */
 }
 
 /* styling af dropdown-lister */
 ul {
     list-style: none;
-    }
-
-    ul li {
-    display: inline-block;
-    position: relative;
+    text-align: right;
+    align-items: right;
     }
 
     ul li a {
     display: block; 
     padding: 1rem 0.5rem;
     }
-
-    ul li ul.dropdown li {
-    display: block;
-    }
     
-    ul li ul.dropdown {
+    li ul.dropdown {
     width: 12rem; /* definerer størrelsen på dropdown under-liste*/
     position: relative;
     display: none; /* fjerner dropdown under-lister */
     font-weight: bold;
     }
 
+    /*sørger for, at dropdown føler menupunktets placering */
     ul li:hover ul.dropdown {
     display: block;
+    right: 0;
     }
 
 
@@ -137,11 +135,13 @@ ul {
     justify-content: right; /* placerer menuen i højre side */
     padding-left: 1rem; /*luft mellem elementer */
     padding-right: 0.5rem;
+    width: auto;
  }
 
-li {
+ /* styling af tekst, i under-listede elementer*/
+ li {
     display: flex;
-    align-items: right;
+    text-align: right;
     right: 0;
 }
 
