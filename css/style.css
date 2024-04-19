@@ -328,6 +328,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-top: 5%;
     margin-bottom: 10%;
     font-size: 1.5rem;
+    padding: 0 1.3rem;
+    line-height: 2rem;
 }
 
 /* Styling af knap på forside 1*/
@@ -369,7 +371,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
 #sidste-forside {
-    margin-top: 47vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
+    margin-top: 46vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
 }
 
 
