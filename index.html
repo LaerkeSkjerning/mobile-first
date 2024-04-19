@@ -5,50 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
     <header>
-        <nav>
-            <aside class="logo-og-bar">
-                <a href="index.html"><img class="logo" src="images/lacana-logo.webp" alt="La Caña logo"></a>
-
-                <input type="checkbox" id="bar-checkbox"> <!--sikrer at navigationsbaren først kommer frem, når der klikkes på bar-image-->
-
-                <label for="bar-checkbox">
-                    <img class="bar" src="images/bar.webp" alt="bar">
-                </label> 
-
-                <ul class="dropdown-indhold">
-                    <li class="dropdown-liste-element"><a href="menu.html">MENUKORT</a> <!-- Menukort fordi det er søgeord -->
-                        <ul class="liste-over-indhold-i-kategori"> <!-- En liste inde i en liste -->
-                            <li><a href="meat-on-stone.html">Meat on the stone</a></li>
-                            <li><a href="saladbowls.html">Salad Bowls</a></li>
-                            <li><a href="sandwich.html">Sandwich</a></li>
-                            <li><a href="soft-taco.html">Soft Taco</a></li>
-                            <li><a href="tapas.html">Tapas</a></li>
-                            <li><a href="billedgalleri.html">Inspiration</a></li>
-                        </ul>
-                    </li> 
-
-                    <li class="dropdown-liste-element"><a href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
-
-                    <li class="dropdown-liste-element"><a href="gavekort.html">GAVEKORT</a>
-                        <ul class="liste-over-indhold-i-kategori">
-                            <li><a href="gavekort-kob.html">Køb gavekort</a></li>
-                            <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown-liste-element"><a href="billedergalleri.html">GALLERI</a></li>
-                    <li class="dropdown-liste-element"><a href="om-os.html">OM OS</a></li>
-                    <li class="dropdown-liste-element"><a href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
-                </ul>
-            </aside>
-        
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
+    
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="#"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedergalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+    
         </nav>
         
     </header>
+
+    <article class="karrusel-container">
+        <aside class="indre-karrusel">
+            <aside class="karrusel-side forside-elementer"> <!-- Havde ID page 1 -->
+                <h1 class="forside-titel"> EN BID AF SPANIEN </h1> <!-- Class, så teksten kan designes ens og skabe kohærens -->
+                <p class="forside-tekst"> Nyd vores spanske specialiteter i Aarhus' hyggelige omgivelser </p>
+                <a id="lyseroed-forside-knap" href="menu.html"> MENU </a>
+            </aside>
+
+            <aside class="karrusel-side forside-elementer"> <!-- Havde ID page 2 -->
+                <h1 class="forside-titel">SMAG MED ØJNENE</h1> 
+                <p class="forside-tekst">Når La Caña byder på tapas, bocadillos, sangria og meget mere.</p>
+                <a class="gul-forside-knap" href="billedgalleri.html">GALLERI</a>
+            </aside>
+
+            <aside class="karrusel-side forside-elementer" id="sidste-forside"> <!-- Havde ID page 3 -->
+                <h1 class="forside-titel">FRISTER SPANIEN?</h1> <!-- Class, så teksten kan designes ens og skabe kohærens -->
+                <p class="forside-tekst">Besøg vores hyggelige pastelfarvede restaurant - samt som takeaway</p> <!-- Hvorfor kommer det på ny linje -->
+                <a class="lyseroed-forside-knap-et" href="https://book.dinnerbooking.com/dk/da-DK/book/index/3281/2">BOOK</a>
+                <a class="lyseroed-forside-knap-to" id="forside-knap-to" href="om-os.html">OM OS</a>
+            </aside>
+            
+        </aside>
+    </article>
+
     
 </body>
 </html>
