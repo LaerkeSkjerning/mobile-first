@@ -4,139 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
+    <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+    </style>
 </head>
+
 <body>
-    <section class="menukort1">
-        <img src="images/menu.webp" alt="icon">
-        <h2>MENUKORT</h2>
-            <container class="menukort2">
-                <ul>
-                    <a href="meat-on-stone.html">Meat On Stone</a>
-                    <a href="saladbowls.html">Saladbowls</a>
-                    <a href="sandwich.html">Sandwich</a>
-                    <a href="soft-taco.html">Soft Taco</a>
-                    <a href="tapas.html">Tapas</a>
-                    <a href="billedgalleri.html">Inspiration</a>
-                </ul>
-            </container>
-    </section>
 
-    <section class="starters">
-        <h2>STARTERS</h2>
-        <Lille><strong>Patatas Bravas</strong> med tomatsovs og aioli</p>
-        <p>Lille 40,- / Stor 75,-</p>
-        <p><strong>Padrons</strong> med citron og aioli 75,-</p>
-        <p><strong>Burrata</strong> med tomat og balsamico 75,-</p>
-        <p><strong>Oliven mix</strong> 30,-</p>
-        <p><strong>Fyldte perberfrugt</strong> med mozzarella (Peberball) 4 stk. 60,-</p>
-        <p><strong>Pan con tomate</strong> 2 stk. (ristet brød) med tomat og olivenolie 35,-</p>
-        <p><strong>Nachos</strong> med dip 85,-</p>
-        <p><strong>Nachos m. Kylling</strong> og dip 105,-</p><br>
-    </section>
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
+    
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+        </nav>
+    </header>
 
-    <section class="tapas1">
-        <h2>KLASSISK TAPAS</h2>
-        <p>Serrano Reserva skinke</p>
-        <p>Chorizo pølse med cornichoner</p>
-        <p>Fennikel charcuteri med cornichoner</p>
-        <p>Saltede mandler</p>
-        <p>Trøffelmayo</p>
-        <p>Romesco dip</p>
-        <p>Tomatsalat med basilikumspesto</p>
-        <p>Spansk Manchego ost</p>
-        <p>Spansk Mahón menorca ost</p>
-        <p>Oliven mix</p>
-        <p>Pate, syltede nødder og rødløg</p>
-        <p>Pan con tomato</p>
-        <p>Pesto</p>
-        <p>Aioli</p>
-        <p>Hertil brød</p>
-        <p>250,-</p><br>
-    </section>
+    <main>
+        <section class="menukort1">
+            <img src="images/menu.webp" alt="icon">
+            <h2>MENUKORT</h2>
+                <container class="menukort2">
+                    <ul>
+                        <a href="meat-on-stone.html">Meat On Stone</a>
+                        <a href="saladbowls.html">Saladbowls</a>
+                        <a href="sandwich.html">Sandwich</a>
+                        <a href="soft-taco.html">Soft Taco</a>
+                        <a href="tapas.html">Tapas</a>
+                        <a href="billedgalleri.html">Inspiration</a>
+                    </ul>
+                </container>
+        </section>
 
-    <section class="tapas2">
-        <h2>MEATLOVERS TAPAS</h2>
-        <p>Serrano Reserva skinke</p>
-        <p>Chorizo pølse med cornichoner</p>
-        <p>Fennikel charcuteri med cornichoner</p>
-        <p>Dansk pølse af Kalv</p>
-        <p>Spansk pølse Galbani</p>
-        <p>Spansk salami fra Hacendado</p>
-        <p>Saltede mandler</p>
-        <p>Trøffelmayo</p>
-        <p>Romesco dip</p>
-        <p>Tomatsalat med basilikumspesto</p>
-        <p>Spansk Manchego ost</p>
-        <p>Spansk Mahón menorca ost</p>
-        <p>Oliven mix</p>
-        <p>Pate, syltede nødder og rødløg</p>
-        <p>Pan con tomato</p>
-        <p>Pesto</p>
-        <p>Aioli</p>
-        <p>Hertil brød</p>
-        <p>250,-</p><br>
-    </section>
+        <section class="starters">
+            <h2>STARTERS</h2>
+            <Lille><strong>Patatas Bravas</strong> med tomatsovs og aioli</p>
+            <p>Lille 40,- / Stor 75,-</p>
+            <p><strong>Padrons</strong> med citron og aioli 75,-</p>
+            <p><strong>Burrata</strong> med tomat og balsamico 75,-</p>
+            <p><strong>Oliven mix</strong> 30,-</p>
+            <p><strong>Fyldte perberfrugt</strong> med mozzarella (Peberball) 4 stk. 60,-</p>
+            <p><strong>Pan con tomate</strong> 2 stk. (ristet brød) med tomat og olivenolie 35,-</p>
+            <p><strong>Nachos</strong> med dip 85,-</p>
+            <p><strong>Nachos m. Kylling</strong> og dip 105,-</p><br>
+        </section>
 
-    <section class="tapas3">
-        <h2>VEGETAR TAPAS</h2>
-        <p>Spansk Manchego ost</p>
-        <p>Spansk Mahón menorca ost</p>
-        <p>Avocado med sesam</p>
-        <p>Saltede mandler</p>
-        <p>Oliven mix</p>
-        <p>Trøffelmayo</p>
-        <p>Romesco dip</p>
-        <p>Tomatsalat med basilikumspesto</p>
-        <p>Spansk tortilla</p>
-        <p>Fyldte peberfrugt med mozzarella</p>
-        <p>Pan con tomato</p>
-        <p>Pesto</p>
-        <p>Aioli</p>
-        <p>Hertil brød</p>
-        <p>175,-</p><br>
-    </section>
+        <section class="tapas1">
+            <h2>KLASSISK TAPAS</h2>
+            <p>Serrano Reserva skinke</p>
+            <p>Chorizo pølse med cornichoner</p>
+            <p>Fennikel charcuteri med cornichoner</p>
+            <p>Saltede mandler</p>
+            <p>Trøffelmayo</p>
+            <p>Romesco dip</p>
+            <p>Tomatsalat med basilikumspesto</p>
+            <p>Spansk Manchego ost</p>
+            <p>Spansk Mahón menorca ost</p>
+            <p>Oliven mix</p>
+            <p>Pate, syltede nødder og rødløg</p>
+            <p>Pan con tomato</p>
+            <p>Pesto</p>
+            <p>Aioli</p>
+            <p>Hertil brød</p>
+            <p>250,-</p><br>
+        </section>
 
-    <section class="tilkoeb1">
-        <h2>KØB TILKØB</h2>
-        <p>Serrano Reserva skinke 45,-</p>
-        <p>2 slags charcuteri 55,-</p>
-        <p>Trøffel salami 40,-</p>
-        <p>KØD-BRÆT mix af 4 slags charcuteri 140,-</p>
-    </section>
+        <section class="tapas2">
+            <h2>MEATLOVERS TAPAS</h2>
+            <p>Serrano Reserva skinke</p>
+            <p>Chorizo pølse med cornichoner</p>
+            <p>Fennikel charcuteri med cornichoner</p>
+            <p>Dansk pølse af Kalv</p>
+            <p>Spansk pølse Galbani</p>
+            <p>Spansk salami fra Hacendado</p>
+            <p>Saltede mandler</p>
+            <p>Trøffelmayo</p>
+            <p>Romesco dip</p>
+            <p>Tomatsalat med basilikumspesto</p>
+            <p>Spansk Manchego ost</p>
+            <p>Spansk Mahón menorca ost</p>
+            <p>Oliven mix</p>
+            <p>Pate, syltede nødder og rødløg</p>
+            <p>Pan con tomato</p>
+            <p>Pesto</p>
+            <p>Aioli</p>
+            <p>Hertil brød</p>
+            <p>250,-</p><br>
+        </section>
 
-    <section class="tilkoeb2">
-        <h2>FISK PÅ DÅSE TILKØB</h2>
-        <p>Serveres med aioli, citron og ristet brød</p>
-        <p><strong>Ansjosfilet</strong> i olivenolie 75,-</p>
-        <p><strong>Boquerones</strong> syltet hvid ansjos 75,-</p>
-        <p><strong>Sardiner</strong> i tomatsovs eller olivenolie 75,-</p>
-        <p>Marinerede <strong>muslinger</strong> Escabeche 75,-</p>
-    </section>
+        <section class="tapas3">
+            <h2>VEGETAR TAPAS</h2>
+            <p>Spansk Manchego ost</p>
+            <p>Spansk Mahón menorca ost</p>
+            <p>Avocado med sesam</p>
+            <p>Saltede mandler</p>
+            <p>Oliven mix</p>
+            <p>Trøffelmayo</p>
+            <p>Romesco dip</p>
+            <p>Tomatsalat med basilikumspesto</p>
+            <p>Spansk tortilla</p>
+            <p>Fyldte peberfrugt med mozzarella</p>
+            <p>Pan con tomato</p>
+            <p>Pesto</p>
+            <p>Aioli</p>
+            <p>Hertil brød</p>
+            <p>175,-</p><br>
+        </section>
 
-    <section class="tilkoeb3">
-        <h2>OSTE</h2>
-        <p><strong>Spanske oste</strong> med honing 50,-</p>
-        <p><strong>Burrata</strong> med tomat og balsamico 75,-</p>
+        <section class="tilkoeb1">
+            <h2>KØB TILKØB</h2>
+            <p>Serrano Reserva skinke 45,-</p>
+            <p>2 slags charcuteri 55,-</p>
+            <p>Trøffel salami 40,-</p>
+            <p>KØD-BRÆT mix af 4 slags charcuteri 140,-</p>
+        </section>
 
-        <h2>BRØD</h2>
-        <p>Ekstra brød 15,-</p>
-        <p>Glutenfri brød 25,-</p>
-    </section>
+        <section class="tilkoeb2">
+            <h2>FISK PÅ DÅSE TILKØB</h2>
+            <p>Serveres med aioli, citron og ristet brød</p>
+            <p><strong>Ansjosfilet</strong> i olivenolie 75,-</p>
+            <p><strong>Boquerones</strong> syltet hvid ansjos 75,-</p>
+            <p><strong>Sardiner</strong> i tomatsovs eller olivenolie 75,-</p>
+            <p>Marinerede <strong>muslinger</strong> Escabeche 75,-</p>
+        </section>
 
-    <section class="tilbud">
-        <h2>TAPAS TILBUD</h2>
-        <p><strong>Inkl. 1,5 times ad libitum drikkevarer</strong></p>
-        <p><strong>Onsdag - torsdag: 250,-</strong></p>
-        <p><strong>Fredag - lørdag: 295,-</strong></p>
-        <p>(Meatlovers Tapas tilbud + 75,-)</p><br>
+        <section class="tilkoeb3">
+            <h2>OSTE</h2>
+            <p><strong>Spanske oste</strong> med honing 50,-</p>
+            <p><strong>Burrata</strong> med tomat og balsamico 75,-</p>
 
-        <h3>Gælder:</h3>
-        <p>Sodavand</p>
-        <p>Carlsberg & Tuborg Classic</p>
-        <p>Husets Rødvin & Hvidvin</p>
-        <p>Cava</p>
-        <p>Sangria</p>
-    </section>
+            <h2>BRØD</h2>
+            <p>Ekstra brød 15,-</p>
+            <p>Glutenfri brød 25,-</p>
+        </section>
+
+        <section class="tilbud">
+            <h2>TAPAS TILBUD</h2>
+            <p><strong>Inkl. 1,5 times ad libitum drikkevarer</strong></p>
+            <p><strong>Onsdag - torsdag: 250,-</strong></p>
+            <p><strong>Fredag - lørdag: 295,-</strong></p>
+            <p>(Meatlovers Tapas tilbud + 75,-)</p><br>
+
+            <h3>Gælder:</h3>
+            <p>Sodavand</p>
+            <p>Carlsberg & Tuborg Classic</p>
+            <p>Husets Rødvin & Hvidvin</p>
+            <p>Cava</p>
+            <p>Sangria</p>
+        </section>
+    </main>
 </body>
+
 </html>
