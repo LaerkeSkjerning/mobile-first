@@ -4,39 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
+    <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+    </style>
 </head>
+
 <body>
-<section class="aabningstider">
-    <h2>ÅBNINGSTIDER</h2>
-    <container class="row">
-        <div class="column1">
-            <p>Onsdag</p>
-            <p>Torsdag</p>
-            <p>Fredag</p>
-            <p>Lørdag</p>
-        </div>
-        <div class="column2">
-            <p>12:00 - LUK</p>
-            <p>12:00 - LUK</p>
-            <p>12:00 - LUK</p>
-            <p>12:00 - LUK</p>
-        </div>
-    </container>
-</section>
 
-<section class="kontakt">
-    <h2>KONTAKT</h2>
-    <p>Åboulevarden 36</p>
-    <p>8000 Aarhus</p>
-    <p>Tlf. 53 19 11 92</p>
-    <p>info@lacana.dk</p>
-</section>
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
+    
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+        </nav>
+    </header>
 
-<section class="kig-indenfor">
-    <h2>KIG INDENFOR</h2>
-    <p>Tag et kig indenfor</p>
-    <p>før du kommer på besøg >></p>
-</section>
+    <main>
+        <section class="aabningstider">
+            <h2>ÅBNINGSTIDER</h2>
+            <container class="row">
+                <div class="column1">
+                    <p>Onsdag</p>
+                    <p>Torsdag</p>
+                    <p>Fredag</p>
+                    <p>Lørdag</p>
+                </div>
+                <div class="column2">
+                    <p>12:00 - LUK</p>
+                    <p>12:00 - LUK</p>
+                    <p>12:00 - LUK</p>
+                    <p>12:00 - LUK</p>
+                </div>
+            </container>
+        </section>
+
+        <section class="kontakt">
+            <h2>KONTAKT</h2>
+            <p>Åboulevarden 36</p>
+            <p>8000 Aarhus</p>
+            <p>Tlf. 53 19 11 92</p>
+            <p>info@lacana.dk</p>
+        </section>
+
+        <section class="kig-indenfor">
+            <h2>KIG INDENFOR</h2>
+            <p>Tag et kig indenfor</p>
+            <p>før du kommer på besøg >></p>
+        </section>
+    </main>
 </body>
+
 </html>

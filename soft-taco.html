@@ -4,45 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
+    <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+    </style>
 </head>
+
 <body>
-    <section class="menukort1">
-        <img src="images/menu.webp" alt="icon">
-        <h2>MENUKORT</h2>
-        <container class="menukort2">
-            <ul>
-                <a href="meat-on-stone.html">Meat On Stone</a>
-                <a href="saladbowls.html">Saladbowls</a>
-                <a href="sandwich.html">Sandwich</a>
-                <a href="soft-taco.html">Soft Taco</a>
-                <a href="tapas.html">Tapas</a>
-                <a href="billedgalleri.html">Inspiration</a>
+
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
+    
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
             </ul>
-        </container>
-    </section>
+        </nav>
+    </header>
 
-    <section class="softtaco">
-        <h2>SOFT TACO</h2>
-        <p>Nyd en af vores lækre tacos - hele dagen fra 11:00 - 21:30</p>
-        <h4>TACO 1</h4>
-        <p>Kylling marineret i fajita, avocadocreme, kål, rødløg og jalapenos</p>
-        <h4>TACO 2</h4>
-        <p>Kylling marineret i pesto, avocadocreme, kål og rødløg</p>
-        <h4>TACO 3</h4>
-        <p>Frisk avocado, peberfrugt, pesto, avocadocreme og kål</p>
-        <p><strong>1 Taco 59,- / 3 Tacos 140,-</strong></p><br>
-    </section>
 
-    <section class="quesadillas">
-        <h2>LUNE QUESADILLAS</h2>
-        <h4>Kylling Quesadillas</h4>
-        <p>Kyllign marineret i fajita med peberfrugt og ost</p>
-        <h4>Avocado Quesadillas</h4>
-        <p>Med avocado, peberfrugt og ost</p>
-        <h4>Serrano Quesadillas</h4>
-        <p>Serrano med ost</p>
-        <p><strong>89,- pr. stk.</strong></p>
-    </section>
+    <main>
+        <section class="menukort1">
+            <img src="images/menu.webp" alt="icon">
+            <h2>MENUKORT</h2>
+            <container class="menukort2">
+                <ul>
+                    <a href="meat-on-stone.html">Meat On Stone</a>
+                    <a href="saladbowls.html">Saladbowls</a>
+                    <a href="sandwich.html">Sandwich</a>
+                    <a href="soft-taco.html">Soft Taco</a>
+                    <a href="tapas.html">Tapas</a>
+                    <a href="billedgalleri.html">Inspiration</a>
+                </ul>
+            </container>
+        </section>
+
+        <section class="softtaco">
+            <h2>SOFT TACO</h2>
+            <p>Nyd en af vores lækre tacos - hele dagen fra 11:00 - 21:30</p>
+            <h4>TACO 1</h4>
+            <p>Kylling marineret i fajita, avocadocreme, kål, rødløg og jalapenos</p>
+            <h4>TACO 2</h4>
+            <p>Kylling marineret i pesto, avocadocreme, kål og rødløg</p>
+            <h4>TACO 3</h4>
+            <p>Frisk avocado, peberfrugt, pesto, avocadocreme og kål</p>
+            <p><strong>1 Taco 59,- / 3 Tacos 140,-</strong></p><br>
+        </section>
+
+        <section class="quesadillas">
+            <h2>LUNE QUESADILLAS</h2>
+            <h4>Kylling Quesadillas</h4>
+            <p>Kyllign marineret i fajita med peberfrugt og ost</p>
+            <h4>Avocado Quesadillas</h4>
+            <p>Med avocado, peberfrugt og ost</p>
+            <h4>Serrano Quesadillas</h4>
+            <p>Serrano med ost</p>
+            <p><strong>89,- pr. stk.</strong></p>
+        </section>
+    </main>
+
 </body>
+
 </html>

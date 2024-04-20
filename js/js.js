@@ -7,7 +7,7 @@
 /* INDEX.HTML LINKER TIL script.js, DER ER FUNKTIONALITETEN FOR SIDEN */
 
 document.addEventListener("DOMContentLoaded", function() {
-    const inner = document.querySelector(".indre-karrusel"); 
+    const inner = document.querySelector(".indre-karrusel"); /* Kan denne linje slettes */
     const pages = document.querySelectorAll(".karrusel-side"); 
     const colors = ["var(--primaer-lyseroed)", "var(--primaer-gul)", "var(--primaer-lyseroed)"]; 
     let currentIndex = 0; 
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function translatePages() {
         const offset = -currentIndex * 100; 
-        inner.style.transform = `translateX(${offset}%)`;
+        inner.style.transform = `translateX(${offset}%)`; /* Kan denne linje slettes */
         changeBackgroundColor(); 
     }
 
