@@ -188,7 +188,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
-
 /*---------------------------------------------*/
 
 /* RESPONSIVE - MEDIA QUERIES */
@@ -225,6 +224,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
      }
 
 }
+
 
 /*STYLING AF GAVEKORT - HTML */
 
@@ -495,4 +495,67 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* OM OS - STYLING  */
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------*/
+
+/* RESPONSIVE - MEDIA QUERIES */
+
+/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (min-width: 1025px) {
+
+    .nav-toggle {
+        display: none; /* skjuler bar-img i desktop view */
+    }
+
+    .nav-menu {
+        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+        /* styling af navigationsbar */
+        display: flex;
+        right: 0;
+        margin: 0.7rem; 
+        z-index: 100;
+    }
+
+    nav li {
+        display: block; /* gør listede elementer synlige */
+    }
+
+    li ul.dropdown {
+        margin-right: 0; /* indryk fra kant, i under-listede elementer */
+        background-color: rgba(249, 203, 206, 0.7); /* primær-lyserød-farve med 50% gennemsigtighed */
+        }
+
+    .dropdown-styling {
+        padding-right: 1.4rem; /* padding i desktop */
+        padding-top: 1.5rem;
+        padding-left: 0.1;
+     }
+
+}
+
+
+/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (max-width: 1024px) {
+
+    .dropdown-styling {
+        background-color: var(--sekundaer-lyseroed);
+        border-style: solid;
+        border-width: 0 0 0.15rem 0;
+        border-color: var(--primaer-lyseroed);
+    }
+
+    li ul.dropdown {
+        padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
+        background-color: var(--primaer-lyseroed);
+        }
+
+}
 
