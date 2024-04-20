@@ -5,12 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
     <link rel="shortcut icon" href="images/ikon.webp">
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <script src="js/script.js"></script>
 
     <!-- Google fonts -->
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+
+:root {
+    --skriftfarve: #000;
+    --primaer-lyseroed: #f9CBCE;
+    --sekundaer-lyseroed: #DfADB0;
+    --sekundaer-moerk-lyseroed: #C78D91;  
+    --primaer-gul: #FFF3A4;
+    --sekundaer-gul: #DFD381;
+    --sekundaer-moerk-gul: #CCC06E;
+}
+body {
+    background-color: var(--primaer-lyseroed);
+}
+/*MENU STYLING*/
+
+.menukort1 { 
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+}
+
+#menuskilt {
+    width: 10%;
+}
+
+.menukort2 {
+    width: 75%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 2% 5% 2% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
+}
+
+.menukort2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menukort2 li {
+    margin-bottom: 2%;
+    border-bottom: 0.1rem solid var(--sekundaer-moerk-lyseroed); /*streg*/
+}
+
+.menukort2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* TAPAS STYLING */
+.tapas {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+}
+
+#tapasskilt {
+    width: 10%;
+}
+
+.tapas-indhold {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 2% 5% 2% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
+    font-family: "Quattrocento", serif;
+}
+.tapas-indhold h3 {
+    font-weight: 650;
+}
+
     </style>
 </head>
 
@@ -62,9 +142,32 @@
 
     <main>
         <!-- MENUKORT DEL -->
+        <section class="menukort1">
+            <img src="images/menu.webp" alt="menu skilt" id="menuskilt">
+            <h2>MENUKORT</h2>
 
-        <section class="starters">
-            <h2>STARTERS</h2>
+            <container class="menukort2">
+                <ul id="indhold-i-menu-liste">
+                    <li><a href="meat-on-stone.html">Meat On Stone</a></li>
+                    <li><a href="saladbowls.html">Saladbowls</a></li>
+                    <li><a href="sandwich.html">Sandwich</a></li>
+                    <li><a href="soft-taco.html">Soft Taco</a></li>
+                    <li><a href="tapas.html">Tapas</a></li>
+                    <li> <a href="billedgalleri.html">Inspiration</a></li>
+                </ul>
+            </container>
+        </section>
+        <br>
+        <!-- MENUKORT DEL -->
+
+        <section class="tapas">
+            <img src="#" alt="tapas-ikon" id="tapas-ikon">
+            <h2>TAPAS</h2>
+        </section>
+
+        <section class="tapas-indhold">
+            
+            <h3>STARTERS</h3>
             <Lille><strong>Patatas Bravas</strong> med tomatsovs og aioli</p>
             <p>Lille 40,- / Stor 75,-</p>
             <p><strong>Padrons</strong> med citron og aioli 75,-</p>
@@ -76,8 +179,8 @@
             <p><strong>Nachos m. Kylling</strong> og dip 105,-</p><br>
         </section>
 
-        <section class="tapas1">
-            <h2>KLASSISK TAPAS</h2>
+        <section class="tapas-indhold">
+            <h3>KLASSISK TAPAS</h3>
             <p>Serrano Reserva skinke</p>
             <p>Chorizo pølse med cornichoner</p>
             <p>Fennikel charcuteri med cornichoner</p>
@@ -96,8 +199,8 @@
             <p>250,-</p><br>
         </section>
 
-        <section class="tapas2">
-            <h2>MEATLOVERS TAPAS</h2>
+        <section class="tapas-indhold">
+            <h3>MEATLOVERS TAPAS</h3>
             <p>Serrano Reserva skinke</p>
             <p>Chorizo pølse med cornichoner</p>
             <p>Fennikel charcuteri med cornichoner</p>
@@ -119,8 +222,8 @@
             <p>250,-</p><br>
         </section>
 
-        <section class="tapas3">
-            <h2>VEGETAR TAPAS</h2>
+        <section class="tapas-indhold">
+            <h3>VEGETAR TAPAS</h3>
             <p>Spansk Manchego ost</p>
             <p>Spansk Mahón menorca ost</p>
             <p>Avocado med sesam</p>
@@ -138,16 +241,16 @@
             <p>175,-</p><br>
         </section>
 
-        <section class="tilkoeb1">
-            <h2>KØB TILKØB</h2>
+        <section class="tapas-indhold">
+            <h3>KØB TILKØB</h3>
             <p>Serrano Reserva skinke 45,-</p>
             <p>2 slags charcuteri 55,-</p>
             <p>Trøffel salami 40,-</p>
             <p>KØD-BRÆT mix af 4 slags charcuteri 140,-</p>
         </section>
 
-        <section class="tilkoeb2">
-            <h2>FISK PÅ DÅSE TILKØB</h2>
+        <section class="tapas-indhold">
+            <h3>FISK PÅ DÅSE TILKØB</h3>
             <p>Serveres med aioli, citron og ristet brød</p>
             <p><strong>Ansjosfilet</strong> i olivenolie 75,-</p>
             <p><strong>Boquerones</strong> syltet hvid ansjos 75,-</p>
@@ -155,18 +258,19 @@
             <p>Marinerede <strong>muslinger</strong> Escabeche 75,-</p>
         </section>
 
-        <section class="tilkoeb3">
-            <h2>OSTE</h2>
+        <section class="tapas-indhold">
+            <h3>OSTE</h3>
             <p><strong>Spanske oste</strong> med honing 50,-</p>
             <p><strong>Burrata</strong> med tomat og balsamico 75,-</p>
 
-            <h2>BRØD</h2>
+            <h3>BRØD</h3>
             <p>Ekstra brød 15,-</p>
-            <p>Glutenfri brød 25,-</p>
+            <p>Glutenfri brød 25,-</p><br>
+
         </section>
 
-        <section class="tilbud">
-            <h2>TAPAS TILBUD</h2>
+        <section class="tapas-indhold">
+            <h3>TAPAS TILBUD</h3>
             <p><strong>Inkl. 1,5 times ad libitum drikkevarer</strong></p>
             <p><strong>Onsdag - torsdag: 250,-</strong></p>
             <p><strong>Fredag - lørdag: 295,-</strong></p>
