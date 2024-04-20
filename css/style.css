@@ -7,6 +7,8 @@
  - "Performance: Produktet skal være optimeret i relation til Page Load Time"
  - "SEO: Optimer din kode til søgemaskiner"
  - "Semantisk HTML; semantiske tags"
+- Billeder skal optimeres og være webp
+- Alt kode skal valideres
 
 */
 
@@ -21,7 +23,6 @@
     padding: 0;
     color: var(--skriftfarve);
     font-family: Quattrocento, 'Times New Roman', Times, serif;
-    /* font-size: 30px; */
 }
 
 /* Definerer de mest brugte farver og andre elementer i koden */
@@ -35,9 +36,11 @@
     --sekundaer-moerk-gul: #CCC06E;
 }
 
-
 a {
-    text-decoration: none; /* Fjerner understregninger */
+    text-decoration: none; /* fjerner streger under links */
+    color: inherit; /* fjerner den blå farve i links */
+    font-size: 1.2rem;
+    font-weight: 650;
 }
 
 body {
@@ -45,14 +48,17 @@ body {
 }
 
 
-/*----------------------------------------------------*/
+/*------------------------------------------*/
 
 /* FUNKTIONER / STYLING AF NAVIGATIONSBAR */
 
 /* Styling af nav-tag */
 nav {
     font-weight: 300;
-    height: 100 vh; /* 100% af viewport-height */
+    position: fixed; /* sikrer at nav følger skærmen, når der scrolles nedad */
+    width: 100%; 
+    top: 0; /* Placerer navigationen øverst på skærmen */
+    z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */
 }
 
 /* styling af checkbox - navigationsbar */
@@ -65,15 +71,16 @@ nav {
     display: none; /* fjerner den aktuelle checkboks fra syne*/
 }
 
-/* styling af burgermenu - bar-img */
+/* placering af burgermenu - bar-img */
 .nav-toggle {
     position: absolute;
     cursor: pointer;
     margin: 0rem 1rem;
     right: 0; /* placerer img helt til højre */
+    z-index: 1000; /* Sørger for, at burgermenu-ikonet vises over alt andet */
 }
 
-/*styling af burgermenu - bar-img */
+/* styling af burgermenu - bar-img */
 .menu {
     width: 3.8rem; /* størrelse på img */
     margin: 0.4rem; /* placering af img fra top */
@@ -81,12 +88,14 @@ nav {
     position: relative;
 }
 
-/* styling af navigationsbar */
+/* styling af navigation */
 .nav-menu {
     display: flex;
     flex-direction: column; /* elementer på række - mobil view*/
+    right: 0;
     margin: 0.7rem; 
     margin-bottom: 0; /* fjerner margin i bund */
+    z-index: 100;
 }
 
 /* funktionalitet af burgermenu - bar-img */
@@ -94,48 +103,71 @@ nav {
     display: block; /*kalder på liste elementerne, når der trykkes på bar-img */
 }
 
-/* styling af dropdown elementer, i en liste */
+/* styling af klik på links i nav */
+a:active {
+    background-color: var(--sekundaer-lyseroed); /* 
+   giver aktiverede links en mørkere baggrundsfarve:*/
+}
+
+/* Justerer positionen af dropdown-lister */
 .dropdown {
-    font-weight: lighter;
+    position: absolute;
+    right: 0; /* Højrestiller dropdown-listen */
+    width: auto /* Definerer bredden af dropdown-listen */
+}
+
+/* layout af dropdown liste */
+.dropdown li {
+    border-style: solid;
+    border-width: 0 0 0.15rem 0;
+    border-color: var(--sekundaer-lyseroed);
+    width: 95%;
 }
 
 /* styling af dropdown-lister */
 ul {
+    display: flex;
+    flex-direction: end;
     list-style: none;
-    }
-
-    ul li {
-    display: inline-block;
-    position: relative;
     }
 
     ul li a {
     display: block; 
     padding: 1rem 0.5rem;
     }
-
-    ul li ul.dropdown li {
-    display: block;
-    }
     
-    ul li ul.dropdown {
-    width: 12rem; /* definerer størrelsen på dropdown under-liste*/
+    li ul.dropdown {
     position: relative;
     display: none; /* fjerner dropdown under-lister */
     font-weight: bold;
     }
 
+    /*sørger for, at dropdown føler menupunktets placering */
     ul li:hover ul.dropdown {
     display: block;
+    right: 0;
     }
+
+/*----------------------------------------------*/
 
 
  /* STYLING AF LISTEDE ELEMENTER - LI */
 
 /* layout af listede elementer */
 .dropdown-styling {
-    width: 9rem; /* definerer størrelsen på dropdown liste elementer*/
+    display: flex;
+    justify-content: right; /* placerer menuen i højre side */
+    padding-left: 1rem; /*luft mellem elementer */
+    padding-right: 1.5rem;
+    width: auto;
  }
+
+ /* styling af tekst, i under-listede elementer*/
+ li {
+    display: flex;
+    text-align: right;
+    right: 0;
+}
 
 /* styling af listede elementer*/
 nav li { 
@@ -155,78 +187,10 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-left: 0.8rem; /* luft omkring img, til nærliggende kanter*/
 }
 
-/* styling af a-tag */
-a {
-    text-decoration: none; /* fjerner streger under links */
-    color: inherit; /* fjerner den blå farve i links */
-    font-size: 1.2rem;
-}
 
+/*----------------------------------------------*/
 
-/*-----------------------------------------------*/
-
-/* RESPONSIVE - MEDIA QUERIES */
-
-/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
-@media only screen and (min-width: 1024px) {
-
-    .nav-toggle {
-        display: none; /* skjuler bar-img i desktop view */
-    }
-
-    .nav-menu {
-        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
-    }
-
-    nav li {
-        display: block; /* gør listede elementer synlige */
-    }
-}
-
-/*----------------------------------------------------*/
-
-
-
-
-
-/* MENUKORTET */
-
-.menukort1 { 
-    display: flex; 
-    flex-direction: column;  
-}
-
-#menuskilt {
-    width: 10%;
-}
-
-.menukort2 {
-    width: 90%;
-    max-width: 400px; /* Adjust max-width as needed */
-    padding: 20px;
-    background-color: #DfADB0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #C78D91(0, 0, 0, 0.1);
-}
-
-.menukort2 ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-.menukort2 li {
-    margin-bottom: 10px;
-}
-
-.menukort2 a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Styling af selve karrusel */
+/* STYLING AF KARUSEL - FORSIDEN */
 
 .karrusel-container {
     /* position: relative; */
@@ -247,13 +211,16 @@ a {
     align-items: center;
 }
 
-/*____________________________________________________________*/
 
-/* Styling af forsideelementerne */
+/*_______________________________________________*/
 
-    /* Generel styling af titel, tekst og knapper på forside */
+/* STYLING AF FORSIDE ELEMENTER */
+
+/* Generel styling af titel, tekst og knapper på forside */
 .forside-elementer {
-    margin-top: 70%;
+    position: relative; /* relativ positionering - så nav-baren ikke rykker elementerne ned, når den åbnes */
+    z-index: 1; /* Sørger for, at forsideelementerne er under navigationsbjælken */
+    margin-top: 40vh; /* Ændret til viewport height enhed for mere præcis placering */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,22 +228,27 @@ a {
     text-align: center;
 }
 
-    /* Styler titlerne på alle forsider*/
+ /* Styler titlerne på alle forsider*/
 .forside-titel {
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 600;
+    line-height: 2.2rem;
 }
 
-    /* Styler teksten på alle forsider */
+/* Styler teksten på alle forsider */
 .forside-tekst {
     margin-top: 5%;
     margin-bottom: 10%;
     font-size: 1.5rem;
+    padding: 0 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
 }
 
 /* Styling af knap på forside 1*/
 #lyseroed-forside-knap {
     font-size: 1.5rem;
+    font-weight: 550;
     padding: 1% 8%;
     background-color: var(--sekundaer-lyseroed);
     border-radius: 20px;
@@ -286,6 +258,7 @@ a {
 /* Knappen på forside 2 i karrusellen */
 .gul-forside-knap {
     font-size: 1.5rem;
+    font-weight: 550;
     padding: 1% 8%;
     background-color: var(--sekundaer-gul);
     border-radius: 20px;
@@ -313,8 +286,199 @@ a {
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
 #sidste-forside {
-    margin-top: 82%;
+    margin-top: 46vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
+}
+
+/*________________________________________*/
+
+
+/* MENUKORTET 
+
+.menukort1 { 
+    display: flex; 
+    flex-direction: column;  
+}
+
+#menuskilt {
+    width: 10%;
+}
+
+.menukort2 {
+    width: 90%;
+    max-width: 400px; 
+    padding: 20px;
+    background-color: #DfADB0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #C78D91(0, 0, 0, 0.1);
+}
+
+.menukort2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menukort2 li {
+    margin-bottom: 10px;
+}
+
+.menukort2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+*/
+
+/*---------------------------------------------*/
+
+
+/* SANDWICH SIDE - STYLING */
+
+#sandwich-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.sandwich {
+    margin-top: 5%;
+    padding: 2% 5%;
+    background-color: var(--sekundaer-lyseroed);
 }
 
 
-/*____________________________________________________________*/
+/*----------------------------------------------*/
+
+/* GAVEKORT - STYLING  */
+
+/* styling af top billede - ekstra afstand fra top*/
+    .billede-container-top {
+        position: relative;
+        margin-top: 6.5rem;
+        padding: 1rem;
+        
+    }
+    
+    .billede-container-top img {
+        display: block;
+        width: 100%;
+        border-radius: 0.8rem; /*afrundede kanter*/
+    }
+
+/* styling af bund billede */
+    .billede-container-bund {
+        position: relative;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .billede-container-bund img {
+        display: block;
+        width: 100%;
+        border-radius: 0.8rem; /*afrundede kanter*/
+    }
+
+
+/* styling af tekstboksen - over billederne */
+.overlay-tekstboks {
+    position: absolute;
+    top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
+    left: 50%; /*sikrer placering i midten*/
+    transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 80%; /*gennemsigtighed af tekstboks*/
+    padding: 2rem; /*luft omkring tekst*/
+    font-weight: 1000; /*tykkelse på tekst*/
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem; /*linjeafstand*/
+    border-radius: 0.8rem; /*afrundede kanter*/
+  }
+
+
+
+/*---------------------------------------------*/
+
+/* RESPONSIVE - MEDIA QUERIES */
+
+/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (min-width: 1025px) {
+ 
+ /* STYLING AF NAVIGATION */
+
+    .nav-toggle {
+        display: none; /* skjuler bar-img i desktop view */
+    }
+
+    .nav-menu {
+        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+        /* styling af navigationsbar */
+        display: flex;
+        right: 0;
+        margin: 0.7rem; 
+        z-index: 100;
+    }
+
+    nav li {
+        display: block; /* gør listede elementer synlige */
+    }
+
+    li ul.dropdown {
+        margin-right: 0; /* indryk fra kant, i under-listede elementer */
+        background-color: rgba(249, 203, 206, 0.7); /* primær-lyserød-farve med 50% gennemsigtighed */
+        }
+
+    .dropdown-styling {
+        padding-right: 1.4rem; /* padding i desktop */
+        padding-top: 1.5rem;
+        padding-left: 0.1;
+     }
+
+
+
+ /*STYLING AF GAVEKORT - HTML */
+
+    .overlay-tekstboks {
+        padding: 5rem; /*luft omkring tekst*/
+        font-weight: 1200; /*tykkelse på tekst*/
+        font-size: 6rem;
+        text-align: center;
+        line-height: 8.5rem; /*linjeafstand*/
+      }
+
+      /* ændring af størrelse/placering af billede, i stor skærm */
+      .billede-container-top {
+        position: relative;
+        padding-top: 4;
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+
+      .billede-container-bund {
+        position: relative;
+        padding-top: 0;
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+
+
+}
+
+
+/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (max-width: 1024px) {
+
+    .dropdown-styling {
+        background-color: var(--sekundaer-lyseroed);
+        border-style: solid;
+        border-width: 0 0 0.15rem 0;
+        border-color: var(--primaer-lyseroed);
+    }
+
+    li ul.dropdown {
+        padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
+        background-color: var(--primaer-lyseroed);
+        }
+    
+}

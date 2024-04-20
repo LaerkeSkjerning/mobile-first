@@ -4,49 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+
+    <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+    
+/* Style for mobile devices */
+.small-img {
+    margin-top: 5rem;
+    width: 15%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+section {
+text-align: center;
+margin-bottom: 5%;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem; /* Juster afstanden mellem billeder */
+}
+
+.billedgalleri
+{
+    border-radius: 2rem; /* Tilføj afrundede hjørner til kanten */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem; /* Juster afstanden mellem tekst og billeder */
+}
+
+    </style>
+
 </head>
+
 <body>
-    <img src="kamera.webp" alt="icon">
-    <h2>BILLEDEGALLERI</h2>
+    
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
 
-    <img src="tapas.lacana.webp" alt="billedgalleri">
-    <p>Meat On Stone menuen</p>
 
-    <img src="spanskinspireret.wrap.lacana.webp" alt="billedgalleri">
-    <p>Soft Taco</p>
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
 
-    <img src="stemning.lacana.webp" alt="billedgalleri">
-    <p>Hygge på LA CANA</p>
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
 
-    <img src="bocadillos.lacana.webp" alt="billedgalleri">
-    <p>Bocadillos</p>
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
 
-    <img src="meat.on.stone.lacana.webp" alt="billedgalleri">
-    <p>Meat On Stone</p>
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
 
-    <img src="personale.lacana.webp" alt="billedgalleri">
-    <p>Mød LA CANA's søde personale</p>
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
 
-    <img src="hvem.er.vi.lacana.webp" alt="billedgalleri">
-    <p>Mød LA CANA's søde personale</p>
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
 
-    <img src="ensalada-laks.webp" alt="billedgalleri">
-    <p>Ensalada med lars</p>
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+        </nav>
+    </header>
 
-    <img src="se.lacana.webp" alt="billedgalleri">
-    <p>Billede af LA CANA's hyggelige siddeområde</p>
 
-    <img src="laks.menu.lacana.webp" alt="billedgalleri">
-    <p>Lakse saladbowl</p>
+    <section>
+        <img src="images/kamera.webp" alt="icon" class="small-img">
+        <h2>BILLEDEGALLERI</h2>
+    </section>
 
-    <img src="lille.brunch.lacana.webp" alt="billedgalleri">
-    <p>Den Lille Brunch</p>
-
-    <img src="se.lacana.indenfor.webp" alt="billedgalleri">
-    <p>Lille inblink i LA CANA's store udvalg</p>
-
-    <img src="ansatte.lacana.webp" alt="billedgalleri">
-    <p>Arbejds hygge på LA CANA</p>
+    <main>
+        <p>Meat On Stone menuen</p>
+        <img src="images.billedgalleri/tapas.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Soft Taco</p>
+        <img src="images.billedgalleri/spanskinspireret.wrap.lacana.webp" alt="billedgalleri" class="billedgalleri">
+    
+        <p>Hygge på LA CANA</p>
+        <img src="images.billedgalleri/stemning.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Arbejdes hygge på LA CANA</p>
+        <img src="images.billedgalleri/ansatte.lacana.webp" alt="billedgalleri" class="billedgalleri">
+       
+        <p>Bocadillos</p>
+        <img src="images.billedgalleri/bocadillos.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Meat On Stone</p>
+        <img src="images.billedgalleri/meat.on.stone.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Mød LA CANA's søde personale</p>
+        <img src="images.billedgalleri/personale.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Mød LA CANA's søde personale</p>
+        <img src="images.billedgalleri/hvem.er.vi.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Ensalada med lars</p>
+        <img src="images.billedgalleri/ensalada-laks.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Billede af LA CANA's hyggelige siddeområde</p>
+        <img src="images.billedgalleri/se.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Lakse saladbowl</p>
+        <img src="images.billedgalleri/laks.menu.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Den Lille Brunch</p>
+        <img src="images.billedgalleri/lille.brunch.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Lille inblink i LA CANA's store udvalg</p>
+        <img src="images.billedgalleri/se.lacana.indenfor.webp" alt="billedgalleri" class="billedgalleri">
+        
+        <p>Arbejds hygge på LA CANA</p>
+        <img src="images.billedgalleri/ansatte.lacana.webp" alt="billedgalleri" class="billedgalleri">
+        
+    </main>
+    
 </body>
+
 </html>

@@ -4,99 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
+    <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <!-- Google fonts -->
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+    </style>
 </head>
+
 <body>
-<section class="menukort1">
-    <img src="menu.webp" alt="icon">
-    <h2>MENUKORT</h2>
-    <container class="menukort2">
-    <ul>
-        <a href="meat-on-stone.html">Meat On Stone</a>
-        <a href="saladbowls.html">Saladbowls</a>
-        <a href="sandwich.html">Sandwich</a>
-        <a href="soft-taco.html">Soft Taco</a>
-        <a href="tapas.html">Tapas</a>
-        <a href="billedgalleri.html">Inspiration</a>
-    </ul>
-</container>
-</section>
 
-<section class="meat-on-stone1">
-    <h2>MEAT-ON-STONE</h2>
-    <h3>STARTERS</h3>
-    <med><strong>Patatas bravas</strong> med tomatsovs og aioli</p>
-    <p>Lille 40,- /  Stor 75,-</p>
+    <header> <!--Navigationsbar & logo-->
+        <nav class="nav"> 
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
+    
+            <!-- Burgerbar img/ikon -->
+            <label for="nav-checkbox" class="nav-toggle">
+                <img class="menu" src="images/bar.webp" alt="navigations-bar" >
+            </label>
+            
+            <ul class="nav-menu"> <!-- burgermenu class-->
+    
+                <li><a href="index.html"> <!-- Logo, på linje med nav -->
+                    <img class="logo" src="images/logo.webp" alt="lacana" >
+                </a></li>
+    
+                <li><a class="dropdown-styling" href="menu.html">MENUKORT</a> 
+                    <ul class="dropdown"> 
+                        <li><a href="meat-on-stone.html">Meat on the stone</a></li>
+                        <li><a href="saladbowls.html">Salad Bowls</a></li>
+                        <li><a href="sandwich.html">Sandwich</a></li>
+                        <li><a href="soft-taco.html">Soft Taco</a></li>
+                        <li><a href="tapas.html">Tapas</a></li>
+                        <li><a href="billedgalleri.html">Inspiration</a></li>
+                    </ul>
+                </li> 
+    
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+    
+                <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
+                    <ul class="dropdown">
+                        <li><a href="gavekort-kob.html">Køb gavekort</a></li>
+                        <li><a href="gavekort-brug.html">Brug af gavekort</a></li>
+                    </ul>
+                </li>
+    
+                <li ><a class="dropdown-styling" href="billedgalleri.html">GALLERI</a></li>
+    
+                <li ><a class="dropdown-styling" href="om-os.html">OM OS</a></li>
+                
+                <li ><a class="dropdown-styling" href="#">ENGLISH</a></li> <!-- Tiltænkt at skulle vise hjemmesiden på engelsk -->
+            </ul>
+        </nav>
+    </header>
 
-    <med><strong>Padrons</strong> med citron og aioli 75,-</p>
+    <main>
 
-    <med><strong>Burrata</strong> med tomat og balsamico 75,-</p>
+        <section class="menukort1">
+            <img src="menu.webp" alt="icon">
+            <h2>MENUKORT</h2>
+            <container class="menukort2">
+            <ul>
+                <a href="meat-on-stone.html">Meat On Stone</a>
+                <a href="saladbowls.html">Saladbowls</a>
+                <a href="sandwich.html">Sandwich</a>
+                <a href="soft-taco.html">Soft Taco</a>
+                <a href="tapas.html">Tapas</a>
+                <a href="billedgalleri.html">Inspiration</a>
+            </ul>
+        </container>
+        </section>
 
-    <p><strong>Oliven mix</strong> 30,-</p>
+        <section class="meat-on-stone1">
+            <h2>MEAT-ON-STONE</h2>
+            <h3>STARTERS</h3>
+            <med><strong>Patatas bravas</strong> med tomatsovs og aioli</p>
+            <p>Lille 40,- /  Stor 75,-</p>
 
-    <p><strong>Pan Con Tomate</strong> 2 stk.(ristet brød med tomat og olie) 35,-</p>
+            <med><strong>Padrons</strong> med citron og aioli 75,-</p>
 
-    <p><strong>Nachos</strong> med dip 85,-</p>
+            <med><strong>Burrata</strong> med tomat og balsamico 75,-</p>
 
-    <p><strong>Nachos m. kylling</strong> og dip 105,-</p>
+            <p><strong>Oliven mix</strong> 30,-</p>
 
-    <p>kr. 395,- pr. person</p>
-</section>
+            <p><strong>Pan Con Tomate</strong> 2 stk.(ristet brød med tomat og olie) 35,-</p>
 
-<section class="meat-on-stone2">
-    <h3>MEAT ON STONE</h3>
-    <p><strong>KØD</strong></p>
-    <p>ENTRECOTE 199,-</p>
-    <p>MØRBRAD 250,-</p>
-        
-    <p><strong>SIDES</strong></p>
-    <p>Patatas Bravas med tomatsovs og aioli 75,-</p>
-    <p>Padrons med citron og aioli 75,-</p>
-    <p>Burrata med tomat og balsamico 75,-</p>
-        
-    <p><strong>GRØNNE SIDES</strong></p>
-    <p>Tomat salat 35,-</p>
-    <p>Kålsalat 35,-</p>
-    <p>Avokado 35,-</p>
-        
-    <p><strong>SAUCE</strong></p>
-    <p>Kold bearnaise 40,-</p>
-    <p>Aioli 40,-</p>
-    <p>Trøffel 40,-</p>
-</section>
+            <p><strong>Nachos</strong> med dip 85,-</p>
 
-<section class="meat-on-stone3">
-    <h3>MEAT ON STONE TILBUD</h3>
-    <p><strong>VÆLG</strong></p>
-    <p>1 SIDES</p>
-    <p>1 KØD</p>
-    <p>1 GRØNNE SIDES</p>
-    <p>1 SAUCE</p>
-    <p>Kr. 295,- pr. person</p>
-    <p>(MØRBRAD + 50 kr)</p>
-        
-    <p><strong>MEAT ON STONE INKL.</strong></p>
-    <p><strong>1,5 times ad libitum drikkevarer</strong></p>
-    <p>(MØRBRAD + 50 kr)</p>
-    <p>kr. 395,- pr. person</p>
-        
-    <p><strong>Tilkøb ekstra Ad Libitum drikkevarer:</strong></p>
-    <p>kr. 150,- for 1 time</p>
-    <p><strong>Gælder:</strong></p>
-    <p>Sodavand</p>
-    <p>Carlsberg & Tuborg Classic</p>
-    <p>Husets Rødvin & Hvidvin</p>
-    <p>Cava</p>
-    <p>Sangria</p>
-</section>
+            <p><strong>Nachos m. kylling</strong> og dip 105,-</p>
 
-<section class="meat-on-stone4">
-    <h3>FISK PÅ DÅSE</h3>
-    <p>(Serveres med aioli, citron og ristet brød)</p>
-    <p><strong>Ansjosfilet</strong> olivenolie 75,-</p>
-    <p><strong>Boquerones</strong> syltet hvid ansjos 75,-</p>
-    <p><strong>Sardiner</strong> i tomatsovs eller olivenolie 75,-</p>
-    <p>Marinerede<strong> muslinger</strong> Escabeche 75,-</p>
-</section>
+            <p>kr. 395,- pr. person</p>
+        </section>
+
+        <section class="meat-on-stone2">
+            <h3>MEAT ON STONE</h3>
+            <p><strong>KØD</strong></p>
+            <p>ENTRECOTE 199,-</p>
+            <p>MØRBRAD 250,-</p>
+                
+            <p><strong>SIDES</strong></p>
+            <p>Patatas Bravas med tomatsovs og aioli 75,-</p>
+            <p>Padrons med citron og aioli 75,-</p>
+            <p>Burrata med tomat og balsamico 75,-</p>
+                
+            <p><strong>GRØNNE SIDES</strong></p>
+            <p>Tomat salat 35,-</p>
+            <p>Kålsalat 35,-</p>
+            <p>Avokado 35,-</p>
+                
+            <p><strong>SAUCE</strong></p>
+            <p>Kold bearnaise 40,-</p>
+            <p>Aioli 40,-</p>
+            <p>Trøffel 40,-</p>
+        </section>
+
+        <section class="meat-on-stone3">
+            <h3>MEAT ON STONE TILBUD</h3>
+            <p><strong>VÆLG</strong></p>
+            <p>1 SIDES</p>
+            <p>1 KØD</p>
+            <p>1 GRØNNE SIDES</p>
+            <p>1 SAUCE</p>
+            <p>Kr. 295,- pr. person</p>
+            <p>(MØRBRAD + 50 kr)</p>
+                
+            <p><strong>MEAT ON STONE INKL.</strong></p>
+            <p><strong>1,5 times ad libitum drikkevarer</strong></p>
+            <p>(MØRBRAD + 50 kr)</p>
+            <p>kr. 395,- pr. person</p>
+                
+            <p><strong>Tilkøb ekstra Ad Libitum drikkevarer:</strong></p>
+            <p>kr. 150,- for 1 time</p>
+            <p><strong>Gælder:</strong></p>
+            <p>Sodavand</p>
+            <p>Carlsberg & Tuborg Classic</p>
+            <p>Husets Rødvin & Hvidvin</p>
+            <p>Cava</p>
+            <p>Sangria</p>
+        </section>
+
+        <section class="meat-on-stone4">
+            <h3>FISK PÅ DÅSE</h3>
+            <p>(Serveres med aioli, citron og ristet brød)</p>
+            <p><strong>Ansjosfilet</strong> olivenolie 75,-</p>
+            <p><strong>Boquerones</strong> syltet hvid ansjos 75,-</p>
+            <p><strong>Sardiner</strong> i tomatsovs eller olivenolie 75,-</p>
+            <p>Marinerede<strong> muslinger</strong> Escabeche 75,-</p>
+        </section>
+    </main>
 </body>
+
 </html>
