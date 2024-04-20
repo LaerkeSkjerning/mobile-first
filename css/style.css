@@ -375,6 +375,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     list-style-type: none;
     padding: 0;
     text-align: center;
+    
 }
 
 .menukort2 li {
@@ -465,7 +466,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     line-height: 2.7rem; /*linjeafstand*/
     border-radius: 0.8rem; /*afrundede kanter*/
   }
-  
 
 /*---------------------------------------------*/
 /* OM OS - STYLING  */
