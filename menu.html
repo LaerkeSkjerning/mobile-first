@@ -6,6 +6,7 @@
         <title>LA CAÑA</title>
         <!-- <link rel="stylesheet" href="css/style.css"> -->
         <link rel="shortcut icon" href="images/ikon.webp">
+        <script src="js/script.js"></script>
         <!-- Google fonts -->
         <style>
              @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
@@ -22,41 +23,48 @@
             body {
                 background-color: var(--primaer-lyseroed);
             }
-            #menu-ikon {
-                width: 10%;
-            }
 
-            h2 {
-                font-family: "Quattrocento", serif;
-                font-weight: 700;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-            }
 
-            p {
-                font-family: "Quattrocento", serif;
-                font-weight: 400;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-            }
-            
-            a {
-                text-decoration: none;
-            }
-            .menukort2 {
-                display: flex;
-            flex-direction: column;
-            background-color: var(--sekundaer-lyseroed, 0.5);
-            border-radius: 10%;
-            margin-left: 4rem;
-            margin-right: 4rem;
-            margin-bottom: 0.5rem;
-            }
-            
+.menukort1 { 
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+}
+
+#menuskilt {
+    width: 10%;
+}
+
+.menukort2 {
+    width: 75%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 2% 5% 2% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
+}
+
+.menukort2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menukort2 li {
+    margin-bottom: 2%;
+    border-bottom: 0.1rem solid var(--sekundaer-moerk-lyseroed);
+}
+
+.menukort2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
         </style>
     </head>
+
 <body>
     <header> <!--Navigationsbar & logo-->
         <nav class="nav"> 
@@ -104,17 +112,17 @@
         
     <main>
         <section class="menukort1">
-            <img src="images/menu.webp" alt="menu skilt" id="menu-ikon">
+            <img src="images/menu.webp" alt="menu skilt" id="menuskilt">
             <h2>MENUKORT</h2>
 
             <container class="menukort2">
                 <ul id="indhold-i-menu-liste">
-                    <p><a href="meat-on-stone.html">Meat On Stone</a></p>
-                    <p><a href="saladbowls.html">Saladbowls</a></p>
-                    <p><a href="sandwich.html">Sandwich</a></p>
-                    <p><a href="soft-taco.html">Soft Taco</a></p>
-                    <p><a href="tapas.html">Tapas</a></p>
-                    <p> <a href="billedgalleri.html">Inspiration</a></p>
+                    <li><a href="meat-on-stone.html">Meat On Stone</a></li>
+                    <li><a href="saladbowls.html">Saladbowls</a></li>
+                    <li><a href="sandwich.html">Sandwich</a></li>
+                    <li><a href="soft-taco.html">Soft Taco</a></li>
+                    <li><a href="tapas.html">Tapas</a></li>
+                    <li> <a href="billedgalleri.html">Inspiration</a></li>
                 </ul>
             </container>
             

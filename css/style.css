@@ -188,6 +188,63 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
+
+/*---------------------------------------------*/
+
+/* RESPONSIVE - MEDIA QUERIES */
+
+/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (min-width: 1025px) {
+
+    .nav-toggle {
+        display: none; /* skjuler bar-img i desktop view */
+    }
+
+    .nav-menu {
+        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
+        /* styling af navigationsbar */
+        display: flex;
+        right: 0;
+        margin: 0.7rem; 
+        z-index: 100;
+    }
+
+    nav li {
+        display: block; /* gør listede elementer synlige */
+    }
+
+    li ul.dropdown {
+        margin-right: 0; /* indryk fra kant, i under-listede elementer */
+        background-color: rgba(249, 203, 206, 0.7); /* primær-lyserød-farve med 50% gennemsigtighed */
+        }
+
+    .dropdown-styling {
+        padding-right: 1.4rem; /* padding i desktop */
+        padding-top: 1.5rem;
+        padding-left: 0.1;
+     }
+
+}
+
+
+/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
+@media only screen and (max-width: 1024px) {
+
+    .dropdown-styling {
+        background-color: var(--sekundaer-lyseroed);
+        border-style: solid;
+        border-width: 0 0 0.15rem 0;
+        border-color: var(--primaer-lyseroed);
+    }
+
+    li ul.dropdown {
+        padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
+        background-color: var(--primaer-lyseroed);
+        }
+
+}
+
+
 /*----------------------------------------------*/
 
 /* STYLING AF KARUSEL - FORSIDEN */
@@ -292,11 +349,13 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*________________________________________*/
 
 
-/* MENUKORTET 
+/* MENUKORTET - STYLING*/
 
 .menukort1 { 
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quattrocento", serif;
 }
 
 #menuskilt {
@@ -304,35 +363,42 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 .menukort2 {
-    width: 90%;
-    max-width: 400px; 
-    padding: 20px;
-    background-color: #DfADB0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #C78D91(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 400px; /* Adjust max-width as needed */
+    padding: 2% 5% 2% 5%;
+    background-color: var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
 .menukort2 ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    
 }
 
 .menukort2 li {
     margin-bottom: 10px;
+    border-bottom: 0.1rem solid var(--sekundaer-moerk-lyseroed);
 }
 
 .menukort2 a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
-*/
 
 /*---------------------------------------------*/
+/* MEAT ON STONE SIDE- STYLING */
 
 
+/*---------------------------------------------*/
+/* SALADBOWLS SIDE - STYLING */
+
+
+/*---------------------------------------------*/
 /* SANDWICH SIDE - STYLING */
 
 #sandwich-container {
@@ -347,138 +413,18 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color: var(--sekundaer-lyseroed);
 }
 
-
-/*----------------------------------------------*/
-
-/* GAVEKORT - STYLING  */
-
-/* styling af top billede - ekstra afstand fra top*/
-    .billede-container-top {
-        position: relative;
-        margin-top: 6.5rem;
-        padding: 1rem;
-        
-    }
-    
-    .billede-container-top img {
-        display: block;
-        width: 100%;
-        border-radius: 0.8rem; /*afrundede kanter*/
-    }
-
-/* styling af bund billede */
-    .billede-container-bund {
-        position: relative;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-    
-    .billede-container-bund img {
-        display: block;
-        width: 100%;
-        border-radius: 0.8rem; /*afrundede kanter*/
-    }
-
-
-/* styling af tekstboksen - over billederne */
-.overlay-tekstboks {
-    position: absolute;
-    top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
-    left: 50%; /*sikrer placering i midten*/
-    transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
-    background-color: var(--sekundaer-lyseroed);
-    opacity: 80%; /*gennemsigtighed af tekstboks*/
-    padding: 2rem; /*luft omkring tekst*/
-    font-weight: 1000; /*tykkelse på tekst*/
-    font-size: 2rem;
-    text-align: center;
-    line-height: 2.7rem; /*linjeafstand*/
-    border-radius: 0.8rem; /*afrundede kanter*/
-  }
-
+/*---------------------------------------------*/
+/* SOFT TACO SIDE - STYLING */
 
 
 /*---------------------------------------------*/
-
-/* RESPONSIVE - MEDIA QUERIES */
-
-/* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
-@media only screen and (min-width: 1025px) {
- 
- /* STYLING AF NAVIGATION */
-
-    .nav-toggle {
-        display: none; /* skjuler bar-img i desktop view */
-    }
-
-    .nav-menu {
-        flex-direction: row; /* ændrer opstilling/retning på listede elementer i nav */
-        /* styling af navigationsbar */
-        display: flex;
-        right: 0;
-        margin: 0.7rem; 
-        z-index: 100;
-    }
-
-    nav li {
-        display: block; /* gør listede elementer synlige */
-    }
-
-    li ul.dropdown {
-        margin-right: 0; /* indryk fra kant, i under-listede elementer */
-        background-color: rgba(249, 203, 206, 0.7); /* primær-lyserød-farve med 50% gennemsigtighed */
-        }
-
-    .dropdown-styling {
-        padding-right: 1.4rem; /* padding i desktop */
-        padding-top: 1.5rem;
-        padding-left: 0.1;
-     }
+/* TAPAS SIDE - STYLING */
 
 
-
- /*STYLING AF GAVEKORT - HTML */
-
-    .overlay-tekstboks {
-        padding: 5rem; /*luft omkring tekst*/
-        font-weight: 1200; /*tykkelse på tekst*/
-        font-size: 6rem;
-        text-align: center;
-        line-height: 8.5rem; /*linjeafstand*/
-      }
-
-      /* ændring af størrelse/placering af billede, i stor skærm */
-      .billede-container-top {
-        position: relative;
-        padding-top: 4;
-        padding-right: 7rem;
-        padding-left: 7rem;
-    }
-
-      .billede-container-bund {
-        position: relative;
-        padding-top: 0;
-        padding-right: 7rem;
-        padding-left: 7rem;
-    }
+/*---------------------------------------------*/
+/* GAVEKORT - STYLING  */
 
 
-}
+/*---------------------------------------------*/
+/* OM OS - STYLING  */
 
-
-/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
-@media only screen and (max-width: 1024px) {
-
-    .dropdown-styling {
-        background-color: var(--sekundaer-lyseroed);
-        border-style: solid;
-        border-width: 0 0 0.15rem 0;
-        border-color: var(--primaer-lyseroed);
-    }
-
-    li ul.dropdown {
-        padding-right: 1.5rem; /* indryk fra kant, i under-listede elementer*/
-        background-color: var(--primaer-lyseroed);
-        }
-    
-}
