@@ -226,32 +226,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 
-/*STYLING AF GAVEKORT - HTML */
-
-.overlay-tekstboks {
-    padding: 5rem; /*luft omkring tekst*/
-    font-weight: 1200; /*tykkelse på tekst*/
-    font-size: 6rem;
-    text-align: center;
-    line-height: 8.5rem; /*linjeafstand*/
-  }
-
-  /* ændring af størrelse/placering af billede, i stor skærm */
-  .billede-container-top {
-    position: relative;
-    padding-top: 4;
-    padding-right: 7rem;
-    padding-left: 7rem;
-}
-
-  .billede-container-bund {
-    position: relative;
-    padding-top: 0;
-    padding-right: 7rem;
-    padding-left: 7rem;
-}
-
-
 /* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
 @media only screen and (max-width: 1024px) {
 
@@ -539,6 +513,31 @@ li:first-child { /* first-child, fordi logo er første element i listede element
         padding-left: 0.1;
      }
 
+}
+
+/*STYLING AF GAVEKORT - HTML */
+
+.overlay-tekstboks {
+    padding: 5rem; /*luft omkring tekst*/
+    font-weight: 1200; /*tykkelse på tekst*/
+    font-size: 6rem;
+    text-align: center;
+    line-height: 8.5rem; /*linjeafstand*/
+  }
+
+  /* ændring af størrelse/placering af billede, i stor skærm */
+  .billede-container-top {
+    position: relative;
+    padding-top: 4;
+    padding-right: 7rem;
+    padding-left: 7rem;
+}
+
+  .billede-container-bund {
+    position: relative;
+    padding-top: 0;
+    padding-right: 7rem;
+    padding-left: 7rem;
 }
 
 
