@@ -487,7 +487,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* GALLERI - STYLING  */
-/* Style for mobile devices */
 .small-img {
     margin-top: 5rem;
     width: 15%;
@@ -511,17 +510,17 @@ margin-bottom: 5%;
 img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 3rem; /* Juster afstanden mellem billeder */
+    margin-bottom: 3rem; 
 }
 
 .billedgalleri
 {
-    border-radius: 2rem; /* Tilføj afrundede hjørner til kanten */
+    border-radius: 2rem; 
 }
 
 p {
     text-align: center;
-    margin-bottom: 1rem; /* Juster afstanden mellem tekst og billeder */
+    margin-bottom: 1rem; 
 }
 
 
