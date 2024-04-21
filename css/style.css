@@ -350,17 +350,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*---------------------------------------------*/
 /* SANDWICH SIDE - STYLING */
 
-#sandwich-container {
-    display: flex;
-    align-items: center;
-    
-}
 
-.sandwich {
-    margin-top: 5%;
-    padding: 2% 5%;
-    background-color: var(--sekundaer-lyseroed);
-}
 
 /*---------------------------------------------*/
 /* SOFT TACO SIDE - STYLING */

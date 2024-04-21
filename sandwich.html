@@ -15,6 +15,37 @@
 
 </head>
 
+<style>
+    #sandwich-elementer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* Få padding til kun at være i midten*/
+        margin-top: 20%; /* Sætter afstand til header*/
+    }
+
+    .sandwich-element {
+        margin-top: 5%;
+        padding: 2% 5%;
+        background-color: var(--sekundaer-lyseroed);
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .sandwich-elementer p {
+        margin-top: 5%;
+    }
+
+    #sandwich-combo-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%; /* Afstanden til elementet ovenover*/
+    }
+
+
+</style>
+
 <body>
 
     <header> <!--Navigationsbar & logo-->
@@ -61,73 +92,58 @@
         </nav>
     </header>
 
-        <!-- 
-        <section class="menukort1">
-            <img src="images/menu.webp" alt="icon">
-            <h2>MENUKORT</h2>
-            <container class="menukort2">
-                <ul>
-                    <a href="meat-on-stone.html">Meat On Stone</a>
-                    <a href="saladbowls.html">Saladbowls</a>
-                    <a href="sandwich.html">Sandwich</a>
-                    <a href="soft-taco.html">Soft Taco</a>
-                    <a href="tapas.html">Tapas</a>
-                    <a href="billedgalleri.html">Inspiration</a>
-                </ul>
-            </container>
-        </section>
+        <!-- HER INDSÆTTES SKABELONEN FOR MENUEN -->
 
-        -->
-
-        <aside class="sandwich-container">
-            <section>
-                <h2>BOCADILLOS (LUNE SANDWICH)</h2>
+        <aside id="sandwich-elementer"> <!-- Gælder alle sandwich -->
+            <section class="sandwich-element">
+                <h2>BOCADILLOS</h2>
+                <h4>(LUNE SANDWICH)</h4>
                 <p>Nyd en af vores lækre sandwich - hele dagen fra 11.00-21.30</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+            <section class="sandwich-element">
+                <h3>Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
                 <p>Manchego, mayonaise og tomat | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+            <section class="sandwich-element">
+                <h3>Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
                 <p>Manchego, mayonaise og tomat | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Chorizo pølse</h3>
+            <section class="sandwich-element">
+                <h3>Chorizo pølse</h3>
                 <p>Trøffelmayonaise, manchego, og tomat | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Marineret kylling</h3>
+            <section class="sandwich-element">
+                <h3>Marineret kylling</h3>
                 <p>Manchego, tomat og romesco | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Avocado</h3>
+            <section class="sandwich-element">
+                <h3>Avocado</h3>
                 <p>Romesco, tomat og marineret salat | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Kold røget laks</h3>
+            <section class="sandwich-element">
+                <h3>Kold røget laks</h3>
                 <p>Med friskostcreme, tomat og marineret salat | 119,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Bagt sød kartoffel</h3>
+            <section class="sandwich-element">
+                <h3>Bagt sød kartoffel</h3>
                 <p>Pesto og tomat | 99,-</p>
             </section>
 
-            <section>
-                <h3 class="sandwich">Tunsalat, pesto</h3>
+            <section class="sandwich-element">
+                <h3>Tunsalat, pesto</h3>
                 <p>avocado, tomat og marineret salat | 119,-</p>
             </section>
 
         </aside>
 
-        <section class="sandwich2">
+        <section id="sandwich-combo-menu">
             <h3>SANDWICH COMBO MENU</h3>
             <p>VALGFRI SANDWICH</p>
             <p>PATATAS BRAVAS (SPANSKE POMFRIT KARTOFLER)</p>
