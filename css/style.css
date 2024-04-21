@@ -287,7 +287,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* sidste-forside bruges til at skubbe forsideelementerne ned, så alt kan ses, når dropdown-menuen er åben*/
 #sidste-forside {
-    margin-top: 46vh; /* Ændret til viewport height enhed for mere præcis placering - i stedet for % */
+    margin-top: 48vh; /* Ændret til viewport 48 height enhed for mere præcis placering - i stedet for % */
 }
 
 /*________________________________________*/
@@ -413,6 +413,22 @@ li:first-child { /* first-child, fordi logo er første element i listede element
         padding-right: 1.4rem; /* padding i desktop */
         padding-top: 1.5rem;
         padding-left: 0.1;
+     }
+
+     #sidste-forside {
+        margin-top: 52vh; 
+     }
+
+     .forside-tekst {
+        margin-bottom: 4%;
+     }
+
+     .lyseroed-forside-knap-et {
+        margin-bottom: -2%;
+     }
+
+     .lyseroed-forside-knap-to {
+        padding: 1% 9.5%;
      }
 
 }
