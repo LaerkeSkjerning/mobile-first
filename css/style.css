@@ -369,7 +369,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1;
     margin: auto;
 }
 
