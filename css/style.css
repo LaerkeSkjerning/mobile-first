@@ -295,7 +295,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* MENUKORTET - STYLING*/
 
-.menukort1 { 
+.hovedmenukort-overskrift { 
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -304,34 +304,39 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #menu-ikon {
     width: 10%;
+    margin-top: 5.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.menukort2 {
+.hovedmenukort {
+    margin-top: 1rem;
     width: 75%;
     max-width: 400px; /* Adjust max-width as needed */
-    padding: 2% 5% 2% 5%;
+    padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
     border-radius: 10%;
     box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
-.menukort2 ul {
+.hovedmenukort ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
 }
 
-.menukort2 li {
-    margin-bottom: 10px;
+.hovedmenukort li {
+    margin-bottom: 1rem;
     border-bottom: 0.1rem solid var(--sekundaer-moerk-lyseroed);
 }
 
-.menukort2 a {
+.hovedmenukort a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0rem 0rem 0.5rem 0rem;
 }
 
 /*---------------------------------------------*/
@@ -349,12 +354,89 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* SOFT TACO SIDE - STYLING */
+.soft-taco-overskrift {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+    margin-bottom: 0.5rem;
+}
 
+#soft-taco-ikon {
+    width: 10%;
+    margin-bottom: 0.5rem;
+}
+
+.soft-taco, .quesadillas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 4% 5% 4% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    font-family: "Quattrocento", serif;
+    text-align: center;
+}
+
+.soft-taco h3, .quesadillas h3 {
+    padding-bottom: 0.4rem;
+}
+
+.soft-taco h4, .quesadillas h4 {
+    padding-top: 0.3rem;
+}
+
+.soft-taco p, .quesadillas p {
+    padding-bottom: 0.4rem;
+}
+
+.taco {
+    font-style: oblique;
+    padding-bottom: 0.3rem;
+}
 
 /*---------------------------------------------*/
 /* TAPAS SIDE - STYLING */
 
+.tapas-overskrift {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+    margin-bottom: 0.5rem;
+}
 
+#tapasskilt {
+    width: 10%;
+    margin-bottom: 0.5rem;
+}
+
+.tapas-indhold-starters h3, .tapas-indhold h3 {
+    font-weight: 650;
+    padding-bottom: 0.4rem;
+}
+
+.tapas-indhold-starters, .tapas-indhold {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 4% 5% 4% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    font-family: "Quattrocento", serif;
+    text-align: center;
+}
+
+.tapas-indhold-starters p, .tapas-indhold p {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+
+.fisk {
+    font-style: oblique;
+    padding-bottom: 0.3rem;
+}
 /*---------------------------------------------*/
 /* GAVEKORT - STYLING  */
 
