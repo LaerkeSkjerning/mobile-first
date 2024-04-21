@@ -5,82 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LA CAÑA</title>
     <link rel="shortcut icon" href="images/ikon.webp">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script> 
     <!-- Google fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap'); 
-       
-        :root {
-            --skriftfarve: #000;
-            --primaer-lyseroed: #f9CBCE;
-            --sekundaer-lyseroed: #DfADB0;
-            --sekundaer-moerk-lyseroed: #C78D91;  
-            --primaer-gul: #FFF3A4;
-            --sekundaer-gul: #DFD381;
-            --sekundaer-moerk-gul: #CCC06E;
-        }
-        body {
-            background-color: var(--primaer-lyseroed);
-        }
-        p {
-            font-family: "Quattrocento", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-        h3 {
-            font-family: "Quattrocento", serif;
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        .overskrift {
-            display: flex;
-            justify-content: center;
-        }
-        #info-ikon {
-            width: 10%;
-        }
-
-        /* Billed omkring kassen med tekstfelterne */
-        .billed-omkring {
-            position: relative;
-            display: inline-block;
-        }
-        .billed-omkring img {
-            display: block;
-            width: 90%;
-            height: auto;
-            border-radius: 10%;
-            opacity: 15%;
-        }
-
-        /* Kassen omkring tekstfelterne */
-        .kassen-omkring {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--sekundaer-lyseroed, 0.5);
-            border-radius: 10%;
-            margin-left: 4rem;
-            margin-right: 4rem;
-            margin-bottom: 0.5rem;
-            
-        }
-        /*  */
-        .aabningstider-table {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .kasse-indhold {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
     </style>
 </head>
+
 <body>
     <header> <!--Navigationsbar & logo-->
         <nav class="nav"> 
@@ -127,52 +59,58 @@
     </header>
 <main>
 
-<img id="info-ikon" src="images/information.webp" alt="info-ikon">
-<section class="overskrift">
-<h2 >OM OS</h2>
-</section>
-<section class="billed-omkring">
-    <img src="images.billedgalleri/tapas.lacana.webp" alt="baggrundsbilled tapas">
-    <section class="kassen-omkring">
-    <h3>ÅBNINGSTIDER</h3>
-        <container class="aabningstider-table">
-            <div class="column1">
-                <p class="line">Onsdag</p>
-                <p class="line">Torsdag</p>
-                <p class="line">Fredag</p>
-                <p class="line">Lørdag</p>
-            </div>
-            <div class="column2">
-                <p class="line">12:00 - LUK</p>
-                <p class="line">12:00 - LUK</p>
-                <p class="line">12:00 - LUK</p>
-                <p class="line">12:00 - LUK</p>
-            </div>
-        </container>
-</section>
+
+<section class="om-os-overskrift">
+    <img id="info-ikon" src="images/information.webp" alt="info-ikon">
+    <h2 >OM OS</h2>
 </section>
 
 <section class="billed-omkring">
-<img src="images.billedgalleri/spanskinspireret.wrap.lacana.webp" alt="baggrundsbilled soft tacos" >
-<section class="kassen-omkring">
-    <container class="kasse-indhold">
+    <img src="images.billedgalleri/tapas.lacana.webp" alt="baggrundsbilled til åbningstider" style="width: 90%;">
+    <section class="kasse-omkring1">
+        <h3>ÅBNINGSTIDER</h3>
+        <container class="tekst-over-billed">
+            <div class="aabningstider-table">
+                <div class="column1">
+                    <p class="line">Onsdag</p>
+                    <p class="line">Torsdag</p>
+                    <p class="line">Fredag</p>
+                    <p class="line">Lørdag</p>
+                </div>
+                <div class="column2">
+                    <p class="line">12:00 - LUK</p>
+                    <p class="line">12:00 - LUK</p>
+                    <p class="line">12:00 - LUK</p>
+                    <p class="line">12:00 - LUK</p>
+                </div>
+            </div>
+        </container>
+    </section>
+</section>
+<br>
+<section class="billed-omkring">
+<img src="images.billedgalleri/spanskinspireret.wrap.lacana.webp" alt="baggrundsbilled til kontakt" style="width: 90%;">
+<section class="kasse-omkring2">
+    <container class="tekst-over-billed">
         <h3>KONTAKT</h3>
         <p>Åboulevarden 36</p>
         <p>8000 Aarhus</p>
         <p>Tlf. 53 19 11 92</p>
         <p>info@lacana.dk</p>
     </container>
+    </section>
 </section>
+<br>
+<section class="billed-omkring">
+    <img src="images.billedgalleri/se.lacana.webp" alt="baggrundsbilled til kig indenfor" style="width: 90%;">
+    <section class="kasse-omkring3">
+        <container class="tekst-over-billed">
+            <h3>KIG INDENFOR</h3>
+            <p>Tag et kig indenfor</p>
+            <p>før du kommer på besøg >></p>
+        </container>
+    </section>
 </section>
-<!--
-    baggrundsbilled til kig indenfor
--->
-<section class="kassen-omkring">
-    <container class="kasse-indhold">
-        <h3>KIG INDENFOR</h3>
-        <p>Tag et kig indenfor</p>
-        <p>før du kommer på besøg >></p>
-    </container>
-</section>
+<br>
 </body>
 </html>
