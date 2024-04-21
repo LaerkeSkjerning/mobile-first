@@ -311,6 +311,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 .hovedmenukort {
     margin-top: 1rem;
     width: 75%;
+    margin: auto;
     max-width: 400px; /* Adjust max-width as needed */
     padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
@@ -371,6 +372,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin: auto;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
     border-radius: 10%;
@@ -420,6 +422,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin: auto;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
     border-radius: 10%;
@@ -469,6 +472,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     border-radius: 10%;
     opacity: 0.5; /* Gør billederne transperante */
     left: 5%; /* Den eneste måde jeg kunne få den i midten af Mobile M i inspect */
+    margin: auto;
 }
 
 /* kassen omkring tekstfelterne */
@@ -476,15 +480,16 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     display: flex;
     flex-direction: column;
     width: 65%;
+    margin: auto;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
     border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
     position: absolute; /* Gør at tekstfeltet kommer ovenpå billedet */
-    top: 53%; 
+    top: 49%; 
     left: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 .kasse-omkring2 {
@@ -497,7 +502,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-family: "Quattrocento", serif;
     text-align: center;
     position: absolute;
-    top: 99%; 
+    top: 95%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
@@ -512,7 +517,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-family: "Quattrocento", serif;
     text-align: center;
     position: absolute;
-    top: 145%; 
+    top: 142%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
