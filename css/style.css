@@ -341,7 +341,47 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* MEAT ON STONE SIDE- STYLING */
+.meat-on-stone-overskrift {
+    display: flex; 
+    flex-direction: column;  
+    align-items: center;
+    font-family: "Quattrocento", serif;
+    margin-bottom: 0.5rem;
+}
 
+#meat-ikon {
+    width: 10%;
+    margin-bottom: 0.5rem;
+}
+
+.meat-on-stone-menu h3 {
+    font-weight: 650;
+    padding-bottom: 0.4rem;
+}
+
+.meat-on-stone-menu {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 4% 5% 4% 5%;
+    background-color:var(--sekundaer-lyseroed);
+    border-radius: 10%;
+    font-family: "Quattrocento", serif;
+    text-align: center;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.meat-on-stone-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+
+.fisk1 {
+    font-style: oblique;
+    padding-bottom: 0.3rem;
+}
 
 /*---------------------------------------------*/
 /* SALADBOWLS SIDE - STYLING */
@@ -437,13 +477,49 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-style: oblique;
     padding-bottom: 0.3rem;
 }
+
 /*---------------------------------------------*/
 /* GAVEKORT - STYLING  */
 
 
 /*---------------------------------------------*/
 /* GALLERI - STYLING  */
+/* Style for mobile devices */
+.small-img {
+    margin-top: 5rem;
+    width: 15%;
+    height: auto;
+    margin-bottom: 3%;
+}
 
+.billedegalleri-overskrift {
+text-align: center;
+margin-bottom: 5%;
+}
+
+
+
+.billede-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem; /* Juster afstanden mellem billeder */
+}
+
+.billedgalleri
+{
+    border-radius: 2rem; /* Tilføj afrundede hjørner til kanten */
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem; /* Juster afstanden mellem tekst og billeder */
+}
 
 
 /*---------------------------------------------*/
