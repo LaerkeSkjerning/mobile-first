@@ -122,7 +122,7 @@ a:active {
 /* styling af dropdown-lister */
 ul {
     display: flex;
-    flex-direction: end;
+    flex-direction: column;
     list-style: none;
     }
 
@@ -341,11 +341,12 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #meat-ikon {
     width: 10%;
-    margin-bottom: 0.5rem; /* Giver afstand til det under */
-    margin: auto; /* Indholdet placeres i midten */
+    margin-bottom: 0.5rem; /* Giver afstand til det under*/
+    margin: auto; /* Indholdet placeres i midten*/
 }
 
-.meat-on-stone-menu h3, h2 { /* Overskrifterne */
+.meat-on-stone-menu h3,
+.meat-on-stone-menu h2 { /* Overskrifterne */
     font-weight: 650;
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
@@ -355,7 +356,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     flex-direction: column; /* Indholdet placeres oven på hinanden */
     width: 90%;
     padding: 4% 5% 4% 5%;
-    background-color:var(--sekundaer-lyseroed);
+    background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
     line-height: 1rem; /* Linjeafstand */
@@ -366,6 +367,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-style: oblique;
     padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
+
 
 /*---------------------------------------------*/
 /* SALADBOWLS SIDE - STYLING */
@@ -531,7 +533,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
     background-color: var(--sekundaer-lyseroed);
     opacity: 80%; /*gennemsigtighed af tekstboks*/
-    padding: 2rem; /*luft omkring tekst*/
+    padding: 1rem; /*luft omkring tekst*/
     font-weight: 1000; /*tykkelse på tekst*/
     font-size: 2rem;
     text-align: center;
@@ -762,20 +764,25 @@ p {
     transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
     background-color: var(--sekundaer-lyseroed);
     opacity: 80%; /*gennemsigtighed af tekstboks*/
-    padding: 1.5rem 2rem 0.5rem 2rem; /*luft omkring tekst*/
+    padding: 0.7rem 1.5rem 0.5rem 1.5rem; /*luft omkring tekst*/
     text-align: center;
     border-radius: 0.8rem; /*afrundede kanter*/
+    font-size: 0.7rem;
+    
 }
 
 .om-os-tekst-over-billed h3 {
     padding-bottom: 0.5rem;
+}
+.om-os-tekst-over-billed p {
+    line-height: 0.3rem; /*linjeafstand*/
 }
 
 .aabningstider-table {
     display: flex;
     flex-direction: row; /* Gør at de bliver placeret ved siden af hinanden */
     justify-content: center; /* Indholdet sættes i midten */
-    gap: 1rem; /* Giver mellemrum mellem indholdet */
+    gap: 0.5rem; /* Giver mellemrum mellem indholdet */
 }
 
 /*---------------------------------------------*/
@@ -854,7 +861,7 @@ p {
     
     .overlay-tekstboks {
         padding: 5rem; /*luft omkring tekst*/
-        font-weight: 1200; /*tykkelse på tekst*/
+        font-weight: 1; /*tykkelse på tekst*/
         font-size: 6rem;
         text-align: center;
         line-height: 8.5rem; /*linjeafstand*/
@@ -908,11 +915,27 @@ p {
         margin: 2%; /* Afstanden mellem p i boksen */
     }
 
+    /* OM OS */
+    .om-os-billed-øverst .om-os-billed-midten .om-os-billed-nederst {
+        display: grid;
+    }
+
+    .om-os-tekst-over-billed {
+        padding: 5rem; /*luft omkring tekst*/
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 5rem; /*linjeafstand*/
+      }
     
+    .om-os-tekst-over-billed p {
+        line-height: 2rem; /*linjeafstand*/
+    }  
+
+
 }
 
 
-/* phone view - max-width er sat til der hvor "desktops and large screens"-starter */
+/* PHONE VIEW - max-width er sat til der hvor "desktops and large screens"-starter */
 @media only screen and (max-width: 1024px) {
 
     .dropdown-styling {
@@ -927,9 +950,126 @@ p {
         background-color: var(--primaer-lyseroed);
         }
 
-
     
 }
 
+/* Responsivitet - meat on stone*/
+@media only screen and (max-width: 768px) {
+    #meat-ikon {
+        width: 20%; /* Ændrer bredden af meat-ikon på mindre skærme */
+        margin: auto; /* Centrerer meat-ikon på mindre skærme */
+    }
+    
+    .meat-on-stone-menu {
+        width: 95%; /* Ændrer bredden af meat-on-stone-menu på mindre skærme */
+        margin: auto; /* Centrerer meat-on-stone-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #meat-ikon {
+        width: 20%; /* Bevarer bredden af meat-ikon på større skærme */
+        margin: auto; /* Centrerer meat-ikon på mindre skærme */
+    }
+    
+    .meat-on-stone-menu {
+        width: 50%; /* Ændrer bredden af meat-on-stone-menu på større skærme */
+        margin: 0; /* Fjerner margin for at placere meat-on-stone-menu i siden */
+        margin-left: 5%; /* Placerer meat-on-stone-menu i midten */
+    }
+}
+
+/* Responsivitet - soft taco*/
+@media only screen and (max-width: 768px) {
+    #soft-taco-ikon {
+        width: 20%; /* Ændrer bredden af taco-ikon på mindre skærme */
+        margin: auto; /* Centrerer taco-ikon på mindre skærme */
+    }
+    
+    .soft-taco, 
+    .quesadillas {
+        width: 95%; /* Ændrer bredden af soft-taco-menu på mindre skærme */
+        margin: auto; /* Centrerer soft-taco-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #soft-taco-ikon {
+        width: 20%; /* Bevarer bredden af soft-taco-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere soft-taco-ikon i siden */
+    }
+    
+    .soft-taco, 
+    .quesadillas {
+        width: 50%; /* Ændrer bredden af .soft-taco og .quesadillas på større skærme */
+        margin: 0; /* Fjerner margin for at placere .soft-taco og .quesadillas i siden */
+        margin-left: 5%; /* Placerer .soft-taco og .quesadillas i midten */
+    }
+}
+
+/* Responsivitet - Tapas*/
+@media only screen and (max-width: 768px) {
+    #tapas-ikon {
+        width: 20%; /* Ændrer bredden af tapas-ikon på mindre skærme */
+        margin: auto; /* Centrerer tapas-ikon på mindre skærme */
+    }
+    
+    .tapas-indhold {
+        width: 95%; /* Ændrer bredden af tapas-indhold på mindre skærme */
+        margin: auto; /* Centrerer tapas-indhold på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #tapas-ikon {
+        width: 20%; /* Bevarer bredden af tapas-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere tapas-ikon i siden */
+    }
+    
+    .tapas-indhold {
+        width: 50%; /* Ændrer bredden af tapas-indhold på større skærme */
+        margin: 0; /* Fjerner margin for at placere tapas-indhold i siden */
+        margin-left: 5%; /* Placerer tapas-indhold i midten */
+    }
+}
+
+/* Responsivitet hovedmenuen */
+@media only screen and (max-width: 768px) {
+    .hovedmenukort-overskrift {
+        align-items: center; /* Indholdet placeres i midten */
+        margin-top: 5rem; /* Giver lidt plads fra toppen på mindre skærme */
+    }
+    
+    #menu-ikon {
+        margin-top: 2rem; /* Giver lidt plads fra toppen på mindre skærme */
+        margin-bottom: 2rem; /* Giver afstand til det under */
+        margin: auto; /* Centrerer menu-ikon på mindre skærme */
+    }
+    
+    .hovedmenukort {
+        width: 75%; /* Ændrer bredden af hovedmenukort på mindre skærme */
+        margin: auto; /* Centrerer hovedmenukort på mindre skærme */
+        margin-top: 1rem; /* Giver lidt plads fra toppen på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hovedmenukort-overskrift {
+        align-items: center; /* Indholdet placeres i midten */
+        margin-top: 5rem; /* Giver lidt plads fra toppen på mindre skærme */
+    }
+    
+    #menu-ikon {
+        margin-top: 2rem; /* Giver lidt plads fra toppen på mindre skærme */
+        margin-bottom: 2rem; /* Giver afstand til det under */
+        margin: auto; /* Centrerer menu-ikon på mindre skærme */
+    }
+    
+    .hovedmenukort {
+        width: 30%; /* Ændrer bredden af hovedmenukort på mindre skærme */
+        margin: auto; /* Centrerer hovedmenukort på mindre skærme */
+        margin-top: 1rem; /* Giver lidt plads fra toppen på mindre skærme */
+    }
+}
 /*----------------------------------------------*/
 
