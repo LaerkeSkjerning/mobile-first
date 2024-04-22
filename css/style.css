@@ -719,17 +719,13 @@ margin-bottom: 5%;
     flex-direction: column;
     align-items: center;
 }
-/*
-img {  dette skal laves om til en klasse/id, som det kan styres af i stedet 
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 3rem; 
-}
-*/
 
 .billedgalleri
 {
     border-radius: 2rem; 
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 3rem; 
 }
 
 p {
