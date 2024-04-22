@@ -348,6 +348,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 #meat-ikon {
     width: 10%;
     margin-bottom: 0.5rem;
+    margin: auto;
 }
 
 .meat-on-stone-menu h3, h2 {
@@ -361,7 +362,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     width: 90%;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
     line-height: 1;
