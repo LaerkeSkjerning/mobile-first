@@ -762,7 +762,7 @@ textarea {
     padding-bottom: 0.5rem;
 }
 .om-os-tekst-over-billed p {
-    line-height: 0.3rem; /*linjeafstand*/
+    line-height: 1rem; /*linjeafstand*/
 }
 
 .aabningstider-table {
@@ -885,24 +885,6 @@ textarea {
         padding-right: 7rem;
         padding-left: 7rem;
     }
-
-
-    /* OM OS */
-    .om-os-billed-øverst .om-os-billed-midten .om-os-billed-nederst {
-        display: grid;
-    }
-
-    .om-os-tekst-over-billed {
-        padding: 5rem; /*luft omkring tekst*/
-        font-size: 1.8rem;
-        text-align: center;
-        line-height: 5rem; /*linjeafstand*/
-      }
-    
-    .om-os-tekst-over-billed p {
-        line-height: 2rem; /*linjeafstand*/
-    }  
-
 
 }
 
@@ -1127,5 +1109,31 @@ textarea {
         display: none;
     }
 }
+ /* Responsivitet OM OS */
+
+ @media only screen and (min-width: 768px) {
+    .om-os-tekst-over-billed {
+        padding: 3%; /*luft omkring tekst*/
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3rem; /*linjeafstand*/
+    }
+
+    .om-os-tekst-over-billed p {
+        line-height: 1rem; /*linjeafstand*/
+    }  
+}
+@media only screen and (min-width: 1024px) {
+    .om-os-tekst-over-billed {
+        padding: 5rem; /*luft omkring tekst*/
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 5rem; /*linjeafstand*/
+      }
+    
+    .om-os-tekst-over-billed p {
+        line-height: 2rem; /*linjeafstand*/
+    }  
+ }
 /*----------------------------------------------*/
 
