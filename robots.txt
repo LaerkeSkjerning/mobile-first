@@ -1,13 +1,3 @@
-Example 1 with robots.txt file
----
 Disallow all example:
 User-agent: *
 Disallow: /
----
-Example 2 with robots.txt file
----
-Allow all example:
-User-agent: *
-Allow: /
-Sitemap: https://domanin.dk/sitemap.xml
----
