@@ -382,10 +382,60 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*---------------------------------------------*/
 /* SALADBOWLS SIDE - STYLING */
 
+#saladbowls-elementer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--sekundaer-lyseroed);
+    margin: 20% 12%;
+}
+
+.saladbowl-element {
+    margin: 2%; /* Skaber mellemrum imellem valgmulighederne */
+}
+
+#saladbowl-img {
+    width: 20%;
+    margin: 5% -2%;
+}
+
+/* Skaber afstand fra titel til tekst under */
+#saladbowls-titel {
+    margin-bottom: 5%;
+}
 
 /*---------------------------------------------*/
 /* SANDWICH SIDE - STYLING */
 
+#sandwich-img {
+    width: 30%;
+    align-self: center;
+    margin-bottom: -5%; /* Rykker billede og titel tættere sammen */
+}
+
+#sandwich-elementer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%; /* Sikrer at den sekundære lyserøde farve ikke går bag head*/
+}
+
+.sandwich-element {
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 2% 5%; /* Afstand mellem alle indre tekst-elementer */
+    background-color: var(--sekundaer-lyseroed);
+}
+
+#sandwich-combo-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--sekundaer-lyseroed);
+    padding: 2% 5%;
+    margin: 2% 12%;
+}
 
 
 /*---------------------------------------------*/
@@ -810,6 +860,39 @@ p {
         padding-top: 0;
         padding-right: 7rem;
         padding-left: 7rem;
+    }
+
+    /* Saladbowls er reponsive, så indholdet flyttes til venstre i siden og menuen til højre */
+    #saladbowls-elementer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        margin: 10% 55% 0 10%;
+        background-color: var(--sekundaer-lyseroed);
+    }
+
+    #sandwich-elementer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        margin: 10% 55% 0 10%;
+        background-color: var(--sekundaer-lyseroed);
+    }
+
+    /* Sanwich er responsive, så indholdet flyttes til venstre i sden og menu til højre*/
+    #sandwich-combo-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        margin: 5% 55% 5% 10%;
+        background-color: var(--sekundaer-lyseroed);
+    }
+
+    #sandwich-combo-menu p {
+        margin: 2%; /* Afstanden mellem p i boksen */
     }
 
 
