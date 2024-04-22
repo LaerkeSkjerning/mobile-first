@@ -482,7 +482,134 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 /*---------------------------------------------*/
-/* GAVEKORT - STYLING  */
+
+/* GAVEKORT HTML - STYLING AF LANDINGPAGE  */
+
+/* styling af top billede - ekstra afstand fra top*/
+.billede-container-top {
+    position: relative;
+    margin-top: 6.5rem;
+    padding: 1rem;
+    
+}
+
+.billede-container-top img {
+    display: block;
+    width: 100%;
+    border-radius: 0.8rem; /*afrundede kanter*/
+}
+
+/* styling af bund billede */
+.billede-container-bund {
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.billede-container-bund img {
+    display: block;
+    width: 100%;
+    border-radius: 0.8rem; /*afrundede kanter*/
+}
+
+
+/* styling af tekstboksen - over billederne */
+.overlay-tekstboks {
+position: absolute;
+top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
+left: 50%; /*sikrer placering i midten*/
+transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+background-color: var(--sekundaer-lyseroed);
+opacity: 80%; /*gennemsigtighed af tekstboks*/
+padding: 2rem; /*luft omkring tekst*/
+font-weight: 1000; /*tykkelse på tekst*/
+font-size: 2rem;
+text-align: center;
+line-height: 2.7rem; /*linjeafstand*/
+border-radius: 0.8rem; /*afrundede kanter*/
+}
+
+
+/* GAVEKORT-KOB HTML - STYLING AF FORMULAR */
+
+/* Styler teksten */
+.kob-gavekort {
+text-align: center;
+}
+
+.kob-gavekort h1 { /*overskrift*/
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    padding: 1.3rem;
+    padding-top: 7.5rem; /* afstand til top - sikrer at overskriften starter under nav/logo.*/
+}
+
+.kob-gavekort h2 { /*underoverskrift*/
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    padding: 1.3rem;
+    padding-bottom: 0;
+}
+
+.kob-gavekort p { /* alm. tekst */
+    font-size: 1.2rem;
+    padding-top: 0;
+    padding: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+}
+
+.kob-gavekort h3 { /* overskrifter, til valg*/
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+
+}
+
+/* deisgn af "hilsen-felt" - taget fra w3 schools */
+textarea {
+width: 65%;
+height: auto;
+padding: 1.3rem;
+border: var(--primaer-lyseroed);
+border-radius: 1rem;
+background-color: var(--sekundaer-lyseroed);
+opacity: 50%; /*gennemsigtighed af tekstboks*/
+font-size: 1rem;
+resize: none;
+}
+
+/* design af kroner-felt */
+#kroner {
+width: 22%;
+height: auto;
+padding: 1.3rem;
+border: var(--primaer-lyseroed);
+border-radius: 1rem;
+background-color: var(--sekundaer-lyseroed);
+opacity: 50%; /*gennemsigtighed af tekstboks*/
+font-size: 1.5rem;
+resize: none;
+}
+
+.knap-kob-gavekort {
+margin-top: 2rem;
+margin-bottom: 0.5rem;
+padding: 1.3rem;
+border: solid 0.2rem;
+border-radius: 1rem;
+background-color: var(--sekundaer-lyseroed);
+opacity: 50%; /*gennemsigtighed af tekstboks*/
+font-size: 2rem;
+font-weight: 600;
+}
+
+#ses {
+margin-bottom: 2rem;
+}
 
 
 /*---------------------------------------------*/
@@ -616,6 +743,7 @@ p {
 /* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
 @media only screen and (min-width: 1025px) {
 
+     /* STYLING AF NAVIGATION */
     .nav-toggle {
         display: none; /* skjuler bar-img i desktop view */
     }
@@ -644,6 +772,8 @@ p {
         padding-left: 0.1;
      }
 
+    
+    /* STYLING AF FORSIDE M. KARUSEL */
      #sidste-forside {
         margin-top: 52vh; 
      }
@@ -659,6 +789,33 @@ p {
      .lyseroed-forside-knap-to {
         padding: 1% 9.5%;
      }
+
+
+    /*STYLING AF GAVEKORT - HTML */
+    
+    .overlay-tekstboks {
+        padding: 5rem; /*luft omkring tekst*/
+        font-weight: 1200; /*tykkelse på tekst*/
+        font-size: 6rem;
+        text-align: center;
+        line-height: 8.5rem; /*linjeafstand*/
+      }
+    
+      /* ændring af størrelse/placering af billede, i stor skærm */
+      .billede-container-top {
+        position: relative;
+        padding-top: 4;
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+    
+      .billede-container-bund {
+        position: relative;
+        padding-top: 0;
+        padding-right: 7rem;
+        padding-left: 7rem;
+    }
+
 
 }
 
@@ -680,5 +837,5 @@ p {
 
 }
 
-
 /*----------------------------------------------*/
+
