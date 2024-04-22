@@ -61,11 +61,6 @@ nav {
     z-index: 999; /* Høj z-index-værdi for at sikre, at det vises over andre elementer */
 }
 
-/* styling af checkbox - navigationsbar */
-.nav {
-    border-bottom: 1px;
-}
-
 /* styling af den egentlige checkboks */
 .nav-checkbox {
     display: none; /* fjerner den aktuelle checkboks fra syne*/
@@ -633,12 +628,13 @@ margin-bottom: 5%;
     flex-direction: column;
     align-items: center;
 }
-
-img {
+/*
+img {  dette skal laves om til en klasse/id, som det kan styres af i stedet 
     max-width: 100%;
     height: auto;
     margin-bottom: 3rem; 
 }
+*/
 
 .billedgalleri
 {
@@ -835,6 +831,8 @@ p {
         background-color: var(--primaer-lyseroed);
         }
 
+
+    
 }
 
 /*----------------------------------------------*/
