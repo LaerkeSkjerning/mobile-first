@@ -515,18 +515,18 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /* styling af tekstboksen - over billederne */
 .overlay-tekstboks {
-position: absolute;
-top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
-left: 50%; /*sikrer placering i midten*/
-transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
-background-color: var(--sekundaer-lyseroed);
-opacity: 80%; /*gennemsigtighed af tekstboks*/
-padding: 2rem; /*luft omkring tekst*/
-font-weight: 1000; /*tykkelse på tekst*/
-font-size: 2rem;
-text-align: center;
-line-height: 2.7rem; /*linjeafstand*/
-border-radius: 0.8rem; /*afrundede kanter*/
+    position: absolute;
+    top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
+    left: 50%; /*sikrer placering i midten*/
+    transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 80%; /*gennemsigtighed af tekstboks*/
+    padding: 2rem; /*luft omkring tekst*/
+    font-weight: 1000; /*tykkelse på tekst*/
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem; /*linjeafstand*/
+    border-radius: 0.8rem; /*afrundede kanter*/
 }
 
 
@@ -534,7 +534,7 @@ border-radius: 0.8rem; /*afrundede kanter*/
 
 /* Styler teksten */
 .kob-gavekort {
-text-align: center;
+    text-align: center;
 }
 
 .kob-gavekort h1 { /*overskrift*/
@@ -571,44 +571,44 @@ text-align: center;
 
 /* deisgn af "hilsen-felt" - taget fra w3 schools */
 textarea {
-width: 65%;
-height: auto;
-padding: 1.3rem;
-border: var(--primaer-lyseroed);
-border-radius: 1rem;
-background-color: var(--sekundaer-lyseroed);
-opacity: 50%; /*gennemsigtighed af tekstboks*/
-font-size: 1rem;
-resize: none;
+    width: 65%;
+    height: auto;
+    padding: 1.3rem;
+    border: var(--primaer-lyseroed);
+    border-radius: 1rem;
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 50%; /*gennemsigtighed af tekstboks*/
+    font-size: 1rem;
+    resize: none;
 }
 
 /* design af kroner-felt */
 #kroner {
-width: 22%;
-height: auto;
-padding: 1.3rem;
-border: var(--primaer-lyseroed);
-border-radius: 1rem;
-background-color: var(--sekundaer-lyseroed);
-opacity: 50%; /*gennemsigtighed af tekstboks*/
-font-size: 1.5rem;
-resize: none;
+    width: 22%;
+    height: auto;
+    padding: 1.3rem;
+    border: var(--primaer-lyseroed);
+    border-radius: 1rem;
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 50%; /*gennemsigtighed af tekstboks*/
+    font-size: 1.5rem;
+    resize: none;
 }
 
 .knap-kob-gavekort {
-margin-top: 2rem;
-margin-bottom: 0.5rem;
-padding: 1.3rem;
-border: solid 0.2rem;
-border-radius: 1rem;
-background-color: var(--sekundaer-lyseroed);
-opacity: 50%; /*gennemsigtighed af tekstboks*/
-font-size: 2rem;
-font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1.3rem;
+    border: solid 0.2rem;
+    border-radius: 1rem;
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 50%; /*gennemsigtighed af tekstboks*/
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 #ses {
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 
