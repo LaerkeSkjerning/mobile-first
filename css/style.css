@@ -384,11 +384,11 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #saladbowls-elementer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
+    text-align: center; /* Teksten sættes i midten */
+    align-items: center; /* Billedet sættes i midten */
     background-color: var(--sekundaer-lyseroed);
-    margin: 20% 12%;
+    margin: 20% 12%; /* Skubber boksen ned fra header og ind fra siderne*/
 }
 
 .saladbowl-element {
@@ -396,13 +396,12 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 #saladbowl-img {
-    width: 20%;
-    margin: 5% -2%;
+    width: 20%; /* Passer med størrelsen i fx sandwich, så der skabes kohærens*/
+    margin: 5%; /* Skaber plads omkring billeder for især at skubbe billeder ned fra øverste kant på boksen*/
 }
 
-/* Skaber afstand fra titel til tekst under */
 #saladbowls-titel {
-    margin-bottom: 5%;
+    margin-bottom: 5%; /* Skaber afstand fra titel til teksten under */
 }
 
 /*---------------------------------------------*/
@@ -410,31 +409,30 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #sandwich-img {
     width: 30%;
-    align-self: center;
+    align-self: center; /* Placerer billedet i midten */
     margin-bottom: -5%; /* Rykker billede og titel tættere sammen */
 }
 
 #sandwich-elementer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Placerer indholdet oven på hinanden*/
+    text-align: center; /* Al tekst står i midten */
     margin-top: 20%; /* Sikrer at den sekundære lyserøde farve ikke går bag head*/
 }
 
 .sandwich-element {
-    margin-left: 12%;
-    margin-right: 12%;
     padding: 2% 5%; /* Afstand mellem alle indre tekst-elementer */
     background-color: var(--sekundaer-lyseroed);
+    margin: 0 12%; /* Placerer den lyserøde baggrund 12% fra hver side */
 }
 
 #sandwich-combo-menu {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Indholdet i combo-menuen placerer oven på hinanden */
+    text-align: center; /* Indholdet placeres i midten */
     background-color: var(--sekundaer-lyseroed);
-    padding: 2% 5%;
-    margin: 2% 12%;
+    padding: 2% 5%; /* Skubber teksten minimalt fra siderne af boksen, de er placeret i*/
+    margin: 2% 12%; /* Giver afstand fra boksen over og afstand fra siderne*/
 }
 
 
