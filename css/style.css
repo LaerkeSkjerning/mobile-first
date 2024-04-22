@@ -358,6 +358,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     text-align: center;
     line-height: 1;
     margin: auto;
+    
 }
 
 .meat-on-stone-menu {
@@ -440,10 +441,9 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 }
 
 #soft-taco-ikon {
-    width: 10%; 
-    margin: auto; /* Indholdet sættes i midten */
+    width: 10%;
     margin-bottom: 0.5rem; /* Giver afstand til det under */
-   
+    margin: auto; /* Indholdet sættes i midten */
 }
 
 .soft-taco, .quesadillas {
@@ -477,26 +477,18 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*---------------------------------------------*/
 /* TAPAS SIDE - STYLING */
 
-.tapas-overskrift {
-    display: flex; 
-    flex-direction: column; /* Indholdet placeres oven på hinanden */
-    align-items: center; /* Indholdet sættes i midten */
-    font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem; /* Giver afstand til det under */
-}
-
 #tapas-ikon {
     width: 10%;
     margin: auto; /* Indholdet sættes i midten */
     margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
-.tapas-indhold-starters h3, .tapas-indhold h3 {
+.tapas-indhold h3, h2 {
     font-weight: 650; /* Tykkelsen af teksten */
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
-.tapas-indhold-starters, .tapas-indhold {
+.tapas-indhold {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -505,12 +497,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color:var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten sættes i midten */
-}
-
-.tapas-indhold-starters p, .tapas-indhold p {
-    display: flex;
-    flex-direction: column; /* Indholdet placeres oven på hinanden */
-    padding: 0.4rem;
+    line-height: 1;
 }
 
 .fisk {
