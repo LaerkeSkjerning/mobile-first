@@ -338,13 +338,13 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #meat-ikon {
     width: 10%;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
     margin: auto; /* Indholdet placeres i midten */
 }
 
-.meat-on-stone-menu h3, h2 {
+.meat-on-stone-menu h3, h2 { /* Overskrifterne */
     font-weight: 650;
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
 .meat-on-stone-menu {
@@ -357,7 +357,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     text-align: center; /* Teksten placeres i midten */
     line-height: 1rem; /* Linjeafstand */
     margin: auto; /* Indholdet placeres i midten */
-    
 }
 
 .fisk1 {
@@ -664,38 +663,34 @@ textarea {
 /*---------------------------------------------*/
 /* GALLERI - STYLING  */
 .small-img {
-    margin-top: 5rem;
-    width: 15%;
-    height: auto;
-    margin-bottom: 3%;
+    margin-top: 5rem; /* laver afstand fra header */
+    width: 15%; 
+    height: auto; /* Gør højden automatisk så den passer med bredden*/
+    margin-bottom: 3%; /* skaber afstand mellem text og ikon */
 }
 
 .billedegalleri-overskrift {
-text-align: center;
-margin-bottom: 5%;
+    text-align: center; /* centrer overskriften */
+    margin-bottom: 5%; /* skaber afstand */
 }
-
-
 
 .billede-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; /* Indstiller layoutet til kolonne */
+    align-items: center; /* Centrerer billederne og texten */
 }
 
-.billedgalleri
-{
-    border-radius: 2rem; 
+.billedgalleri {
+    border-radius: 2rem; /* Sætter en afrundet kant */
     max-width: 100%;
-    height: auto;
-    margin-bottom: 3rem; 
+    height: auto; /* Gør højden automatisk så den passer med skærmtypen */
+    margin-bottom: 3rem; /* Skaber afstand */
 }
 
 p {
-    text-align: center;
-    margin-bottom: 1rem; 
+    text-align: center; /* Centrerer tekst i <p> elementer */
+    margin-bottom: 1rem; /* Skaber afstand mellem text og billede */
 }
-
 
 /*---------------------------------------------*/
 /* OM OS - STYLING  */
