@@ -359,7 +359,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
-    line-height: 1rem; /* Linjeafstand */
+    line-height: 2rem; /* Linjeafstand */
     margin: auto; /* Indholdet placeres i midten */
 }
 
@@ -391,7 +391,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
-    line-height: 1rem; /* Linjeafstand */
+    line-height: 2rem; /* Linjeafstand */
     margin: auto; /* Indholdet placeres i midten */
 }
 
@@ -418,7 +418,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
-    line-height: 1rem; /* Linjeafstand */
+    line-height: 2rem; /* Linjeafstand */
     margin: auto; /* Indholdet placeres i midten */
 }
 
@@ -438,6 +438,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
+    line-height: 2rem; /* Linjeafstand */
     text-align: center; /* Teksten sættes i midten */
 }
 
@@ -476,7 +477,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color:var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten sættes i midten */
-    line-height: 1rem; /* Linjeafstand */
+    line-height: 2rem; /* Linjeafstand */
 }
 
 /*---------------------------------------------*/
@@ -678,7 +679,7 @@ textarea {
     margin-bottom: 3rem; /* Skaber afstand */
 }
 
-p {
+.billedetext {
     text-align: center; /* Centrerer tekst i <p> elementer */
     margin-bottom: 1rem; /* Skaber afstand mellem text og billede */
 }
@@ -804,7 +805,7 @@ p {
     .dropdown-styling {
         padding-right: 1.4rem; /* padding i desktop */
         padding-top: 1.5rem;
-        padding-left: 0.1;
+        padding-left: 0.1rem;
      }
 
     
@@ -822,7 +823,7 @@ p {
      #desktop-forside-img {
         margin-top: 8%; /* Skaber afstand mellem billede og header */
         opacity: 50%; /* Giver billedet en gennemsigtighed på 50% */
-        width: 100%; /* Billedet fylder hele article */
+        width: 100%; /* Billedet fylder hele siden*/
      }
 
      #desktop-forside-indhold {
@@ -830,17 +831,34 @@ p {
         background-color: var(--sekundaer-lyseroed); /* Padding omkring teksten */
      }
 
+    /* Ens med forsidens elementer i mobile-version */
      #desktop-forside-titel {
         font-size: 2rem;
         font-weight: 600;
         line-height: 2.2rem;
      }
 
+    /* Ens med forsidens elementer i mobile-version */
      #desktop-forside-tekst {
         font-size: 1.5rem;
         padding: 0 1.3rem;
         line-height: 2rem;
         font-weight: 500;
+     }
+
+     #desktop-overlay-boks {
+        position: absolute;
+        top: 70%;
+        left: 50%; 
+        transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+        background-color: var(--sekundaer-lyseroed);
+        opacity: 80%; /*gennemsigtighed af tekstboks*/
+        padding: 1rem; /*luft omkring tekst*/
+        font-weight: 1000; /*tykkelse på tekst*/
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.7rem; /*linjeafstand*/
+        border-radius: 0.8rem; /*afrundede kanter*/
      }
 
     /*STYLING AF GAVEKORT - HTML */
@@ -856,7 +874,7 @@ p {
       /* ændring af størrelse/placering af billede, i stor skærm */
       .billede-container-top {
         position: relative;
-        padding-top: 4;
+        padding-top: 4px;
         padding-right: 7rem;
         padding-left: 7rem;
     }
@@ -1060,7 +1078,7 @@ p {
         width: 15%; 
     }
 
-    p {
+    .billedetext {
         width: 90%; 
     }
 }
@@ -1074,6 +1092,10 @@ p {
 
     .small-img {
         width: 7%; /* Sætter bredden af billederne til at fylde hver kolonne */
+    }
+
+    .billedetext {
+        display: none;
     }
 }
 /*----------------------------------------------*/
