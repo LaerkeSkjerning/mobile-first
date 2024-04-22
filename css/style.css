@@ -310,7 +310,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     max-width: 400px; /* Adjust max-width as needed */
     padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
-    border-radius: 10%;
     box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
@@ -361,7 +360,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     width: 90%;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
     line-height: 1;
@@ -440,44 +438,43 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /* SOFT TACO SIDE - STYLING */
 .soft-taco-overskrift {
     display: flex; 
-    flex-direction: column;  
-    align-items: center;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
+    align-items: center; /* Indholdet sættes i midten */
     font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
 #soft-taco-ikon {
     width: 10%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
 .soft-taco, .quesadillas {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
     width: 90%;
-    margin: auto;
+    margin: auto; /* Indholdet sættes i midten */
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
-    text-align: center;
+    text-align: center; /* Teksten sættes i midten */
 }
 
 .soft-taco h3, .quesadillas h3 {
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
 .soft-taco h4, .quesadillas h4 {
-    padding-top: 0.3rem;
+    padding-top: 0.3rem; /* Giver afstand til det under */
 }
 
 .soft-taco p, .quesadillas p {
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
 .taco {
-    font-style: oblique;
-    padding-bottom: 0.3rem;
+    font-style: oblique; 
+    padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
 
 /*---------------------------------------------*/
@@ -485,43 +482,42 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 .tapas-overskrift {
     display: flex; 
-    flex-direction: column;  
-    align-items: center;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
+    align-items: center; /* Indholdet sættes i midten */
     font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
 #tapas-ikon {
     width: 10%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
 .tapas-indhold-starters h3, .tapas-indhold h3 {
-    font-weight: 650;
-    padding-bottom: 0.4rem;
+    font-weight: 650; /* Tykkelsen af teksten */
+    padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
 .tapas-indhold-starters, .tapas-indhold {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: auto; /* Indholdet sættes i midten */
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
-    text-align: center;
+    text-align: center; /* Teksten sættes i midten */
 }
 
 .tapas-indhold-starters p, .tapas-indhold p {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
     padding: 0.4rem;
 }
 
 .fisk {
     font-style: oblique;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
 
 /*---------------------------------------------*/
@@ -749,65 +745,63 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* baggrundsbilleder */
-.billed-omkring img {
+/* styling af det øverste baggrundsbillede */
+.om-os-billed-øverst {
     position: relative;
-    border-radius: 10%;
-    opacity: 0.5; /* Gør billederne transperante */
-    left: 5%; /* Den eneste måde jeg kunne få den i midten af Mobile M i inspect */
-    margin: auto;
+    padding: 1rem;
 }
 
-/* kassen omkring tekstfelterne */
-.kasse-omkring1 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    margin: auto;
-    padding: 4% 5% 4% 5%;
-    background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
-    font-family: "Quattrocento", serif;
-    text-align: center;
-    position: absolute; /* Gør at tekstfeltet kommer ovenpå billedet */
-    top: 49%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
+.om-os-billed-øverst img {
+    display: block;
+    width: 90%;
+    border-radius: 0.8rem; /*afrundede kanter*/
+    margin: auto; /* Placering i midten */
+    opacity: 50%; /* Gennemsigtigheden */
 }
 
-.kasse-omkring2 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    padding: 4% 5% 4% 5%;
-    background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
-    font-family: "Quattrocento", serif;
-    text-align: center;
+/* styling af det midterste baggrundsbillede */
+.om-os-billed-midten {
+    position: relative;
+    padding: 1rem;
+}
+
+.om-os-billed-midten img {
+    display: block;
+    width: 100%;
+    border-radius: 0.8rem; /*afrundede kanter*/
+    margin: auto; /* Placering i midten */
+    opacity: 50%; /* Gennemsigtigheden */
+}
+
+/* styling af det nederste baggrundsbillede */
+.om-os-billed-nederst {
+    position: relative;
+    padding: 1rem;
+}
+
+.om-os-billed-nederst img {
+    display: block;
+    width: 100%;
+    border-radius: 0.8rem; /*afrundede kanter*/
+    margin: auto; /* Placering i midten */
+    opacity: 50%; /* Gennemsigtigheden */
+}
+
+/* styling af tekstfeltet - ovenpå baggrundsbillederne */
+.om-os-tekst-over-billed {
     position: absolute;
-    top: 95%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 50%; /*sikrer placering i midten, både vertikalt og horisontalt i forhold til det omsluttende billede. */
+    left: 50%; /*sikrer placering i midten*/
+    transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+    background-color: var(--sekundaer-lyseroed);
+    opacity: 80%; /*gennemsigtighed af tekstboks*/
+    padding: 1.5rem 2rem 0.5rem 2rem; /*luft omkring tekst*/
+    text-align: center;
+    border-radius: 0.8rem; /*afrundede kanter*/
 }
 
-.kasse-omkring3 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    padding: 4% 5% 4% 5%;
-    background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
-    font-family: "Quattrocento", serif;
-    text-align: center;
-    position: absolute;
-    top: 142%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-/* kassernes indhold */
-.tekst-over-billed {
-    display: flex;
-    flex-direction: column;
+.om-os-tekst-over-billed h3 {
+    padding-bottom: 0.5rem;
 }
 
 .aabningstider-table {
