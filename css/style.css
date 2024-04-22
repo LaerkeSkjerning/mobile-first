@@ -310,7 +310,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     max-width: 400px; /* Adjust max-width as needed */
     padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
-    border-radius: 10%;
     box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
