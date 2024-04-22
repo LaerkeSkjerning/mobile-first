@@ -449,6 +449,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 #soft-taco-ikon {
     width: 10%;
     margin-bottom: 0.5rem;
+    margin: auto;
 }
 
 .soft-taco, .quesadillas {
@@ -458,7 +459,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin: auto;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
 }
@@ -494,6 +494,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 #tapas-ikon {
     width: 10%;
     margin-bottom: 0.5rem;
+    margin: auto;
 }
 
 .tapas-indhold-starters h3, .tapas-indhold h3 {
@@ -508,7 +509,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin: auto;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
-    border-radius: 10%;
     font-family: "Quattrocento", serif;
     text-align: center;
 }
