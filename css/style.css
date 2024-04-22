@@ -213,7 +213,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /* STYLING AF FORSIDE ELEMENTER */
 
 /* Generel styling af titel, tekst og knapper på forside */
-#desktop-img {
+#desktop-forside-view {
     display: none; /* Billedet vises ikke i mobile størrelser */
 }
 
@@ -820,13 +820,35 @@ p {
         display: none; /* Karrusellen fjernes ved desktopview */
      }
 
-     #desktop-img {
-        display: block;
-        
+     #desktop-forside-view {
+        display: flex; /* Bruges, da vi har inline elementer (blandt andet img)*/
+        flex-direction: column; /* Indholdet står over hinanden */
+        text-align: center; /* Teksten står i midten */
      }
 
+     #desktop-forside-img {
+        margin-top: 8%; /* Skaber afstand mellem billede og header */
+        opacity: 50%; /* Giver billedet en gennemsigtighed på 50% */
+        width: 100%; /* Billedet fylder hele article */
+     }
 
+     #desktop-forside-indhold {
+        padding: 5%;
+        background-color: var(--sekundaer-lyseroed); /* Padding omkring teksten */
+     }
 
+     #desktop-forside-titel {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+     }
+
+     #desktop-forside-tekst {
+        font-size: 1.5rem;
+        padding: 0 1.3rem;
+        line-height: 2rem;
+        font-weight: 500;
+     }
 
     /*STYLING AF GAVEKORT - HTML */
     
