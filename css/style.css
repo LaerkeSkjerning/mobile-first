@@ -361,12 +361,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     
 }
 
-.meat-on-stone-menu {
-    display: flex;
-    flex-direction: column;
-    padding: 0.4rem;
-}
-
 .fisk1 {
     font-style: oblique;
     padding-bottom: 0.3rem;
