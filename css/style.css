@@ -762,7 +762,7 @@ textarea {
     padding-bottom: 0.5rem;
 }
 .om-os-tekst-over-billed p {
-    line-height: 0.3rem; /*linjeafstand*/
+    line-height: 1rem; /*linjeafstand*/
 }
 
 .aabningstider-table {
