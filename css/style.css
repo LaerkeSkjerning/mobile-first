@@ -337,11 +337,12 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #meat-ikon {
     width: 10%;
-    margin-bottom: 0.5rem; /* Giver afstand til det under */
-    margin: auto; /* Indholdet placeres i midten */
+    margin-bottom: 0.5rem; /* Giver afstand til det under*/
+    margin: auto; /* Indholdet placeres i midten*/
 }
 
-.meat-on-stone-menu h3, h2 { /* Overskrifterne */
+.meat-on-stone-menu h3,
+.meat-on-stone-menu h2 { /* Overskrifterne */
     font-weight: 650;
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
@@ -351,7 +352,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     flex-direction: column; /* Indholdet placeres oven på hinanden */
     width: 90%;
     padding: 4% 5% 4% 5%;
-    background-color:var(--sekundaer-lyseroed);
+    background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
     line-height: 1rem; /* Linjeafstand */
@@ -362,6 +363,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-style: oblique;
     padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
+
 
 /*---------------------------------------------*/
 /* SALADBOWLS SIDE - STYLING */
@@ -910,5 +912,119 @@ p {
     
 }
 
+/* Responsivitet - meat on stone*/
+@media only screen and (max-width: 768px) {
+    #meat-ikon {
+        width: 20%; /* Ændrer bredden af meat-ikon på mindre skærme */
+        margin: auto; /* Centrerer meat-ikon på mindre skærme */
+    }
+    
+    .meat-on-stone-menu {
+        width: 95%; /* Ændrer bredden af meat-on-stone-menu på mindre skærme */
+        margin: auto; /* Centrerer meat-on-stone-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #meat-ikon {
+        width: 20%; /* Bevarer bredden af meat-ikon på større skærme */
+        margin: auto; /* Centrerer meat-ikon på mindre skærme */
+    }
+    
+    .meat-on-stone-menu {
+        width: 50%; /* Ændrer bredden af meat-on-stone-menu på større skærme */
+        margin: 0; /* Fjerner margin for at placere meat-on-stone-menu i siden */
+        margin-left: 5%; /* Placerer meat-on-stone-menu i midten */
+    }
+}
+
+/* Responsivitet - soft taco*/
+@media only screen and (max-width: 768px) {
+    #soft-taco-ikon {
+        width: 20%; /* Ændrer bredden af taco-ikon på mindre skærme */
+        margin: auto; /* Centrerer taco-ikon på mindre skærme */
+    }
+    
+    .soft-taco, 
+    .quesadillas {
+        width: 95%; /* Ændrer bredden af soft-taco-menu på mindre skærme */
+        margin: auto; /* Centrerer soft-taco-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #soft-taco-ikon {
+        width: 20%; /* Bevarer bredden af soft-taco-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere soft-taco-ikon i siden */
+    }
+    
+    .soft-taco, 
+    .quesadillas {
+        width: 50%; /* Ændrer bredden af .soft-taco og .quesadillas på større skærme */
+        margin: 0; /* Fjerner margin for at placere .soft-taco og .quesadillas i siden */
+        margin-left: 5%; /* Placerer .soft-taco og .quesadillas i midten */
+    }
+}
+
+/* Responsivitet - Tapas*/
+@media only screen and (max-width: 768px) {
+    #tapas-ikon {
+        width: 20%; /* Ændrer bredden af tapas-ikon på mindre skærme */
+        margin: auto; /* Centrerer tapas-ikon på mindre skærme */
+    }
+    
+    .tapas-indhold {
+        width: 95%; /* Ændrer bredden af tapas-indhold på mindre skærme */
+        margin: auto; /* Centrerer tapas-indhold på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #tapas-ikon {
+        width: 20%; /* Bevarer bredden af tapas-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere tapas-ikon i siden */
+    }
+    
+    .tapas-indhold {
+        width: 50%; /* Ændrer bredden af tapas-indhold på større skærme */
+        margin: 0; /* Fjerner margin for at placere tapas-indhold i siden */
+        margin-left: 5%; /* Placerer tapas-indhold i midten */
+    }
+}
+
+
+/* Responsivitet */
+@media only screen and (max-width: 768px) {
+    .hovedmenukort-overskrift {
+        align-items: center; /* Indholdet placeres i midten */
+    }
+    
+    #menu-ikon {
+        margin-top: 5.5rem; /* Giver afstand til det over */
+        margin: auto; /* Centrerer menu-ikon på mindre skærme */
+    }
+    
+    .hovedmenukort {
+        width: 90%; /* Ændrer bredden af hovedmenukort på mindre skærme */
+        margin: auto; /* Centrerer hovedmenukort på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hovedmenukort-overskrift {
+        align-items: flex-end; /* Indholdet placeres til højre */
+    }
+    
+    #menu-ikon {
+        margin-top: 5.5rem; /* Giver afstand til det over */
+        margin-bottom: 0.5rem; /* Giver afstand til det under */
+        margin-left: auto; /* Placerer menu-ikon til højre */
+    }
+    
+    .hovedmenukort {
+        width: 75%; /* Bevarer bredden af hovedmenukort på større skærme */
+        margin-left: auto; /* Placerer hovedmenukort til højre */
+    }
+}
 /*----------------------------------------------*/
 
