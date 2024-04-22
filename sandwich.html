@@ -6,12 +6,72 @@
     <title>LA CAÑA</title>
     <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
     <!-- Google fonts -->
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
     </style>
+
 </head>
+
+<style>
+    #sandwich-img {
+        width: 30%;
+        align-self: center;
+        margin-bottom: -5%; /* Rykker billede og titel tættere sammen */
+
+    }
+
+    #sandwich-elementer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%; /* Sikrer at den sekundære lyserøde farve ikke går bag head*/
+    }
+
+    .sandwich-element {
+        margin-left: 12%;
+        margin-right: 12%;
+        padding: 2% 5%; /* Afstand mellem alle indre tekst-elementer */
+        background-color: var(--sekundaer-lyseroed);
+    }
+
+    #sandwich-combo-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--sekundaer-lyseroed);
+        padding: 2% 5%;
+        margin: 2% 12%;
+    }
+    
+
+    @media only screen and (min-width: 1025px) {
+        #sandwich-elementer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            margin: 10% 55% 0 10%;
+            background-color: var(--sekundaer-lyseroed);
+        }
+
+        #sandwich-combo-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            margin: 5% 55% 5% 10%;
+            background-color: var(--sekundaer-lyseroed);
+        }
+
+        #sandwich-combo-menu p {
+            margin: 2%; /* Afstanden mellem p i boksen */
+        }
+
+    }
+</style>
 
 <body>
 
@@ -41,7 +101,7 @@
                     </ul>
                 </li> 
     
-                <li><a class="dropdown-styling" href="https://book.dinnerbooking.com/dk/da-DK/book/index/3281/2">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
     
                 <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
                     <ul class="dropdown">
@@ -59,27 +119,70 @@
         </nav>
     </header>
 
-    <main>
-        <!-- HOVEDMENUKORT DEL -->
-        <section class="hovedmenukort-overskrift">
-            <img src="images/menu.webp" alt="menu-ikon" id="menu-ikon">
-            <h2>MENUKORT</h2>
+        <!-- HER INDSÆTTES SKABELONEN FOR MENUEN -->
 
-            <container class="hovedmenukort">
-                <ul id="indhold-i-menu-liste">
-                    <li><a href="meat-on-stone.html">Meat On Stone</a></li>
-                    <li><a href="saladbowls.html">Saladbowls</a></li>
-                    <li><a href="sandwich.html">Sandwich</a></li>
-                    <li><a href="soft-taco.html">Soft Taco</a></li>
-                    <li><a href="tapas.html">Tapas</a></li>
-                    <li> <a href="billedgalleri.html">Inspiration</a></li>
-                </ul>
-            </container>
+        <aside id="sandwich-elementer"> <!-- Gælder alle sandwich -->
+
+            <section class="sandwich-element">
+                <img id="sandwich-img" src="images/sandwich.webp" alt="Sandwich">
+            </section>
+
+            <section class="sandwich-element">
+                <h2>BOCADILLOS</h2>
+                <h4>(LUNE SANDWICH)</h4>
+                <p>Nyd en af vores lækre sandwich - hele dagen fra 11.00-21.30</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+                <p>Manchego, mayonaise og tomat | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Serrano skinke</h3> <!-- Overvej, om dette skal være h4 i stedet--> 
+                <p>Manchego, mayonaise og tomat | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Chorizo pølse</h3>
+                <p>Trøffelmayonaise, manchego, og tomat | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Marineret kylling</h3>
+                <p>Manchego, tomat og romesco | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Avocado</h3>
+                <p>Romesco, tomat og marineret salat | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Kold røget laks</h3>
+                <p>Med friskostcreme, tomat og marineret salat | 119,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Bagt sød kartoffel</h3>
+                <p>Pesto og tomat | 99,-</p>
+            </section>
+
+            <section class="sandwich-element">
+                <h3>Tunsalat, pesto</h3>
+                <p>avocado, tomat og marineret salat | 119,-</p>
+            </section>
+
+        </aside>
+
+        <section id="sandwich-combo-menu">
+            <h3>SANDWICH COMBO MENU</h3>
+            <p>VALGFRI SANDWICH</p>
+            <p>PATATAS BRAVAS (SPANSKE POMFRIT KARTOFLER)</p>
+            <p>VALGFRI ØL / VAND</p>
+            <p>159,-</p>
         </section>
-        <br>
-        
-    </main>
-    
-</body>
 
+    </body>
+    
 </html>

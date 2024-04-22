@@ -6,6 +6,7 @@
     <title>LA CAÑA</title>
     <link rel="shortcut icon" href="images/ikon.webp">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
     <!-- Google fonts -->
     <style>
@@ -13,8 +14,48 @@
     </style>
 </head>
 
-<body>
+<style>
 
+
+    #saladbowls-elementer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background-color: var(--sekundaer-lyseroed);
+        margin: 20% 12%;
+    }
+
+    .saladbowl-element {
+        margin: 2%; /* Skaber mellemrum imellem valgmulighederne */
+    }
+
+    #saladbowl-img {
+        width: 20%;
+        margin: 5% -2%;
+    }
+
+    /* Skaber afstand fra titel til tekst under */
+    #saladbowls-titel {
+        margin-bottom: 5%;
+    }
+
+    @media only screen and (min-width: 1025px) {
+        #saladbowls-elementer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            margin: 10% 55% 0 10%;
+            background-color: var(--sekundaer-lyseroed);
+        }
+
+
+    }
+
+</style>
+
+<body>
     <header> <!--Navigationsbar & logo-->
         <nav class="nav"> 
             <input type="checkbox" id="nav-checkbox" class="nav-checkbox"> <!--id skal bruges til checkboksens funktion, class skal style elementerne -->
@@ -41,7 +82,7 @@
                     </ul>
                 </li> 
     
-                <li><a class="dropdown-styling" href="https://book.dinnerbooking.com/dk/da-DK/book/index/3281/2">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
+                <li><a class="dropdown-styling" href="#">BOOK BORD</a></li> <!-- Henvis til ekstern bookingside -->
     
                 <li><a class="dropdown-styling" href="gavekort.html">GAVEKORT</a>
                     <ul class="dropdown">
@@ -60,26 +101,56 @@
     </header>
 
     <main>
-        <!-- HOVEDMENUKORT DEL -->
-        <section class="hovedmenukort-overskrift">
-            <img src="images/menu.webp" alt="menu-ikon" id="menu-ikon">
-            <h2>MENUKORT</h2>
 
-            <container class="hovedmenukort">
-                <ul id="indhold-i-menu-liste">
-                    <li><a href="meat-on-stone.html">Meat On Stone</a></li>
-                    <li><a href="saladbowls.html">Saladbowls</a></li>
-                    <li><a href="sandwich.html">Sandwich</a></li>
-                    <li><a href="soft-taco.html">Soft Taco</a></li>
-                    <li><a href="tapas.html">Tapas</a></li>
-                    <li> <a href="billedgalleri.html">Inspiration</a></li>
-                </ul>
-            </container>
-        </section>
-        <br>
-        
+        <aside id="saladbowls-elementer">
+            
+            <img id="saladbowl-img" src="images/salat.webp" alt="Salad Bowl">
+            
+
+            <section class="saladbowl-element">
+                <h2 id="saladbowls-titel">SALADBOWLS</h2>
+                <p>Nyd en af vores lækre salater <br> - hele dagen fra 11.00-21.30</p>
+                <br> <!-- Må jeg det her? XD-->
+                <p>Alle bowls indeholder, sprød salat, bagte grøntsager, marineret kål, urter og ristede nødder</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Vælg mellem:</h4>
+                <p>Quinoa eller Bulgur</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Vælg Topping:</h4>
+                <p>Pestodressing eller Hvidløgsdressing</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Salad ala' Caesar</h4>
+                <p>hjertesalat, manchego, kylling, dressing og croutoner | 99,-</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Marineret kylling</h4>
+                <p>spansk ost og romesco dip | 99,-</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Koldt røget laks</h4>
+                <p>og friskostecreme | 119,-</p>
+            </section>
+
+            <section class="saladbowl-element">
+                 <h4>Avocado</h4>
+                <p>tomat, spansk ost og romesco dip | 99,-</p>
+            </section>
+
+            <section class="saladbowl-element">
+                <h4>Burrata</h4>
+                <p>Tomat og pesto | 119,-</p>
+            </section>
+        </aside>
+
     </main>
-    
 </body>
 
 </html>
