@@ -350,7 +350,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-bottom: 0.5rem;
 }
 
-.meat-on-stone-menu h3 {
+.meat-on-stone-menu h3, h2 {
     font-weight: 650;
     padding-bottom: 0.4rem;
 }
