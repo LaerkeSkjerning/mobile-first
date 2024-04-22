@@ -61,9 +61,44 @@
     </header>
 
     <main>
+        <section class="kob-gavekort">
+                <h1>KØB AF GAVEKORT</h1>
+                
+                <h2> Køb dit gavekort til La Caña her. </h2>
+                
+                
+                <form >
+                <h3> Vælg dit ønskede beløb i kr.:</h3>
+                    
+                    
+                    <input type = "number" id = "kroner" name = "værdi" step= "10" min="100"> 
+                    
+                    <p> <!-- sikerer afstanden til ovenforstående elementer-->
+                    <h3>Vælg at designe dit gavekort med en personlig hilsen, eller få La Caña's søde personale til det.</h3>
+                    <textarea>Skriv en hilsen...</textarea>
+                    
+                        <p> <!-- Sikrer, at checkboks kommer under ovenstående tekstboks -->
+                            <input type="checkbox" id="hilsen" checked="checked" />
+                            <label for="hilsen"> Ønsker at La Caña står for designet</label>
+                        </p>
+                    </p>
+                
+                    <h3> Vælg om du ønsker gavekortet leveret til din egen e-mail adresse, direkte til modtager, eller i en fin gavekuvert sendt som pakke med posten. </h3>
+                     
+                        <p><!-- Sikrer, at checkboks kommer under ovenstående element -->
+                        <input type="checkbox" id="levering" checked="checked" />
+                        <label for="hilsen"> Ønsker gavekortet leveret på E-maill </label>
         
+                        <br>
+                        <input type="checkbox" id="levering" checked="checked" />
+                        <label for="hilsen"> Ønsker gavekortet sendt til adresse, i fin gavekuvert. </label>
+                        </p>
+                    
+                    <button class="knap-kob-gavekort" type="submit">KØB</button>
+                    <h2 id="ses"> Vi glæder os til at se jer!</h2>
 
-
+                </form>
+        </section>
     </main>
 
 
