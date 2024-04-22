@@ -692,7 +692,7 @@ textarea {
     margin-bottom: 3rem; /* Skaber afstand */
 }
 
-p {
+.billedetext {
     text-align: center; /* Centrerer tekst i <p> elementer */
     margin-bottom: 1rem; /* Skaber afstand mellem text og billede */
 }
@@ -1083,7 +1083,7 @@ p {
         width: 15%; 
     }
 
-    p {
+    .billedetext {
         width: 90%; 
     }
 }
@@ -1097,6 +1097,10 @@ p {
 
     .small-img {
         width: 7%; /* Sætter bredden af billederne til at fylde hver kolonne */
+    }
+
+    .billedetext {
+        display: none;
     }
 }
 /*----------------------------------------------*/
