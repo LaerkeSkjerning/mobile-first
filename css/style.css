@@ -790,7 +790,7 @@ p {
 /* RESPONSIVE - MEDIA QUERIES */
 
 /* desktop view - min-width er sat til der hvor "desktops and large screens"-starter */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
 
      /* STYLING AF NAVIGATION */
     .nav-toggle {
@@ -909,7 +909,7 @@ p {
         line-height: 2rem; /*linjeafstand*/
     }  
 
-    
+
 }
 
 
