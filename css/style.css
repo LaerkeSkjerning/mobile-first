@@ -309,7 +309,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin: auto; /* Indholdet placeres i midten */
     padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
-    box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
 .hovedmenukort ul {
