@@ -337,13 +337,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* MEAT ON STONE SIDE- STYLING */
-.meat-on-stone-overskrift {
-    display: flex; 
-    flex-direction: column;  
-    align-items: center;
-    font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem;
-}
 
 #meat-ikon {
     width: 10%;
@@ -476,13 +469,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*---------------------------------------------*/
 /* TAPAS SIDE - STYLING */
 
-.tapas-overskrift {
-    display: flex; 
-    flex-direction: column;  
-    align-items: center;
-    font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem;
-}
 
 #tapas-ikon {
     width: 10%;
