@@ -1098,10 +1098,6 @@ p {
     .small-img {
         width: 7%; /* Sætter bredden af billederne til at fylde hver kolonne */
     }
-
-    p {
-        display: none; /* Skjuler teksten på større skærme */
-    }
 }
 /*----------------------------------------------*/
 
