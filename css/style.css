@@ -359,7 +359,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color: var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten placeres i midten */
-    line-height: 1rem; /* Linjeafstand */
+    line-height: 2rem; /* Linjeafstand */
     margin: auto; /* Indholdet placeres i midten */
 }
 
