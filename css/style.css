@@ -438,13 +438,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 /*---------------------------------------------*/
 /* SOFT TACO SIDE - STYLING */
-.soft-taco-overskrift {
-    display: flex; 
-    flex-direction: column;  
-    align-items: center;
-    font-family: "Quattrocento", serif;
-    margin-bottom: 0.5rem;
-}
 
 #soft-taco-ikon {
     width: 10%;
