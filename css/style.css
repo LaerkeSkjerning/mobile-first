@@ -991,38 +991,42 @@ p {
     }
 }
 
-
-/* Responsivitet */
+/* Responsivitet hovedmenuen */
 @media only screen and (max-width: 768px) {
     .hovedmenukort-overskrift {
         align-items: center; /* Indholdet placeres i midten */
+        margin-top: 5rem; /* Giver lidt plads fra toppen på mindre skærme */
     }
     
     #menu-ikon {
-        margin-top: 5.5rem; /* Giver afstand til det over */
+        margin-top: 2rem; /* Giver lidt plads fra toppen på mindre skærme */
+        margin-bottom: 2rem; /* Giver afstand til det under */
         margin: auto; /* Centrerer menu-ikon på mindre skærme */
     }
     
     .hovedmenukort {
-        width: 90%; /* Ændrer bredden af hovedmenukort på mindre skærme */
+        width: 75%; /* Ændrer bredden af hovedmenukort på mindre skærme */
         margin: auto; /* Centrerer hovedmenukort på mindre skærme */
+        margin-top: 1rem; /* Giver lidt plads fra toppen på mindre skærme */
     }
 }
 
 @media only screen and (min-width: 768px) {
     .hovedmenukort-overskrift {
-        align-items: flex-end; /* Indholdet placeres til højre */
+        align-items: center; /* Indholdet placeres i midten */
+        margin-top: 5rem; /* Giver lidt plads fra toppen på mindre skærme */
     }
     
     #menu-ikon {
-        margin-top: 5.5rem; /* Giver afstand til det over */
-        margin-bottom: 0.5rem; /* Giver afstand til det under */
-        margin-left: auto; /* Placerer menu-ikon til højre */
+        margin-top: 2rem; /* Giver lidt plads fra toppen på mindre skærme */
+        margin-bottom: 2rem; /* Giver afstand til det under */
+        margin: auto; /* Centrerer menu-ikon på mindre skærme */
     }
     
     .hovedmenukort {
-        width: 75%; /* Bevarer bredden af hovedmenukort på større skærme */
-        margin-left: auto; /* Placerer hovedmenukort til højre */
+        width: 30%; /* Ændrer bredden af hovedmenukort på mindre skærme */
+        margin: auto; /* Centrerer hovedmenukort på mindre skærme */
+        margin-top: 1rem; /* Giver lidt plads fra toppen på mindre skærme */
     }
 }
 /*----------------------------------------------*/
