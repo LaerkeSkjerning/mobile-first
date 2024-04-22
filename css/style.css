@@ -532,37 +532,36 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     text-align: center;
 }
 
-.kob-gavekort h1 { /*overskrift*/
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.2rem;
-    padding: 1.3rem;
-    padding-top: 7.5rem; /* afstand til top - sikrer at overskriften starter under nav/logo.*/
-}
+    .kob-gavekort h1 { /*overskrift*/
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.2rem;
+        padding: 1.3rem;
+        padding-top: 7.5rem; /* afstand til top - sikrer at overskriften starter under nav/logo.*/
+    }
 
-.kob-gavekort h2 { /*underoverskrift*/
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    padding: 1.3rem;
-    padding-bottom: 0;
-}
+    .kob-gavekort h2 { /*underoverskrift*/
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        padding: 1.3rem;
+        padding-bottom: 0;
+    }
 
-.kob-gavekort p { /* alm. tekst */
-    font-size: 1.2rem;
-    padding-top: 0;
-    padding: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 300;
-}
+    .kob-gavekort p { /* alm. tekst */
+        font-size: 1.2rem;
+        padding-top: 0;
+        padding: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 300;
+    }
 
-.kob-gavekort h3 { /* overskrifter, til valg*/
-    font-size: 1.2rem;
-    padding: 1rem;
-    line-height: 1.8rem;
-    font-weight: 600;
-
-}
+    .kob-gavekort h3 { /* overskrifter, til valg*/
+        font-size: 1.2rem;
+        padding: 1rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+    }
 
 /* deisgn af "hilsen-felt" - taget fra w3 schools */
 textarea {
@@ -604,6 +603,48 @@ textarea {
 
 #ses {
     margin-bottom: 2rem;
+}
+
+
+
+/* GAVEKORT-BRUG HTML - STYLING */
+
+/* Styler teksten */
+.brug-gavekort {
+    text-align: center;
+}
+
+.brug-gavekort h1 { /*overskrift*/
+    font-size: 1.5rem;
+    font-weight: 650;
+    line-height: 2.2rem;
+    padding: 7rem 1.3rem 0 1.3rem; /* afstand til top - sikrer at overskriften starter under nav/logo.*/
+}
+
+.gk-info-bund h1 { /*fordi afstand til top er ændret*/
+    padding: 3rem 1.3rem 0 1.3rem; 
+}
+
+.brug-gavekort h2 { /*underoverskrift*/
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+    text-decoration: underline var(--sekundaer-moerk-lyseroed) ;
+}
+
+.brug-gavekort p { /* alm. tekst */
+    font-size: 1.2rem;
+    padding: 1.5rem 1.3rem 0 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.brug-gavekort h3 { /* overskrifter, afsluttende tekst info*/
+    font-size: 1.8rem;
+    padding: 2rem 1.3rem 3rem 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 700;
 }
 
 
