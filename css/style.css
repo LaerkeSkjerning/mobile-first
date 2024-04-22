@@ -292,45 +292,44 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 .hovedmenukort-overskrift { 
     display: flex; 
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
+    align-items: center; /* Indholdet placeres i midten */
     font-family: "Quattrocento", serif;
 }
 
 #menu-ikon {
     width: 10%;
-    margin-top: 5.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 5.5rem; /* Giver afstand til det over */
+    margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
 .hovedmenukort {
     margin-top: 1rem;
     width: 75%;
-    margin: auto;
-    max-width: 400px; /* Adjust max-width as needed */
+    margin: auto; /* Indholdet placeres i midten */
     padding: 5% 5% 2% 5%;
     background-color: var(--sekundaer-lyseroed);
     box-shadow: 0 0 5% var(--sekundaer-moerk-lyseroed);
 }
 
 .hovedmenukort ul {
-    list-style-type: none;
+    list-style-type: none;/* Fjerner stregerne under */
     padding: 0;
-    text-align: center;
+    text-align: center; /* Teksten placeres i midten */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
 }
 
 .hovedmenukort li {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Giver afstand til det under */
     border-bottom: 0.1rem solid var(--sekundaer-moerk-lyseroed);
 }
 
 .hovedmenukort a {
-    text-decoration: none;
+    text-decoration: none; /* Fjerne den blå farve */
     color: #333;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: bold; /* tykkelsen */
+    font-size: 1rem; 
     padding: 0rem 0rem 0.5rem 0rem;
 }
 
@@ -339,8 +338,8 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #meat-ikon {
     width: 10%;
-    margin-bottom: 0.5rem;
-    margin: auto;
+    margin-bottom: 0.5rem; 
+    margin: auto; /* Indholdet placeres i midten */
 }
 
 .meat-on-stone-menu h3, h2 {
@@ -350,20 +349,20 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 .meat-on-stone-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
     width: 90%;
     padding: 4% 5% 4% 5%;
     background-color:var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
-    text-align: center;
-    line-height: 1;
-    margin: auto;
+    text-align: center; /* Teksten placeres i midten */
+    line-height: 1rem; /* Linjeafstand */
+    margin: auto; /* Indholdet placeres i midten */
     
 }
 
 .fisk1 {
     font-style: oblique;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
 
 /*---------------------------------------------*/
@@ -442,15 +441,15 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     text-align: center; /* Teksten sættes i midten */
 }
 
-.soft-taco h3, .quesadillas h3 {
+.soft-taco h3, .quesadillas h3 { /* Overskrifterne */
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
-.soft-taco h4, .quesadillas h4 {
+.soft-taco h4, .quesadillas h4 { /* Overskrifterne */
     padding-top: 0.3rem; /* Giver afstand til det under */
 }
 
-.soft-taco p, .quesadillas p {
+.soft-taco p, .quesadillas p { /* Almindelig tekst */
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
@@ -468,7 +467,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin-bottom: 0.5rem; /* Giver afstand til det under */
 }
 
-.tapas-indhold h3, h2 {
+.tapas-indhold h3, h2 { /* Overskrifterne */
     font-weight: 650; /* Tykkelsen af teksten */
     padding-bottom: 0.4rem; /* Giver afstand til det under */
 }
@@ -482,7 +481,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     background-color:var(--sekundaer-lyseroed);
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten sættes i midten */
-    line-height: 1;
+    line-height: 1rem; /* Linjeafstand */
 }
 
 .fisk {
@@ -776,9 +775,9 @@ p {
 
 .aabningstider-table {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: row; /* Gør at de bliver placeret ved siden af hinanden */
+    justify-content: center; /* Indholdet sættes i midten */
+    gap: 1rem; /* Giver mellemrum mellem indholdet */
 }
 
 /*---------------------------------------------*/
