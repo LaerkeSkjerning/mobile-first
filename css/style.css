@@ -1049,5 +1049,37 @@ p {
         margin-top: 1rem; /* Giver lidt plads fra toppen på mindre skærme */
     }
 }
+
+/* Responsivitet billedegalleri */
+@media only screen and (max-width: 768px)  {
+    .billede-main {
+        flex-direction: column; 
+        justify-content: space-between; /* Placerer elementer jævnt i bredden */
+    }
+
+    .small-img {
+        width: 15%; 
+    }
+
+    p {
+        width: 90%; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .billede-main {
+        display: grid; /* Ændrer layoutet til CSS-grid på større skærme */
+        grid-template-columns: repeat(3, 1fr); /* Opdeler grid'en i tre kolonner med samme bredde */
+        grid-gap: 1rem; /* Tilføjer lidt mellemrum mellem grid-elementerne */
+    }
+
+    .small-img {
+        width: 7%; /* Sætter bredden af billederne til at fylde hver kolonne */
+    }
+
+    p {
+        display: none; /* Skjuler teksten på større skærme */
+    }
+}
 /*----------------------------------------------*/
 
