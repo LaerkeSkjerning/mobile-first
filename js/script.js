@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function() { /* listener, der venter paa at al HTML-indholdet er loaded foer funktionen starter */
     const inner = document.querySelector(".indre-karrusel"); /* querySelector henter det foerste element, der har klassen 'indre-karrusel' */
     const pages = document.querySelectorAll(".karrusel-side"); /* querySelectorAll henter alle elementer med klassen 'karrusel-side' (og gemmer dem i en NodeList) */
