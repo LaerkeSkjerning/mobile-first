@@ -363,7 +363,7 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     margin: auto; /* Indholdet placeres i midten */
 }
 
-.fisk1 {
+.fisk {
     font-style: oblique;
     padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
@@ -372,59 +372,49 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /*---------------------------------------------*/
 /* SALADBOWLS SIDE - STYLING */
 
-#saladbowls-elementer {
+#saladbowl-ikon {
+    width: 10%;
+    margin-bottom: 0.5rem; /* Giver afstand til det under*/
+    margin: auto; /* Indholdet placeres i midten*/
+}
+
+.saladbowls h2 { /* Overskrifter */
+    font-weight: 650;
+    margin-bottom: 0.4rem; /* Giver afstand til det under */
+}
+.saladbowls {
     display: flex;
     flex-direction: column; /* Indholdet placeres oven på hinanden */
-    text-align: center; /* Teksten sættes i midten */
-    align-items: center; /* Billedet sættes i midten */
+    width: 90%;
+    padding: 4% 5% 4% 5%;
     background-color: var(--sekundaer-lyseroed);
-    margin: 20% 12%; /* Skubber boksen ned fra header og ind fra siderne*/
+    font-family: "Quattrocento", serif;
+    text-align: center; /* Teksten placeres i midten */
+    line-height: 1rem; /* Linjeafstand */
+    margin: auto; /* Indholdet placeres i midten */
 }
 
-.saladbowl-element {
-    margin: 2%; /* Skaber mellemrum imellem valgmulighederne */
-}
-
-#saladbowl-img {
-    width: 20%; /* Passer med størrelsen i fx sandwich, så der skabes kohærens*/
-    margin: 5%; /* Skaber plads omkring billeder for især at skubbe billeder ned fra øverste kant på boksen*/
-}
-
-#saladbowls-titel {
-    margin-bottom: 5%; /* Skaber afstand fra titel til teksten under */
-}
 
 /*---------------------------------------------*/
 /* SANDWICH SIDE - STYLING */
 
-#sandwich-img {
-    width: 30%;
-    align-self: center; /* Placerer billedet i midten */
-    margin-bottom: -5%; /* Rykker billede og titel tættere sammen */
+#sandwich-ikon {
+    width: 10%;
+    margin-bottom: 0.5rem; /* Giver afstand til det under*/
+    margin: auto; /* Indholdet placeres i midten*/
 }
 
-#sandwich-elementer {
+.sandwich-menu {
     display: flex;
-    flex-direction: column; /* Placerer indholdet oven på hinanden*/
-    text-align: center; /* Al tekst står i midten */
-    margin-top: 20%; /* Sikrer at den sekundære lyserøde farve ikke går bag head*/
-}
-
-.sandwich-element {
-    padding: 2% 5%; /* Afstand mellem alle indre tekst-elementer */
+    flex-direction: column; /* Indholdet placeres oven på hinanden */
+    width: 90%;
+    padding: 4% 5% 4% 5%;
     background-color: var(--sekundaer-lyseroed);
-    margin: 0 12%; /* Placerer den lyserøde baggrund 12% fra hver side */
+    font-family: "Quattrocento", serif;
+    text-align: center; /* Teksten placeres i midten */
+    line-height: 1rem; /* Linjeafstand */
+    margin: auto; /* Indholdet placeres i midten */
 }
-
-#sandwich-combo-menu {
-    display: flex;
-    flex-direction: column; /* Indholdet i combo-menuen placerer oven på hinanden */
-    text-align: center; /* Indholdet placeres i midten */
-    background-color: var(--sekundaer-lyseroed);
-    padding: 2% 5%; /* Skubber teksten minimalt fra siderne af boksen, de er placeret i*/
-    margin: 2% 12%; /* Giver afstand fra boksen over og afstand fra siderne*/
-}
-
 
 /*---------------------------------------------*/
 /* SOFT TACO SIDE - STYLING */
@@ -486,11 +476,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     font-family: "Quattrocento", serif;
     text-align: center; /* Teksten sættes i midten */
     line-height: 1rem; /* Linjeafstand */
-}
-
-.fisk {
-    font-style: oblique;
-    padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
 
 /*---------------------------------------------*/
@@ -818,7 +803,7 @@ textarea {
     .dropdown-styling {
         padding-right: 1.4rem; /* padding i desktop */
         padding-top: 1.5rem;
-        padding-left: 0.1;
+        padding-left: 0.1rem;
      }
 
     
@@ -836,7 +821,7 @@ textarea {
      #desktop-forside-img {
         margin-top: 8%; /* Skaber afstand mellem billede og header */
         opacity: 50%; /* Giver billedet en gennemsigtighed på 50% */
-        width: 100%; /* Billedet fylder hele article */
+        width: 100%; /* Billedet fylder hele siden*/
      }
 
      #desktop-forside-indhold {
@@ -844,17 +829,34 @@ textarea {
         background-color: var(--sekundaer-lyseroed); /* Padding omkring teksten */
      }
 
+    /* Ens med forsidens elementer i mobile-version */
      #desktop-forside-titel {
         font-size: 2rem;
         font-weight: 600;
         line-height: 2.2rem;
      }
 
+    /* Ens med forsidens elementer i mobile-version */
      #desktop-forside-tekst {
         font-size: 1.5rem;
         padding: 0 1.3rem;
         line-height: 2rem;
         font-weight: 500;
+     }
+
+     #desktop-overlay-boks {
+        position: absolute;
+        top: 70%;
+        left: 50%; 
+        transform: translate(-50%, -50%); /*Transform-funktionen bruges til at finjustere placeringen*/
+        background-color: var(--sekundaer-lyseroed);
+        opacity: 80%; /*gennemsigtighed af tekstboks*/
+        padding: 1rem; /*luft omkring tekst*/
+        font-weight: 1000; /*tykkelse på tekst*/
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.7rem; /*linjeafstand*/
+        border-radius: 0.8rem; /*afrundede kanter*/
      }
 
     /*STYLING AF GAVEKORT - HTML */
@@ -870,7 +872,7 @@ textarea {
       /* ændring af størrelse/placering af billede, i stor skærm */
       .billede-container-top {
         position: relative;
-        padding-top: 4;
+        padding-top: 4px;
         padding-right: 7rem;
         padding-left: 7rem;
     }
@@ -883,7 +885,7 @@ textarea {
     }
 
     /* Saladbowls er reponsive, så indholdet flyttes til venstre i siden og menuen til højre */
-    #saladbowls-elementer {
+    .sandwich-menu {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -892,7 +894,7 @@ textarea {
         background-color: var(--sekundaer-lyseroed);
     }
 
-    #sandwich-elementer {
+    .sandwich-menu{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
