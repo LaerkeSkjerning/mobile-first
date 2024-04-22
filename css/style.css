@@ -886,29 +886,6 @@ textarea {
         padding-left: 7rem;
     }
 
-    /* Saladbowls er reponsive, så indholdet flyttes til venstre i siden og menuen til højre */
-    .sandwich-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-        margin: 10% 55% 0 10%;
-        background-color: var(--sekundaer-lyseroed);
-    }
-
-    .sandwich-menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-        margin: 10% 55% 0 10%;
-        background-color: var(--sekundaer-lyseroed);
-    }
-
-
-    .sandwich-menu p {
-        margin: 2%; /* Afstanden mellem p i boksen */
-    }
 
     /* OM OS */
     .om-os-billed-øverst .om-os-billed-midten .om-os-billed-nederst {
@@ -971,6 +948,58 @@ textarea {
         width: 50%; /* Ændrer bredden af meat-on-stone-menu på større skærme */
         margin: 0; /* Fjerner margin for at placere meat-on-stone-menu i siden */
         margin-left: 5%; /* Placerer meat-on-stone-menu i midten */
+    }
+}
+
+/* Responsivitet - Saladbowls*/
+@media only screen and (max-width: 768px) {
+    #saladbowl-ikon {
+        width: 20%; /* Ændrer bredden af saladbowl-ikon på mindre skærme */
+        margin: auto; /* Centrerer saladbowl-ikon på mindre skærme */
+    }
+    
+    .saladbowls-menu {
+        width: 95%; /* Ændrer bredden af saladbowls-menu på mindre skærme */
+        margin: auto; /* Centrerer saladbowls-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #saladbowl-ikon {
+        width: 20%; /* Bevarer bredden af saladbowl-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere saladbowl-ikon i siden */
+    }
+    
+    .saladbowls-menu {
+        width: 50%; /* Ændrer bredden af saladbowls-menu på større skærme */
+        margin: 0; /* Fjerner margin for at placere saladbowls-menu i siden */
+        margin-left: 5%; /* Placerer saladbowls-menu i midten */
+    }
+}
+
+/* Responsivitet - Sandwich*/
+@media only screen and (max-width: 768px) {
+    #sandwich-ikon {
+        width: 20%; /* Ændrer bredden af sandwich-ikon på mindre skærme */
+        margin: auto; /* Centrerer sandwich-ikon på mindre skærme */
+    }
+    
+    .sandwich-menu {
+        width: 95%; /* Ændrer bredden af sandwich-menu på mindre skærme */
+        margin: auto; /* Centrerer sandwich-menu på mindre skærme */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #sandwich-ikon {
+        width: 20%; /* Bevarer bredden af sandwich-ikon på større skærme */
+        margin: auto; /* Fjerner margin for at placere sandwich-ikon i siden */
+    }
+    
+    .sandwich-menu {
+        width: 50%; /* Ændrer bredden af sandwich-menu på større skærme */
+        margin: 0; /* Fjerner margin for at placere sandwich-menu i siden */
+        margin-left: 5%; /* Placerer sandwich-menu i midten */
     }
 }
 
