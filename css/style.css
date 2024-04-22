@@ -374,15 +374,16 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 #saladbowl-ikon {
     width: 10%;
-    margin-bottom: 0.5rem; /* Giver afstand til det under*/
     margin: auto; /* Indholdet placeres i midten*/
 }
 
-.saladbowls h2 { /* Overskrifter */
+.saladbowls-menu h2 { /* Overskrift */
     font-weight: 650;
+    margin-top: 0.4rem; /* Giver afstand til det over */
     margin-bottom: 0.4rem; /* Giver afstand til det under */
 }
-.saladbowls {
+
+.saladbowls-menu {
     display: flex;
     flex-direction: column; /* Indholdet placeres oven på hinanden */
     width: 90%;
@@ -402,6 +403,11 @@ li:first-child { /* first-child, fordi logo er første element i listede element
     width: 10%;
     margin-bottom: 0.5rem; /* Giver afstand til det under*/
     margin: auto; /* Indholdet placeres i midten*/
+}
+.sandwich-menu h2 { /* Overskrift */
+    font-weight: 650;
+    margin-top: 0.4rem; /* Giver afstand til det over */
+    margin-bottom: 0.4rem; /* Giver afstand til det under */
 }
 
 .sandwich-menu {
@@ -445,11 +451,6 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 
 .soft-taco p, .quesadillas p { /* Almindelig tekst */
     padding-bottom: 0.4rem; /* Giver afstand til det under */
-}
-
-.taco {
-    font-style: oblique; 
-    padding-bottom: 0.3rem; /* Giver afstand til det under */
 }
 
 /*---------------------------------------------*/
@@ -886,17 +887,8 @@ p {
         background-color: var(--sekundaer-lyseroed);
     }
 
-    /* Sanwich er responsive, så indholdet flyttes til venstre i sden og menu til højre*/
-    #sandwich-combo-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: center;
-        margin: 5% 55% 5% 10%;
-        background-color: var(--sekundaer-lyseroed);
-    }
 
-    #sandwich-combo-menu p {
+    .sandwich-menu p {
         margin: 2%; /* Afstanden mellem p i boksen */
     }
 
