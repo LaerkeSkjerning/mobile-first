@@ -213,6 +213,10 @@ li:first-child { /* first-child, fordi logo er første element i listede element
 /* STYLING AF FORSIDE ELEMENTER */
 
 /* Generel styling af titel, tekst og knapper på forside */
+#desktop-img {
+    display: none; /* Billedet vises ikke i mobile størrelser */
+}
+
 .forside-elementer {
     position: relative; /* relativ positionering - så nav-baren ikke rykker elementerne ned, når den åbnes */
     z-index: 1; /* Sørger for, at forsideelementerne er under navigationsbjælken */
@@ -813,22 +817,17 @@ p {
      }
 
     
-    /* STYLING AF FORSIDE M. KARUSEL */
-     #sidste-forside {
-        margin-top: 52vh; 
+    /* STYLING AF FORSIDE */
+     .karrusel-container {
+        display: none; /* Karrusellen fjernes ved desktopview */
      }
 
-     .forside-tekst {
-        margin-bottom: 4%;
+     #desktop-img {
+        display: block;
+        
      }
 
-     .lyseroed-forside-knap-et {
-        margin-bottom: -2%;
-     }
 
-     .lyseroed-forside-knap-to {
-        padding: 1% 9.5%;
-     }
 
 
     /*STYLING AF GAVEKORT - HTML */
@@ -889,7 +888,7 @@ p {
         margin: 2%; /* Afstanden mellem p i boksen */
     }
 
-
+    
 }
 
 
